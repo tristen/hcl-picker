@@ -1,0 +1,363 @@
+/* ------------------------------------------
+  Reset ♥
+  http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+---------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  }
+body { line-height: 1; }
+ol, ul { list-style: none;  }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+/* tables still need 'cellspacing='0'' in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+:focus { outline: 0; }
+
+/* ------------------------------------------
+  Typography ♥
+---------------------------------------------*/
+body {
+  background: #f5f5f5;
+  color: #404040;
+  }
+body,
+textarea,
+input {
+  font: 13px/20px 'Helvetica Neue Light','Helvetica Neue',Helvetica,arial,freesans,clean,sans-serif;
+  }
+pre,
+code { font:normal 12px/20px monospace; }
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight:700;
+  margin: 0;
+  }
+h1 {
+  font-size: 16px;
+  margin: 0;
+  }
+h2 {
+  font-size: 18px;
+  line-height: 22px;
+  }
+h3 {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 20px;
+  }
+small {
+  font-size: 11px;
+  color: #999;
+  display: block;
+  }
+a {
+  color: #69AACA;
+  text-decoration: none;
+  }
+  a:hover {
+    color: #337A9D;
+    }
+
+p {
+  margin: 0 0 10px;
+  }
+label {
+  font-weight:700;
+  }
+strong {
+  font-weight:700;
+  }
+sup {
+  font-size: 11px;
+  vertical-align: top;
+  position: relative;
+  top: -3px;
+  }
+
+/*-----------------------------------
+  Form Elements
+-------------------------------------*/
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+  }
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  display: inline-block;
+  width: 172px;
+  margin-left: 10px;
+  height: 200px;
+  padding: 4px;
+  margin-bottom: 9px;
+  border: none;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  }
+
+/* ------------------------------------------
+  Layout ♥
+---------------------------------------------*/
+.limiter {
+  width: 720px;
+  margin: 0 auto;
+  position: relative;
+  }
+
+/* ------------------------------------------
+  General Styling ♥
+---------------------------------------------*/
+.heading {
+  background: #fff;
+  padding: 60px 0 20px;
+  }
+span.branding {
+  background-color: #000;
+  color: #fff;
+  font-size: 13px;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  padding: 15px;
+  display: inline=block;
+  text-align: center;
+  margin-right: 5px;
+  }
+span.paraphrase {
+  color: #AEAEAE;
+  font-weight: 200;
+  }
+
+.bar {
+  margin: 1em 0 1em;
+  height: 80px;
+  clear: both;
+  }
+  .bar .b {
+    height: 80px;
+    width: 240px;
+    float: left;
+    }
+ul.tools {
+  margin: 0 0 10px;
+  }
+  ul.tools li {
+    float: left;
+    }
+    ul.tools li a {
+      display: block;
+      background: #404040;
+      color: #fff;
+      height: 30px;
+      line-height: 30px;
+      width: 115px;
+      text-align: center;
+      }
+
+/* ------------------------------------------
+  Color Picker ♥
+---------------------------------------------*/
+#color-picker {
+  margin-top: 20px;
+  }
+  ul.axis-select li {
+    display: inline;
+    }
+    ul.axis-select li a {
+      margin-right: 5px;
+      text-transform: uppercase;
+      }
+
+.axis-select a.sel {
+  font-weight: bold;
+  color: #000;
+  }
+.z-axis-label {
+  text-transform: uppercase;
+  position: absolute;
+  top:-27px;
+  left: -5px;
+  width: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  }
+#sl-val {
+  white-space:nowrap;
+  position: absolute;
+  left: 28px;
+  top: 2px;
+  }
+#sl-z {
+  height:420px;
+  margin-top:0px;
+  }
+.tool {
+  position: relative;
+  width: 480px;
+  float: left;
+  }
+  .canvas,
+  .slider {
+    float: left;
+    }
+
+.sidebar {
+  width: 230px;
+  margin-left: 10px;
+  float: left;
+  }
+
+.top {
+  margin: 10px 0;
+  }
+#grad, #colorscale, #bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 420px;
+  }
+#grad {
+  left: -10px;
+  top: -10px;
+  z-index: 20;
+  height: 440px;
+  width: 440px;
+  }
+#bg {
+  background-image: url(images/canvas.png);
+  background-repeat: repeat;
+  left: 0;
+  position:
+  relative;
+  width: 420px;
+  z-index:0;
+  }
+.drag_cont {
+  position: absolute;
+  z-index: 50;
+  left: -10px;
+  top: -10px;
+  width: 440px;
+  height: 440px;
+  }
+#colorspace {
+  width: 420px;
+  height: 420px;
+  }
+#visual-output,
+#code-output {
+  float: left;
+  }
+#visual-output .swatch {
+  width: 40px;
+  height: 40px;
+  }
+
+.drag {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  }
+.panel .right {
+  position: absolute;
+  left: 440px;
+  top: 0;
+  }
+
+/*  -------------------------------------------------------
+ *  Slider ♥
+ *  ------------------------------------------------------- */
+.ui-slider {
+  position: relative;
+  text-align: left;
+  margin-left: 5px;
+  }
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 19px;
+  height: 20px;
+  cursor: default;
+  left:-10px!important;
+  border: 1px solid #444;
+  }
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+  }
+.ui-slider-vertical {
+  width: 1px;
+  border:0;
+  border-left: 1px solid #000;
+  height: 100px;
+  }
+.ui-slider-vertical .ui-slider-handle {
+  left: -.3em;
+  margin-left: 0;
+  margin-bottom: -.6em;
+  }
+.ui-slider-vertical .ui-slider-range {
+  left: 0;
+  width: 100%;
+  }
+.ui-slider-vertical .ui-slider-range-min  { bottom: 0; }
+.ui-slider-vertical .ui-slider-range-max  { top: 0; }
+
+/*  -------------------------------------------------------
+ *  little helpers ♥
+ *  ------------------------------------------------------- */
+.icon {
+  background-image: url(img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: block;
+  text-indent: -999em;
+  width: 20px; height: 20px;
+  }
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  }
+
+* html .clearfix { height: 1%; } /* IE6 */
+*:first-child + html .clearfix { min-height: 1%; } /* IE7 */
