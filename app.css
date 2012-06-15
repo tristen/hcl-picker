@@ -114,15 +114,13 @@ textarea {
   overflow: auto;
   vertical-align: top;
   display: inline-block;
-  width: 172px;
-  margin-left: 10px;
+  width: 132px;
   height: 200px;
   padding: 4px;
-  margin-bottom: 9px;
   border: none;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  resize: none;
   }
 
 /* ------------------------------------------
@@ -139,16 +137,18 @@ textarea {
 ---------------------------------------------*/
 .heading {
   background: #fff;
-  padding: 60px 0 20px;
+  padding: 40px 0 10px;
   }
 span.branding {
-  background-color: #000;
+  background: transparent url(images/sprite.png) no-repeat 0 0;
   color: #fff;
-  font-size: 13px;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  padding: 15px;
-  display: inline=block;
+  color: rgba(255,255,255,0.9);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  display: inline-block;
   text-align: center;
   margin-right: 5px;
   }
@@ -167,21 +167,6 @@ span.paraphrase {
     width: 240px;
     float: left;
     }
-ul.tools {
-  margin: 0 0 10px;
-  }
-  ul.tools li {
-    float: left;
-    }
-    ul.tools li a {
-      display: block;
-      background: #404040;
-      color: #fff;
-      height: 30px;
-      line-height: 30px;
-      width: 115px;
-      text-align: center;
-      }
 
 /* ------------------------------------------
   Color Picker ♥
@@ -217,10 +202,6 @@ ul.tools {
   left: 28px;
   top: 2px;
   }
-#sl-z {
-  height:420px;
-  margin-top:0px;
-  }
 .tool {
   position: relative;
   width: 480px;
@@ -229,6 +210,9 @@ ul.tools {
   .canvas,
   .slider {
     float: left;
+    }
+  .slider {
+    width: 40px;
     }
 
 .sidebar {
@@ -274,15 +258,39 @@ ul.tools {
   width: 420px;
   height: 420px;
   }
+#controls,
 #visual-output,
 #code-output {
   float: left;
+  }
+#visual-output {
+  margin: 0 5px;
   }
 #visual-output .swatch {
   width: 40px;
   height: 40px;
   }
-
+#controls a {
+  background: #fff;
+  display: block;
+  padding: 14px 0;
+  text-align: center;
+  font-weight: bold;
+  color: #AEAEAE;
+  border: 1px solid #E0E0E0;
+  font-size: 16px;
+  line-height: 0;
+  margin: 0;
+  width: 28px;
+  }
+  #controls a.subtract {
+    position: relative;
+    top: -1px;
+    }
+  #controls a:active {
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.10);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.10);
+    }
 .drag {
   position: absolute;
   width: 10px;
@@ -306,30 +314,34 @@ ul.tools {
   margin-left: 5px;
   }
 .ui-slider .ui-slider-handle {
+  background: #eaeaea;
   position: absolute;
   z-index: 2;
-  width: 19px;
+  width: 20px;
   height: 20px;
   cursor: default;
-  left:-10px!important;
-  border: 1px solid #444;
+  left: 10px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin: 0;
+  }
+.ui-slider .ui-slider-handle.ui-state-hover {
+  background-color: #aeaeae;
   }
 .ui-slider .ui-slider-range {
   position: absolute;
   z-index: 1;
-  font-size: .7em;
   display: block;
-  border: 0;
-  background-position: 0 0;
   }
 .ui-slider-vertical {
-  width: 1px;
-  border:0;
-  border-left: 1px solid #000;
-  height: 100px;
+  background: #fff;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+  width: 40px;
+  height: 420px;
+  margin: 0;
   }
 .ui-slider-vertical .ui-slider-handle {
-  left: -.3em;
   margin-left: 0;
   margin-bottom: -.6em;
   }
@@ -339,6 +351,59 @@ ul.tools {
   }
 .ui-slider-vertical .ui-slider-range-min  { bottom: 0; }
 .ui-slider-vertical .ui-slider-range-max  { top: 0; }
+
+
+/*-----------------------------------
+  Facebook like popups
+-------------------------------------*/
+.tooltip {
+  z-index: 12000;
+  display: block;
+  position: absolute;
+  visibility: visible;
+  padding: 5px;
+  z-index: 1000;
+  margin-left: 5px;
+  }
+.tooltip.fade.in {
+  filter: alpha(opacity=100);
+  opacity: 1;
+  }
+.tooltip.above .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  z-index: 100;
+  }
+.tooltip-inner {
+  padding: 4px 8px 5px;
+  background-color: white;
+  text-align: center;
+  max-width: 200px;
+  text-decoration: none;
+  -moz-box-shadow: 0 0 8px rgba(0,0,0,0.25);
+  box-shadow: 0 0 8px rgba(0,0,0,0.25);
+  font-weight: 500;
+  }
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  }
+.fade {
+  -webkit-transition: opacity 0.15s linear;
+  -moz-transition: opacity 0.15s linear;
+  -ms-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+  opacity: 0;
+  }
+.fade.in {
+  opacity: 1;
+  }
 
 /*  -------------------------------------------------------
  *  little helpers ♥

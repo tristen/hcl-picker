@@ -3,17 +3,19 @@
   <head>
   <meta charset='utf-8' />
   <title>HCL | A Colorpicker for Data</title>
+  <link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon' />
   <link rel='stylesheet' href='app.css' type='text/css' />
 	<script src='scripts/jquery.min.js'></script>
 	<script src='scripts/jquery-ui.js'></script>
   <script src='scripts/chroma.js'></script>
+  <script src='scripts/bootstrap-tooltip.js'></script>
 	<script src='app.js'></script>
 </head>
 <body>
 
   <div class='heading'>
     <div class='limiter'>
-      <h1><span class='branding'>HCL</span> <span class='paraphrase'>A <a href='http://en.wikipedia.org/wiki/Munsell_color_system' class='acronym'>hue, chroma, lightness</a> colorpicker for data.</span></h1>
+      <h1><span class='branding'>HCL</span> <span class='paraphrase'><a href='http://en.wikipedia.org/wiki/Munsell_color_system' class='acronym'>hue, chroma, lightness</a> colorpicker for data.</span></h1>
     </div>
   </div>
 
@@ -33,16 +35,15 @@
       </div>
 
       <div class='slider'>
-        <div class='z-axis-label'>S</div>
         <div id='sl-z'></div>
       </div>
     </div>
 
     <div class='sidebar'>
-      <ul class='tools clearfix'>
-        <li><a id='subtract' href='#'>- Swatch</a></li>
-        <li><a id='add' href='#'>+ Swatch</a></li>
-      </ul>
+      <div id='controls'>
+        <a data-type='add' href='#' rel='tooltip' title='Add a swatch' >+</a>
+        <a data-type='subtract' class='subtract' href='#' rel='tooltip' title='Remove a swatch'>-</a>
+      </div>
       <div id='visual-output'></div>
       <textarea id='code-output'></textarea>
     </div>
@@ -51,6 +52,9 @@
 <script>
   $('document').ready(function() {
     new Colorpicker;
+    $('a[rel=tooltip]').tooltip({
+      live: true
+    });
   });
 </script>
 </body>
