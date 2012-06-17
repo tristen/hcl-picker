@@ -26,7 +26,8 @@ Colorpicker.prototype = {
             $('.axis-select a').remove();
             for (i = 0; i < modeopt.axis.length; i++) {
                 var ax = modeopt.axis[i];
-                var a = $('<li><a href="#" data-axis="' + ax + '">' + ax[0] + '/' + ax[1] + '</a></li>');
+                var title = modeopt.labels[i];
+                var a = $('<li><a href="#" rel="tooltip" class="' + ax + '" title="' + title + '" data-axis="' + ax + '">' + ax[0] + '&#8211;' + ax[1] + '</a></li>');
                 $('.axis-select').append(a);
             }
             $('.axis-select a').click(changeAxisClick);
@@ -43,7 +44,8 @@ Colorpicker.prototype = {
                     ['h', 'hue', 0,360,0],
                     ['c', 'chroma', 0,5,1],
                     ['l', 'lightness', 0,1.7,0.6]],
-                axis: ['hlc', 'clh', 'hcl']
+                axis: ['hlc', 'clh', 'hcl'],
+                labels: ['Hue to Lightness', 'Chroma to Lightness', 'Hue to Chroma']
             }
         };
 
@@ -104,8 +106,8 @@ Colorpicker.prototype = {
             config.y = axis[1];
             config.z = axis[2];
 
-            $('.axis-select a').removeClass('sel');
-            $('.axis-select').find('[data-axis="' + axis + '"]').addClass('sel');
+            $('.axis-select a').removeClass('active');
+            $('.axis-select').find('[data-axis="' + axis + '"]').addClass('active');
             var i;
 
             for (i = 0; i < config.opt.dimensions.length; i++) {
@@ -131,6 +133,7 @@ Colorpicker.prototype = {
             $('label[for=val-z]').html(config.zdim[1]);
             renderColorSpace();
 
+            var handle = $('#sl-z .ui-slider-handle');
             if (config.gradients) resetGradient();
                 $('#sl-val').html($('#sl-z').slider('value') + ' ' + axis[2]);
             };
@@ -140,25 +143,18 @@ Colorpicker.prototype = {
                 updateAxis(axis);
             };
 
-            var updateSlideValPos = function() {
-                $('#sl-val').css({top: ($('#sl-z .ui-slider-handle').position().top+7) + 'px' });
-            };
-
             window.setView = setView;
 
             $('#sl-z').slider({
-                orientation: 'vertical',
                 range: 'min',
                 step: 0.01,
                 value: 0.5,
-                slide: function( event, ui ) {
+                slide: function(event, ui) {
                     $('#sl-val').html(ui.value + ' ' + axis[2]);
                     config.zval = ui.value;
                     renderColorSpace();
                 }
             });
-
-            $('#sl-z .ui-slider-handle').append('<div id="sl-val" />');
 
             var swatches = 6;
             if (config.gradients) {
@@ -213,7 +209,7 @@ Colorpicker.prototype = {
                 $('.drag.to').css({ width: (a*2) + 'px', height: (a*2)+'px', left: (x1-a) + 'px', top: (y1-a) + 'px' });
 
                 ctx.beginPath();
-                ctx.strokeStyle='rgba(255,255,255,.75)';
+                ctx.strokeStyle='rgba(255,255,255,.25)';
                 ctx.moveTo(x0,y0);
                 ctx.lineTo(x1,y1);
                 ctx.stroke();
@@ -263,10 +259,19 @@ Colorpicker.prototype = {
                     $('#visual-output').append(swatch);
 
                     // Code Snippet
-                    textarea.append(colors[i] + '\n');
+                    textarea.append('<span class"value">' + colors[i] + '</span>');
                 }
                 textarea.on('click', function() {
-                    $(this).select();
+                    if (document.selection) {
+                        var range = document.body.createTextRange();
+                            range.moveToElementText(document.getElementById('code-output'));
+                        range.select();
+                        }
+                    else if (window.getSelection) {
+                        var range = document.createRange();
+                            range.selectNode(document.getElementById('code-output'));
+                        window.getSelection().addRange(range);
+                    }
                     return false;
                 });
             };

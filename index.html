@@ -19,34 +19,33 @@
     </div>
   </div>
 
-  <div id='color-picker' class='limiter'>
+  <div id='color-picker' class='clearfix limiter'>
     <ul class='axis-select'></ul>
-    <div class='tool clearfix'>
-
-      <div class='canvas'>
-        <div id='bg'>
-          <canvas id='colorspace' width='210' height='210'></canvas>
-        </div>
-        <canvas id='grad' width='440' height='440'></canvas>
-        <div class='drag_cont'>
-          <div class='drag from'></div>
-          <div class='drag to'></div>
-        </div>
+    <div class='canvas'>
+      <div id='bg'>
+        <canvas id='colorspace' width='210' height='210'></canvas>
       </div>
-
-      <div class='slider'>
-        <div id='sl-z'></div>
+      <canvas id='grad' width='440' height='440'></canvas>
+      <div class='drag_cont'>
+        <div class='drag from'></div>
+        <div class='drag to'></div>
       </div>
     </div>
 
     <div class='sidebar'>
+      <div class='inner'>
+        <div id='visual-output'></div>
+        <div id='code-output'></div>
+      </div>
       <div id='controls'>
         <a data-type='add' href='#' rel='tooltip' title='Add a swatch' >+</a>
         <a data-type='subtract' class='subtract' href='#' rel='tooltip' title='Remove a swatch'>-</a>
       </div>
-      <div id='visual-output'></div>
-      <textarea id='code-output'></textarea>
     </div>
+  </div>
+  <div class='slider limiter'>
+    <div id='sl-z' class='slider'></div>
+    <div id='sl-val'></div>
   </div>
 
 <script>
