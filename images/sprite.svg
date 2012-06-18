@@ -57,12 +57,12 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="22.627417"
-     inkscape:cx="-186.70439"
-     inkscape:cy="195.26834"
+     inkscape:zoom="1"
+     inkscape:cx="256.9731"
+     inkscape:cy="287.35443"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="true"
+     showgrid="false"
      inkscape:window-width="1280"
      inkscape:window-height="752"
      inkscape:window-x="4"
@@ -342,5 +342,2021 @@
        inkscape:export-filename="/Users/tristen/github/hcl-picker/images/handle.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3825"
+       width="420"
+       height="35"
+       x="30"
+       y="747.36218"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g4988"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="40"
+         height="24.999983"
+         width="2"
+         id="rect3827"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3853"
+         width="2"
+         height="24.999983"
+         x="44"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="48"
+         height="24.999983"
+         width="2"
+         id="rect3855"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3857"
+         width="2"
+         height="24.999983"
+         x="52"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="56"
+         height="24.999983"
+         width="2"
+         id="rect3859"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3861"
+         width="2"
+         height="24.999983"
+         x="60"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="64"
+         height="24.999983"
+         width="2"
+         id="rect3863"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3865"
+         width="2"
+         height="24.999983"
+         x="68"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="72"
+         height="24.999983"
+         width="2"
+         id="rect3867"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3869"
+         width="2"
+         height="24.999983"
+         x="76"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="80"
+         height="24.999983"
+         width="2"
+         id="rect3871"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3873"
+         width="2"
+         height="24.999983"
+         x="84"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="88"
+         height="24.999983"
+         width="2"
+         id="rect3875"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3877"
+         width="2"
+         height="24.999983"
+         x="92"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="96"
+         height="24.999983"
+         width="2"
+         id="rect3879"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3881"
+         width="2"
+         height="24.999983"
+         x="100"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="104"
+         height="24.999983"
+         width="2"
+         id="rect3883"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3885"
+         width="2"
+         height="24.999983"
+         x="108"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="112"
+         height="24.999983"
+         width="2"
+         id="rect3887"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3889"
+         width="2"
+         height="24.999983"
+         x="116"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="120"
+         height="24.999983"
+         width="2"
+         id="rect3891"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3893"
+         width="2"
+         height="24.999983"
+         x="124"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="128"
+         height="24.999983"
+         width="2"
+         id="rect3895"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3897"
+         width="2"
+         height="24.999983"
+         x="132"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="136"
+         height="24.999983"
+         width="2"
+         id="rect3899"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3901"
+         width="2"
+         height="24.999983"
+         x="140"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="144"
+         height="24.999983"
+         width="2"
+         id="rect3903"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3905"
+         width="2"
+         height="24.999983"
+         x="148"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="152"
+         height="24.999983"
+         width="2"
+         id="rect3907"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3909"
+         width="2"
+         height="24.999983"
+         x="156"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="160"
+         height="24.999983"
+         width="2"
+         id="rect3911"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3913"
+         width="2"
+         height="24.999983"
+         x="164"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="168"
+         height="24.999983"
+         width="2"
+         id="rect3915"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3917"
+         width="2"
+         height="24.999983"
+         x="172"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="176"
+         height="24.999983"
+         width="2"
+         id="rect3919"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3921"
+         width="2"
+         height="24.999983"
+         x="180"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="184"
+         height="24.999983"
+         width="2"
+         id="rect3923"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3925"
+         width="2"
+         height="24.999983"
+         x="188"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="192"
+         height="24.999983"
+         width="2"
+         id="rect3927"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3929"
+         width="2"
+         height="24.999983"
+         x="196"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="200"
+         height="24.999983"
+         width="2"
+         id="rect3931"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3933"
+         width="2"
+         height="24.999983"
+         x="204"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="208"
+         height="24.999983"
+         width="2"
+         id="rect3935"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3937"
+         width="2"
+         height="24.999983"
+         x="212"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="216"
+         height="24.999983"
+         width="2"
+         id="rect3939"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3941"
+         width="2"
+         height="24.999983"
+         x="220"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="224"
+         height="24.999983"
+         width="2"
+         id="rect3943"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3945"
+         width="2"
+         height="24.999983"
+         x="228"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="232"
+         height="24.999983"
+         width="2"
+         id="rect3947"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3949"
+         width="2"
+         height="24.999983"
+         x="236"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="240"
+         height="24.999983"
+         width="2"
+         id="rect3951"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3953"
+         width="2"
+         height="24.999983"
+         x="244"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="248"
+         height="24.999983"
+         width="2"
+         id="rect3955"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3957"
+         width="2"
+         height="24.999983"
+         x="252"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="256"
+         height="24.999983"
+         width="2"
+         id="rect3959"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3961"
+         width="2"
+         height="24.999983"
+         x="260"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="264"
+         height="24.999983"
+         width="2"
+         id="rect3963"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3965"
+         width="2"
+         height="24.999983"
+         x="268"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="272"
+         height="24.999983"
+         width="2"
+         id="rect3967"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3969"
+         width="2"
+         height="24.999983"
+         x="276"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="280"
+         height="24.999983"
+         width="2"
+         id="rect3971"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3973"
+         width="2"
+         height="24.999983"
+         x="284"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="288"
+         height="24.999983"
+         width="2"
+         id="rect3975"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3977"
+         width="2"
+         height="24.999983"
+         x="292"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="296"
+         height="24.999983"
+         width="2"
+         id="rect3979"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3981"
+         width="2"
+         height="24.999983"
+         x="300"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="304"
+         height="24.999983"
+         width="2"
+         id="rect3983"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3985"
+         width="2"
+         height="24.999983"
+         x="308"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="312"
+         height="24.999983"
+         width="2"
+         id="rect3987"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3989"
+         width="2"
+         height="24.999983"
+         x="316"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="320"
+         height="24.999983"
+         width="2"
+         id="rect3991"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3993"
+         width="2"
+         height="24.999983"
+         x="324"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="328"
+         height="24.999983"
+         width="2"
+         id="rect3995"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3997"
+         width="2"
+         height="24.999983"
+         x="332"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="336"
+         height="24.999983"
+         width="2"
+         id="rect3999"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4001"
+         width="2"
+         height="24.999983"
+         x="340"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="344"
+         height="24.999983"
+         width="2"
+         id="rect4003"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4005"
+         width="2"
+         height="24.999983"
+         x="348"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="352"
+         height="24.999983"
+         width="2"
+         id="rect4007"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4009"
+         width="2"
+         height="24.999983"
+         x="356"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="360"
+         height="24.999983"
+         width="2"
+         id="rect4011"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4013"
+         width="2"
+         height="24.999983"
+         x="364"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="368"
+         height="24.999983"
+         width="2"
+         id="rect4015"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4017"
+         width="2"
+         height="24.999983"
+         x="372"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="376"
+         height="24.999983"
+         width="2"
+         id="rect4019"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4021"
+         width="2"
+         height="24.999983"
+         x="380"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="384"
+         height="24.999983"
+         width="2"
+         id="rect4023"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4025"
+         width="2"
+         height="24.999983"
+         x="388"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="392"
+         height="24.999983"
+         width="2"
+         id="rect4027"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4029"
+         width="2"
+         height="24.999983"
+         x="396"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4031"
+         width="2"
+         height="24.999983"
+         x="400"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="752.36218"
+         x="404"
+         height="24.999983"
+         width="2"
+         id="rect4033"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4035"
+         width="2"
+         height="24.999983"
+         x="408"
+         y="752.36218"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="412"
+         height="24.999983"
+         width="2"
+         id="rect4037"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4039"
+         width="2"
+         height="24.999983"
+         x="416"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="420"
+         height="24.999983"
+         width="2"
+         id="rect4041"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4043"
+         width="2"
+         height="24.999983"
+         x="424"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="428"
+         height="24.999983"
+         width="2"
+         id="rect4045"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4047"
+         width="2"
+         height="24.999983"
+         x="432"
+         y="752.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+         y="752.36218"
+         x="436"
+         height="24.999983"
+         width="2"
+         id="rect4049"
+         style="color:#000000;fill:#808080;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="762.33478"
+       x="40"
+       height="2.9999881"
+       width="2"
+       id="rect4063"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4065"
+       width="2"
+       height="2.9999881"
+       x="44"
+       y="762.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="762.33478"
+       x="48"
+       height="2.9999881"
+       width="2"
+       id="rect4067"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4069"
+       width="2"
+       height="2.9999881"
+       x="51.999996"
+       y="762.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="762.33478"
+       x="55.999996"
+       height="2.9999881"
+       width="2"
+       id="rect4071"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4073"
+       width="2"
+       height="2.9999881"
+       x="59.999996"
+       y="762.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="762.33478"
+       x="63.999992"
+       height="2.9999881"
+       width="2"
+       id="rect4075"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4077"
+       width="2"
+       height="2.9999881"
+       x="67.999985"
+       y="762.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="762.33478"
+       x="71.999985"
+       height="2.9999881"
+       width="2"
+       id="rect4079"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4081"
+       width="2"
+       height="2.9999881"
+       x="75.999985"
+       y="762.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="761.33478"
+       x="79.999985"
+       height="5.0000052"
+       width="2"
+       id="rect4083"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4085"
+       width="2"
+       height="5.0000052"
+       x="83.999985"
+       y="761.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="761.33478"
+       x="87.999985"
+       height="5.0000052"
+       width="2"
+       id="rect4087"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4089"
+       width="2"
+       height="5.0000052"
+       x="91.999985"
+       y="761.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="761.33478"
+       x="95.999985"
+       height="5.0000052"
+       width="2"
+       id="rect4091"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4093"
+       width="2"
+       height="5.0000052"
+       x="99.999985"
+       y="761.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="761.33478"
+       x="104"
+       height="5.0000052"
+       width="2"
+       id="rect4095"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4097"
+       width="2"
+       height="5.0000052"
+       x="108"
+       y="761.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="761.33478"
+       x="112"
+       height="5.0000052"
+       width="2"
+       id="rect4099"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4101"
+       width="2"
+       height="5.0000052"
+       x="116"
+       y="761.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="760.33478"
+       x="120"
+       height="7.0000024"
+       width="2"
+       id="rect4103"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4105"
+       width="2"
+       height="7.0000024"
+       x="124"
+       y="760.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="760.33478"
+       x="128"
+       height="7.0000024"
+       width="2"
+       id="rect4107"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4109"
+       width="2"
+       height="7.0000024"
+       x="131.99998"
+       y="760.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="760.33478"
+       x="135.99998"
+       height="7.0000024"
+       width="2"
+       id="rect4111"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4113"
+       width="2"
+       height="7.0000024"
+       x="139.99998"
+       y="760.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="760.33478"
+       x="143.99998"
+       height="7.0000024"
+       width="2"
+       id="rect4115"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4117"
+       width="2"
+       height="7.0000024"
+       x="147.99998"
+       y="760.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="760.33478"
+       x="151.99998"
+       height="7.0000024"
+       width="2"
+       id="rect4119"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4121"
+       width="2"
+       height="7.0000024"
+       x="155.99998"
+       y="760.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="759.33478"
+       x="159.99998"
+       height="9"
+       width="2"
+       id="rect4123"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4125"
+       width="2"
+       height="9"
+       x="163.99998"
+       y="759.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="759.33478"
+       x="167.99998"
+       height="9"
+       width="2"
+       id="rect4127"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4129"
+       width="2"
+       height="9"
+       x="171.99998"
+       y="759.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="759.33478"
+       x="175.99998"
+       height="9"
+       width="2"
+       id="rect4131"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4133"
+       width="2"
+       height="9"
+       x="179.99998"
+       y="759.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="759.33478"
+       x="183.99998"
+       height="9"
+       width="2"
+       id="rect4135"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4137"
+       width="2"
+       height="9"
+       x="187.99998"
+       y="759.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="759.33478"
+       x="191.99998"
+       height="9"
+       width="2"
+       id="rect4139"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4141"
+       width="2"
+       height="10.999997"
+       x="195.99998"
+       y="758.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="758.33478"
+       x="199.99998"
+       height="10.999997"
+       width="2"
+       id="rect4143"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4145"
+       width="2"
+       height="10.999997"
+       x="203.99998"
+       y="758.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="758.33478"
+       x="207.99998"
+       height="10.999997"
+       width="2"
+       id="rect4147"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4149"
+       width="2"
+       height="10.999997"
+       x="211.99998"
+       y="758.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="758.33478"
+       x="215.99998"
+       height="10.999997"
+       width="2"
+       id="rect4151"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4153"
+       width="2"
+       height="10.999997"
+       x="219.99998"
+       y="758.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="758.33478"
+       x="223.99998"
+       height="10.999997"
+       width="2"
+       id="rect4155"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4157"
+       width="2"
+       height="10.999997"
+       x="227.99998"
+       y="758.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="758.33478"
+       x="231.99998"
+       height="10.999997"
+       width="2"
+       id="rect4159"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4161"
+       width="2"
+       height="12.999994"
+       x="235.99998"
+       y="757.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="757.33478"
+       x="239.99998"
+       height="12.999994"
+       width="2"
+       id="rect4163"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4165"
+       width="2"
+       height="12.999994"
+       x="243.99998"
+       y="757.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="757.33478"
+       x="247.99998"
+       height="12.999994"
+       width="2"
+       id="rect4167"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4169"
+       width="2"
+       height="12.999994"
+       x="251.99998"
+       y="757.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="757.33478"
+       x="255.99998"
+       height="12.999994"
+       width="2"
+       id="rect4171"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4173"
+       width="2"
+       height="12.999994"
+       x="260"
+       y="757.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="757.33478"
+       x="264"
+       height="12.999994"
+       width="2"
+       id="rect4175"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4177"
+       width="2"
+       height="12.999994"
+       x="268"
+       y="757.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="757.33478"
+       x="272"
+       height="12.999994"
+       width="2"
+       id="rect4179"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4181"
+       width="2"
+       height="14.999991"
+       x="276"
+       y="756.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="756.33478"
+       x="280"
+       height="14.999991"
+       width="2"
+       id="rect4183"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4185"
+       width="2"
+       height="14.999991"
+       x="284"
+       y="756.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="756.33478"
+       x="288"
+       height="14.999991"
+       width="2"
+       id="rect4187"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4189"
+       width="2"
+       height="14.999991"
+       x="292"
+       y="756.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="756.33478"
+       x="296"
+       height="14.999991"
+       width="2"
+       id="rect4191"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4193"
+       width="2"
+       height="14.999991"
+       x="300"
+       y="756.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="756.33478"
+       x="304"
+       height="14.999991"
+       width="2"
+       id="rect4195"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4197"
+       width="2"
+       height="14.999991"
+       x="308"
+       y="756.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="756.33478"
+       x="312"
+       height="14.999991"
+       width="2"
+       id="rect4199"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4201"
+       width="2"
+       height="16.999989"
+       x="316"
+       y="755.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="755.33478"
+       x="320"
+       height="16.999989"
+       width="2"
+       id="rect4203"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4205"
+       width="2"
+       height="16.999989"
+       x="324"
+       y="755.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="755.33478"
+       x="328"
+       height="16.999989"
+       width="2"
+       id="rect4207"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4209"
+       width="2"
+       height="16.999989"
+       x="332"
+       y="755.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="755.33478"
+       x="336"
+       height="16.999989"
+       width="2"
+       id="rect4211"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4213"
+       width="2"
+       height="16.999989"
+       x="340"
+       y="755.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="755.33478"
+       x="344"
+       height="16.999989"
+       width="2"
+       id="rect4215"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4217"
+       width="2"
+       height="16.999989"
+       x="348"
+       y="755.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="755.33478"
+       x="352"
+       height="16.999989"
+       width="2"
+       id="rect4219"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4221"
+       width="2"
+       height="18.999987"
+       x="356"
+       y="754.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="754.33478"
+       x="360"
+       height="18.999987"
+       width="2"
+       id="rect4223"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4225"
+       width="2"
+       height="18.999987"
+       x="364"
+       y="754.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="754.33478"
+       x="368"
+       height="18.999987"
+       width="2"
+       id="rect4227"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4229"
+       width="2"
+       height="18.999987"
+       x="372"
+       y="754.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="754.33478"
+       x="376"
+       height="18.999987"
+       width="2"
+       id="rect4231"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4233"
+       width="2"
+       height="18.999987"
+       x="380"
+       y="754.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="754.33478"
+       x="384"
+       height="18.999987"
+       width="2"
+       id="rect4235"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4237"
+       width="2"
+       height="18.999987"
+       x="388"
+       y="754.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="754.33478"
+       x="392"
+       height="18.999987"
+       width="2"
+       id="rect4239"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4241"
+       width="2"
+       height="20.999983"
+       x="396"
+       y="753.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4243"
+       width="2"
+       height="20.999983"
+       x="400"
+       y="753.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="753.33478"
+       x="404"
+       height="20.999983"
+       width="2"
+       id="rect4245"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4247"
+       width="2"
+       height="20.999983"
+       x="408"
+       y="753.33478"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="753.33478"
+       x="412"
+       height="20.999983"
+       width="2"
+       id="rect4249"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4251"
+       width="2"
+       height="20.999983"
+       x="416"
+       y="753.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="753.33478"
+       x="420"
+       height="20.999983"
+       width="2"
+       id="rect4253"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4255"
+       width="2"
+       height="20.999983"
+       x="424"
+       y="753.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="753.33478"
+       x="428"
+       height="20.999983"
+       width="2"
+       id="rect4257"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4259"
+       width="2"
+       height="20.999983"
+       x="432"
+       y="753.33478" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/volume.png"
+       y="753.33478"
+       x="436"
+       height="20.999983"
+       width="2"
+       id="rect4261"
+       style="color:#000000;fill:#505050;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
   </g>
 </svg>

@@ -140,7 +140,7 @@ span.branding {
   line-height: 60px;
   display: inline-block;
   text-align: center;
-  margin-right: 5px;
+  margin-right: 10px;
   text-indent: -999em;
   }
 span.paraphrase {
@@ -394,7 +394,7 @@ span.paraphrase {
   background: #808080;
   width: 420px;
   height: 35px;
-  border-radius: 4:wpx;
+  border-radius: 0 0 0 4px;
   position: absolute;
   z-index: 1;
   display: block;
