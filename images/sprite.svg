@@ -57,9 +57,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8751351"
-     inkscape:cx="32.56783"
-     inkscape:cy="145.35918"
+     inkscape:zoom="22.627417"
+     inkscape:cx="30.427642"
+     inkscape:cy="219.85381"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -101,35 +101,36 @@
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
        inkscape:export-filename="/Users/tristen/Desktop/hcl-picker/images/canvas.png"
-       y="922.36218"
-       x="5"
+       y="887.36218"
+       x="165"
        height="20"
        width="20"
        id="rect129903"
-       style="color:#000000;fill:#e5e5e5;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#b3b3b3;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        transform="scale(-1,1)" />
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
        inkscape:export-filename="/Users/tristen/Desktop/hcl-picker/images/canvas.png"
-       style="color:#000000;fill:#f0f0f0;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#b3b3b3;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect129905"
        width="20"
        height="20"
-       x="25"
-       y="922.36218"
+       x="185"
+       y="887.36218"
        transform="scale(-1,1)" />
     <path
-       style="color:#000000;fill:#e5e5e5;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m -45,942.36218 20,0 0,20 -20,0 z"
-       id="rect129907" />
+       style="color:#000000;fill:#b3b3b3;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -205,907.36218 20,0 0,20 -20,0 z"
+       id="rect129907"
+       inkscape:connector-curvature="0" />
     <rect
-       y="942.36218"
-       x="-25"
+       y="907.36218"
+       x="-185"
        height="20"
        width="20"
        id="rect129909"
-       style="color:#000000;fill:#f0f0f0;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#b3b3b3;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        inkscape:export-filename="/Users/tristen/Desktop/hcl-picker/images/canvas.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
@@ -144,17 +145,6 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"
        transform="matrix(1.0909092,0,0,1.0909092,1.7238646e-7,-77.487522)" />
-    <image
-       width="16"
-       height="19.240507"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABfCAIAAAAmgA1KAAAAA3NCSVQICAjb4U/gAAABg0lEQVR4 nO2aQUoEQQxFK91BFBx6yoULF8KAF/AC3v9QanuB/wcCBcLPf8ukSPcjiz/VTNw+vwYkNlzf4l/O x0bOB5mPzpMRothWF9vqYltdMo4Dd0i+nTQ/C7l39zyunyvm9NqtbXWxrS621SV/5wV3qvfVYg7T 3F51f3be2lYX2+piW13ynM+4U7x/8jp58qL5QecU3kUT2+piW11sq0vGfISNWJFv9+bQz8PF85X5 vXZrW11sq4ttdcmn+QAb9PMtzWF2Hter8+m1tzK/125tq4ttdbGtLnl9wcIbCVCWb7ROcnKvzlkx v9dubauLbXWxrS75OnFg7XHCOss9mp/lvMXP3Vfkdq/d2lYX2+piW13y7foDGyzHeO6RnFw1p5i3 8PdCr93aVhfb6mJbXfKd5S2535bybYyRi/I2V+Rzr93aVhfb6mJbXfJ2fMNGPT+rOUleaNkcUOy1 W9vqYltdbKtLflxw3lbvpSwPab2Sk6Oew4n+79Vrt7bVxba69LL9A+DrGnrqRvMnAAAAAElFTkSu QmCC "
-       id="image16452-7"
-       x="-178.15422"
-       y="832.80096"
-       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"
-       clip-path="url(#clipPath16502)" />
     <rect
        style="color:#000000;fill:#2c2c2c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect129861"
@@ -220,13 +210,148 @@
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cccccc" />
     </g>
-    <path
-       style="color:#000000;fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m -55,802.36218 c -2,0 -2,-3 0,-3 l 390,-5 c 10,0 10,13 0,13 z"
-       id="path3019"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc"
-       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/slider-position.png"
+    <rect
+       style="color:#000000;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3789"
+       width="2"
+       height="1.9999974"
+       x="25"
+       y="827.36218"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/handle.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/handle.png"
+       y="831.36218"
+       x="25"
+       height="1.9999974"
+       width="2"
+       id="rect3795"
+       style="color:#000000;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       style="color:#000000;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3797"
+       width="2"
+       height="1.9999974"
+       x="25"
+       y="835.36218"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/handle.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <image
+       width="16"
+       height="19.240507"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABfCAIAAAAmgA1KAAAAA3NCSVQICAjb4U/gAAABg0lEQVR4 nO2aQUoEQQxFK91BFBx6yoULF8KAF/AC3v9QanuB/wcCBcLPf8ukSPcjiz/VTNw+vwYkNlzf4l/O x0bOB5mPzpMRothWF9vqYltdMo4Dd0i+nTQ/C7l39zyunyvm9NqtbXWxrS621SV/5wV3qvfVYg7T 3F51f3be2lYX2+piW13ynM+4U7x/8jp58qL5QecU3kUT2+piW11sq0vGfISNWJFv9+bQz8PF85X5 vXZrW11sq4ttdcmn+QAb9PMtzWF2Hter8+m1tzK/125tq4ttdbGtLnl9wcIbCVCWb7ROcnKvzlkx v9dubauLbXWxrS75OnFg7XHCOss9mp/lvMXP3Vfkdq/d2lYX2+piW13y7foDGyzHeO6RnFw1p5i3 8PdCr93aVhfb6mJbXfKd5S2535bybYyRi/I2V+Rzr93aVhfb6mJbXfJ2fMNGPT+rOUleaNkcUOy1 W9vqYltdbKtLflxw3lbvpSwPab2Sk6Oew4n+79Vrt7bVxba69LL9A+DrGnrqRvMnAAAAAElFTkSu QmCC "
+       id="image16452-7"
+       x="-178.15422"
+       y="832.80096"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       clip-path="url(#clipPath16502)"
+       transform="translate(-15,15)" />
+    <g
+       transform="matrix(0.31069983,0,0,0.31069983,-195.40741,586.0375)"
+       id="g3799"
+       style="font-size:52.58620453px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.49000005;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="cccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path3801"
+         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#000000;fill-opacity:1;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         d="m 17.403968,860.39532 3.218541,0 10e-7,12.87416 3.21854,0 -10e-7,-12.87416 3.218541,0 0,28.96687 -3.21854,-1e-5 0,-12.87416 -3.21854,0 -0.158951,12.87417 -3.059591,0" />
+      <path
+         sodipodi:nodetypes="cczcczcccccccc"
+         inkscape:connector-curvature="0"
+         id="path3803"
+         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#000000;fill-opacity:1;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         d="m 39.933752,882.9251 0,6.43708 c 0,0 -3.218541,0 -6.437081,0 -3.21854,0 -3.21854,0 -3.21854,-3.21854 l 0,-22.52978 c 0,-3.21854 0,-3.21854 3.21854,-3.21854 3.21854,0 6.437081,0 6.437081,0 l 0,6.43708 -3.21854,0 0,-3.21854 -3.218541,0 0,22.52978 3.218541,0 0,-3.21854" />
+      <path
+         sodipodi:nodetypes="cccccc"
+         inkscape:connector-curvature="0"
+         id="path3805"
+         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#000000;fill-opacity:1;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         d="m 43.152293,860.39532 3.21854,0 0,25.74832 3.218541,0 0,3.21854 -6.437081,0" />
+    </g>
+    <g
+       style="font-size:52.58620453px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica"
+       id="g3807"
+       transform="matrix(0.31069983,0,0,0.31069983,-195.40741,585.0375)"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         d="m 17.403968,860.39532 3.218541,0 10e-7,12.87416 3.21854,0 -10e-7,-12.87416 3.218541,0 0,28.96687 -3.21854,-1e-5 0,-12.87416 -3.21854,0 -0.158951,12.87417 -3.059591,0"
+         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#ffffff;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         id="path3809"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccccccc" />
+      <path
+         d="m 39.933752,882.9251 0,6.43708 c 0,0 -3.218541,0 -6.437081,0 -3.21854,0 -3.21854,0 -3.21854,-3.21854 l 0,-22.52978 c 0,-3.21854 0,-3.21854 3.21854,-3.21854 3.21854,0 6.437081,0 6.437081,0 l 0,6.43708 -3.21854,0 0,-3.21854 -3.218541,0 0,22.52978 3.218541,0 0,-3.21854"
+         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#ffffff;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         id="path3811"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cczcczcccccccc" />
+      <path
+         d="m 43.152293,860.39532 3.21854,0 0,25.74832 3.218541,0 0,3.21854 -6.437081,0"
+         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#ffffff;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         id="path3813"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccc" />
+    </g>
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/handle.png"
+       y="827.36218"
+       x="29"
+       height="1.9999974"
+       width="2"
+       id="rect3815"
+       style="color:#000000;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       style="color:#000000;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3817"
+       width="2"
+       height="1.9999974"
+       x="29"
+       y="831.36218"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/handle.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/handle.png"
+       y="835.36218"
+       x="29"
+       height="1.9999974"
+       width="2"
+       id="rect3819"
+       style="color:#000000;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/handle.png"
+       y="823.36218"
+       x="25"
+       height="1.9999974"
+       width="2"
+       id="rect3821"
+       style="color:#000000;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       style="color:#000000;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3823"
+       width="2"
+       height="1.9999974"
+       x="29"
+       y="823.36218"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/handle.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
   </g>

@@ -1,22 +1,20 @@
 var Colorpicker = function() {
-    this.init();
+    var config = {
+        sq: 210,
+        scale: 2,
+        mode: 'hcl',
+        x: '',
+        y: '',
+        z: '',
+        zval: 0.5
+    };
+    this.init(config);
 };
 
 Colorpicker.prototype = {
-    init: function() {
+    init: function(config) {
         var getctx = function(id) {return document.getElementById(id).getContext('2d'); };
         var Color = chroma.Color;
-        var config = {
-            sq: 210,
-            scale: 2,
-            mode: 'lab',
-            x: '',
-            y: '',
-            z: '',
-            zval: 0.5,
-            gradients: 6
-        };
-
         var changeMode = function(mode) {
             config.mode = mode;
             var modeopt = colorspace[mode];
@@ -45,7 +43,7 @@ Colorpicker.prototype = {
                     ['c', 'chroma', 0,5,1],
                     ['l', 'lightness', 0,1.7,0.6]],
                 axis: ['hlc', 'clh', 'hcl'],
-                labels: ['Hue to Lightness', 'Chroma to Lightness', 'Hue to Chroma']
+                labels: ['Hue/Lightness', 'Chroma/Lightness', 'Hue/Chroma']
             }
         };
 
@@ -64,22 +62,21 @@ Colorpicker.prototype = {
 
         var bgimg;
         var renderColorSpace = function() {
-            var x, y, xv, color, idx, xyz,
+            var x, y, xv, color, idx,
                 dx = config.dx,
                 dy = config.dy,
-                i, dim,
                 xdim = config.xdim,
                 ydim=config.ydim,
                 sq = config.sq,
                 ctx = getctx('colorspace'),
                 imdata = ctx.createImageData(sq,sq);
 
-            for (x=0; x<sq; x++) {
-                for (y=0; y<sq; y++) {
+            for (x=0; x < sq; x++) {
+                for (y=0; y < sq; y++) {
 
-                    idx = (x+y*imdata.width)*4;
-                    xv = xdim[2] + (x/sq)*(xdim[3]-xdim[2]);
-                    yv = ydim[2] + (y/sq)*(ydim[3]-ydim[2]);
+                    idx = (x + y * imdata.width) * 4;
+                    xv = xdim[2] + (x/sq) * (xdim[3] - xdim[2]);
+                    yv = ydim[2] + (y/sq) * (ydim[3] - ydim[2]);
 
                     color = getColor(xv, yv).rgb;
 
@@ -97,7 +94,7 @@ Colorpicker.prototype = {
                 }
             }
             ctx.putImageData(imdata, 0,0);
-            if (config.gradients) showGradient();
+            showGradient();
         };
 
         var updateAxis = function(axis) {
@@ -134,170 +131,185 @@ Colorpicker.prototype = {
             renderColorSpace();
 
             var handle = $('#sl-z .ui-slider-handle');
-            if (config.gradients) resetGradient();
-                $('#sl-val').html($('#sl-z').slider('value') + ' ' + axis[2]);
-            };
+            resetGradient();
+            $('#sl-val').html('<span>' + $('#sl-z').slider('value') + '</span>' + axis[2]);
+        };
 
-            var setView = function(mode, axis) {
-                changeMode(mode);
-                updateAxis(axis);
-            };
+        var setView = function(mode, axis) {
+            changeMode(mode);
+            updateAxis(axis);
+        };
 
-            window.setView = setView;
+        $('#sl-z').slider({
+            range: 'min',
+            step: 0.01,
+            value: 0.5,
+            slide: function(event, ui) {
+                $('#sl-val span').html(ui.value);
+                config.zval = ui.value;
+                renderColorSpace();
+            }
+        });
 
-            $('#sl-z').slider({
-                range: 'min',
-                step: 0.01,
-                value: 0.5,
-                slide: function(event, ui) {
-                    $('#sl-val').html(ui.value + ' ' + axis[2]);
-                    config.zval = ui.value;
-                    renderColorSpace();
-                }
-            });
+        var swatches = 6;
+        var gradient = {
+            from: [0,1], //x,y
+            to: [1,0.5], //x,y
+            steps: swatches,
+            handlesize: 10
+        };
 
-            var swatches = 6;
-            if (config.gradients) {
-                var gradient = {
-                from: [0,1], //x,y
-                to: [1,0.5], //x,y
-                steps: swatches,
-                handlesize: 10
-            };
-
-            $('#controls a').click(function () {
-                var operation = $(this).attr('data-type');
-                if (operation == 'add') {
-                    swatches = swatches + 1;
-                    gradient.steps = swatches;
-                    showGradient();
-                }
-                if (operation == 'subtract') {
-                    if (swatches != 1) {
-                    swatches = swatches - 1;
-                    gradient.steps = swatches;
-                    showGradient();
-                    }
-                }
-                return false;
-            });
-
-            var resetGradient = function() {
-                gradient.from[0] = config.xdim[2] + (config.xdim[3]-config.xdim[2]) * (23/36);
-                gradient.from[1] = config.ydim[2] + (config.ydim[3]-config.ydim[2]) * 0.1;
-                gradient.to[0] = config.xdim[2] + (config.xdim[3]-config.xdim[2]) * (8/36);
-                gradient.to[1] = config.ydim[2] + (config.ydim[3]-config.ydim[2]) * 0.8;
+        $('#controls a').click(function () {
+            var operation = $(this).attr('data-type');
+            if (operation == 'add') {
+                swatches = swatches + 1;
+                gradient.steps = swatches;
                 showGradient();
+            }
+            if (operation == 'subtract') {
+                if (swatches != 1) {
+                swatches = swatches - 1;
+                gradient.steps = swatches;
+                showGradient();
+                }
+            }
+            return false;
+        });
+
+        var resetGradient = function() {
+            gradient.from[0] = config.xdim[2] + (config.xdim[3]-config.xdim[2]) * (23/36);
+            gradient.from[1] = config.ydim[2] + (config.ydim[3]-config.ydim[2]) * 0.1;
+            gradient.to[0] = config.xdim[2] + (config.xdim[3]-config.xdim[2]) * (8/36);
+            gradient.to[1] = config.ydim[2] + (config.ydim[3]-config.ydim[2]) * 0.8;
+            showGradient();
+        };
+
+        var showGradient = function(from) {
+            // draw line
+            var colors = [], col_f, col_t, col;
+            var toX = function(v, dim) {
+                return Math.round((v - dim[2])/(dim[3]-dim[2])*config.sq*config.scale)-0.5;
             };
-
-            var showGradient = function() {
-                // draw line
-                var colors = [], col_f, col_t, col,
-                toX = function(v, dim) {
-                    return Math.round((v - dim[2])/(dim[3]-dim[2])*config.sq*config.scale)-0.5;
-                },
-                a = gradient.handlesize, b = Math.floor(gradient.handlesize*0.65), i, fx, fy, x, y,
-
-                x0 = toX(gradient.from[0], config.xdim)+10,
+            var a = gradient.handlesize,
+                b = Math.floor(gradient.handlesize*0.65), i, fx, fy, x, y;
+            var x0 = toX(gradient.from[0], config.xdim)+10,
                 x1 = toX(gradient.to[0], config.xdim)+10,
                 y0 = toX(gradient.from[1], config.ydim)+10,
                 y1 = toX(gradient.to[1], config.ydim)+10,
-                ctx = getctx('grad');
-                ctx.clearRect(0,0,600,600);
 
-                $('.drag.from').css({ width: (a*2) + 'px', height: (a*2) + 'px', left: (x0-a) + 'px', top: (y0-a) + 'px' });
-                $('.drag.to').css({ width: (a*2) + 'px', height: (a*2)+'px', left: (x1-a) + 'px', top: (y1-a) + 'px' });
+            ctx = getctx('grad');
+            ctx.clearRect(0,0,600,600);
 
-                ctx.beginPath();
-                ctx.strokeStyle='rgba(255,255,255,.25)';
-                ctx.moveTo(x0,y0);
-                ctx.lineTo(x1,y1);
-                ctx.stroke();
+            $('.drag.from').css({
+                width: (a*2)+'px',
+                height: (a*2)+'px',
+                left: (x0-a)+'px',
+                top: (y0-a)+'px'
+            });
 
-                ctx.beginPath();
-                ctx.strokeStyle='#fff';
-                col_f = getColor(gradient.from[0],gradient.from[1]).hex();
-                ctx.fillStyle = col_f;
-                ctx.rect(x0-a,y0-a,a*2,a*2);
-                ctx.fill();
-                ctx.stroke();
-
-                ctx.beginPath();
-                col_t = getColor(gradient.to[0],gradient.to[1]).hex();
-                ctx.fillStyle= col_t;
-                ctx.rect(x1-a,y1-a,a*2,a*2);
-                ctx.fill();
-                ctx.stroke();
-
-                colors.push(col_f);
-
-                for (i = 1; i < gradient.steps-1; i++) {
-                    fx = gradient.from[0] + (i/(gradient.steps-1)) * (gradient.to[0]-gradient.from[0]);
-                    fy = gradient.from[1] + (i/(gradient.steps-1)) * (gradient.to[1]-gradient.from[1]);
-                    x = toX(fx, config.xdim) + 10;
-                    y = toX(fy, config.ydim) + 10;
-
-                    ctx.beginPath();
-                    ctx.strokeStyle = 'rgba(255,255,255,.5)';
-                    col = getColor(fx,fy).hex();
-                    colors.push(col);
-                    ctx.fillStyle = col;
-                    ctx.rect(x-b,y-b,b*2,b*2);
-                    ctx.fill();
-                    ctx.stroke();
-                }
-                colors.push(col_t);
-
-                $('#visual-output .swatch').remove();
-                $('#code-output').empty();
-
-                var textarea = $('#code-output');
-                for (i = 0; i < colors.length; i++) {
-                    // Color Swatches
-                    var swatch = $('<div class="swatch" />');
-                    swatch.css({ background: colors[i] });
-                    $('#visual-output').append(swatch);
-
-                    // Code Snippet
-                    textarea.append('<span class"value">' + colors[i] + '</span>');
-                }
-                textarea.on('click', function() {
-                    if (document.selection) {
-                        var range = document.body.createTextRange();
-                            range.moveToElementText(document.getElementById('code-output'));
-                        range.select();
-                        }
-                    else if (window.getSelection) {
-                        var range = document.createRange();
-                            range.selectNode(document.getElementById('code-output'));
-                        window.getSelection().addRange(range);
-                    }
-                    return false;
+            if (!from) {
+                $('.drag.to').css({
+                    width: (a*2)+'px',
+                    height: (a*2)+'px',
+                    left: (x1-a)+'px',
+                    top: (y1-a)+'px'
                 });
-            };
+            }
 
-            $('.drag').draggable({
-                containment: 'parent',
-                drag: function(event, ui) {
-                    var from = $(event.target).hasClass('from'),
+            ctx.beginPath();
+            ctx.strokeStyle='rgba(255,255,255,0.25)';
+            ctx.moveTo(x0,y0);
+            ctx.lineTo(x1,y1);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.strokeStyle='#fff';
+            col_f = getColor(gradient.from[0],gradient.from[1]).hex();
+            ctx.fillStyle = col_f;
+            ctx.rect(x0-a,y0-a,a*2,a*2);
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.beginPath();
+            col_t = getColor(gradient.to[0],gradient.to[1]).hex();
+            ctx.fillStyle= col_t;
+            ctx.rect(x1-a,y1-a,a*2,a*2);
+            ctx.fill();
+            ctx.stroke();
+
+            colors.push(col_f);
+
+            for (i = 1; i < gradient.steps-1; i++) {
+                fx = gradient.from[0] + (i/(gradient.steps-1)) * (gradient.to[0]-gradient.from[0]);
+                fy = gradient.from[1] + (i/(gradient.steps-1)) * (gradient.to[1]-gradient.from[1]);
+                x = toX(fx, config.xdim) + 10;
+                y = toX(fy, config.ydim) + 10;
+
+                ctx.beginPath();
+                ctx.strokeStyle = 'rgba(255,255,255,0.25)';
+                col = getColor(fx,fy).hex();
+                colors.push(col);
+                ctx.fillStyle = col;
+                ctx.rect(x-b,y-b,b*2,b*2);
+                ctx.fill();
+                ctx.stroke();
+            }
+            colors.push(col_t);
+
+            $('#visual-output .swatch').remove();
+            $('#code-output').empty();
+
+            var textarea = $('#code-output');
+            for (i = 0; i < colors.length; i++) {
+                // Color Swatches
+                var swatch = $('<div class="swatch" />');
+                swatch.css({ background: colors[i] });
+                $('#visual-output').append(swatch);
+
+                // Code Snippet
+                textarea.append('<span class"value">' + colors[i] + '</span>');
+            }
+            textarea.bind('click', function() {
+                if (document.selection) {
+                    var rangeD = document.body.createTextRange();
+                        rangeD.moveToElementText(document.getElementById('code-output'));
+                    rangeD.select();
+                    }
+                else if (window.getSelection) {
+                    var rangeW = document.createRange();
+                        rangeW.selectNode(document.getElementById('code-output'));
+                    window.getSelection().addRange(rangeW);
+                }
+                return false;
+            });
+        };
+
+        $('.drag').draggable({
+            containment: 'parent',
+            drag: function(event, ui) {
+                var from = $(event.target).hasClass('from'),
                     x = ui.position.left + gradient.handlesize-10,
                     y = ui.position.top + gradient.handlesize-10,
                     xv = x / (config.sq*config.scale) * (config.xdim[3]-config.xdim[2]) + config.xdim[2],
                     yv = y / (config.sq*config.scale) * (config.ydim[3]-config.ydim[2]) + config.ydim[2];
 
-                    xv = Math.min(config.xdim[3], Math.max(config.xdim[2], xv));
-                    yv = Math.min(config.ydim[3], Math.max(config.ydim[2], yv));
+                xv = Math.min(config.xdim[3], Math.max(config.xdim[2], xv));
+                yv = Math.min(config.ydim[3], Math.max(config.ydim[2], yv));
 
-                    from ? gradient.from = [xv,yv] : gradient.to = [xv,yv];
+                if (from) {
+                    gradient.from = [xv,yv];
+                    showGradient(from);
+                } else {
+                    gradient.to = [xv,yv];
                     showGradient();
                 }
-            });
-        }
+            }
+        });
 
-        var mode = 'hcl',
-        axis = colorspace[mode].axis[0];
+        var mode = 'hcl';
+        var axis = colorspace[mode].axis[0];
 
         setView(mode, axis);
-        if (config.gradients) showGradient();
+        showGradient();
     }
 };

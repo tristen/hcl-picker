@@ -171,7 +171,7 @@ span.paraphrase {
       height: 35px;
       font-size: 11px;
       line-height: 35px;
-      border-bottom: 1px solid #303030;
+      border-bottom: 1px solid #222;
       letter-spacing: 1px;
       }
       ul.axis-select li a.active {
@@ -200,6 +200,7 @@ span.paraphrase {
 #sl-val {
   white-space:nowrap;
   position: absolute;
+  text-transform: uppercase;
   left: 28px;
   top: 2px;
   }
@@ -263,14 +264,6 @@ span.paraphrase {
   relative;
   width: 420px;
   z-index:0;
-  }
-.drag_cont {
-  position: absolute;
-  z-index: 50;
-  left: -10px;
-  top: -10px;
-  width: 440px;
-  height: 440px;
   }
 #colorspace {
   width: 420px;
@@ -336,12 +329,20 @@ span.paraphrase {
       box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
       }
 
+.drag_cont {
+  position: absolute;
+  z-index: 50;
+  left:-10px;
+  top:-10px;
+  width: 440px;
+  height:440px;
+  }
 .drag {
   position: absolute;
-  width: 10px;
-  height: 10px;
-  top: 0;
-  left: 0;
+  width:10px;
+  height:10px;
+  top:0;
+  left:0;
   cursor: pointer;
   }
 .panel .right {
@@ -364,9 +365,6 @@ span.paraphrase {
   }
 .ui-slider-horizontal {
   background-color: #505050;
-  background-image: url(images/slider-position.png);
-  background-repeat: no-repeat;
-  background-position: 10px 11px;
   height: 35px;
   width: 419px;
   margin: -35px 0 0;
@@ -375,25 +373,28 @@ span.paraphrase {
   border-right: 1px solid #303030;
   }
 .ui-slider .ui-slider-handle {
-  background: #303030;
+  background: #303030 url(images/handle.png) no-repeat 5px 11px;
   -moz-box-shadow: 0 0 4px rgba(0,0,0,0.15);
   box-shadow: 0 0 4px rgba(0,0,0,0.15);
   position: absolute;
   z-index: 2;
-  width: 10px;
-  height: 20px;
+  width: 15px;
+  height: 35px;
   cursor: default;
   left: 10px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
   margin: 0;
-  top: 7px;
+  top: 0;
   }
 .ui-slider .ui-slider-handle.ui-state-hover,
 .ui-slider .ui-slider-handle.ui-state-active {
+  background-color: #252525;
   cursor: move;
   }
 .ui-slider .ui-slider-range {
+  background: #808080;
+  width: 420px;
+  height: 35px;
+  border-radius: 4:wpx;
   position: absolute;
   z-index: 1;
   display: block;
