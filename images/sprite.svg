@@ -59,10 +59,10 @@
      inkscape:pageshadow="2"
      inkscape:zoom="22.627417"
      inkscape:cx="-181.70439"
-     inkscape:cy="191.56954"
+     inkscape:cy="195.26834"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="true"
+     showgrid="false"
      inkscape:window-width="1280"
      inkscape:window-height="752"
      inkscape:window-x="4"
@@ -125,12 +125,12 @@
        id="rect129907"
        inkscape:connector-curvature="0" />
     <rect
-       y="907.36218"
-       x="-185"
+       y="847.36218"
+       x="-195"
        height="20"
        width="20"
        id="rect129909"
-       style="color:#000000;fill:#b3b3b3;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        inkscape:export-filename="/Users/tristen/Desktop/hcl-picker/images/canvas.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
@@ -243,7 +243,7 @@
     <g
        transform="matrix(0.31069983,0,0,0.31069983,-195.40741,586.0375)"
        id="g3799"
-       style="font-size:52.58620453px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.49000005;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica"
+       style="font-size:52.58620452999999628px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica"
        inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -251,23 +251,23 @@
          sodipodi:nodetypes="cccccccccccc"
          inkscape:connector-curvature="0"
          id="path3801"
-         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#000000;fill-opacity:1;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         style="font-size:19.03345679999999973px;font-weight:bold;font-stretch:condensed;fill:#ffffff;fill-opacity:1;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
          d="m 14.185427,860.39532 3.218541,0 1e-6,12.87416 3.21854,0 -1e-6,-12.87416 3.218541,0 0,28.96687 -3.21854,-1e-5 0,-12.87416 -3.21854,0 -0.158951,12.87417 -3.059591,0" />
       <path
          sodipodi:nodetypes="cczcczcccccccc"
          inkscape:connector-curvature="0"
          id="path3803"
-         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#000000;fill-opacity:1;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         style="font-size:19.03345679999999973px;font-weight:bold;font-stretch:condensed;fill:#ffffff;fill-opacity:1;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
          d="m 39.933752,882.9251 0,6.43708 c 0,0 -3.218541,0 -6.437081,0 -3.21854,0 -3.21854,0 -3.21854,-3.21854 l 0,-22.52978 c 0,-3.21854 0,-3.21854 3.21854,-3.21854 3.21854,0 6.437081,0 6.437081,0 l 0,6.43708 -3.21854,0 0,-3.21854 -3.218541,0 0,22.52978 3.218541,0 0,-3.21854" />
       <path
          sodipodi:nodetypes="cccccc"
          inkscape:connector-curvature="0"
          id="path3805"
-         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#000000;fill-opacity:1;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         style="font-size:19.03345679999999973px;font-weight:bold;font-stretch:condensed;fill:#ffffff;fill-opacity:1;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
          d="m 46.370834,860.39532 3.21854,0 0,25.74832 3.218541,0 0,3.21854 -6.437081,0" />
     </g>
     <g
-       style="font-size:52.58620453px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica"
+       style="font-size:52.58620452999999628px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#646464;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica"
        id="g3807"
        transform="matrix(0.31069983,0,0,0.31069983,-195.40741,585.0375)"
        inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
@@ -275,19 +275,19 @@
        inkscape:export-ydpi="90">
       <path
          d="m 14.185427,860.39532 3.218541,0 1e-6,12.87416 3.21854,0 -1e-6,-12.87416 3.218541,0 0,28.96687 -3.21854,-1e-5 0,-12.87416 -3.21854,0 -0.158951,12.87417 -3.059591,0"
-         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#ffffff;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         style="font-size:19.03345679999999973px;font-weight:bold;font-stretch:condensed;fill:#646464;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed;fill-opacity:1"
          id="path3809"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cccccccccccc" />
       <path
          d="m 39.933752,882.9251 0,6.43708 c 0,0 -3.218541,0 -6.437081,0 -3.21854,0 -3.21854,0 -3.21854,-3.21854 l 0,-22.52978 c 0,-3.21854 0,-3.21854 3.21854,-3.21854 3.21854,0 6.437081,0 6.437081,0 l 0,6.43708 -3.21854,0 0,-3.21854 -3.218541,0 0,22.52978 3.218541,0 0,-3.21854"
-         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#ffffff;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         style="font-size:19.03345679999999973px;font-weight:bold;font-stretch:condensed;fill:#646464;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed;fill-opacity:1"
          id="path3811"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cczcczcccccccc" />
       <path
          d="m 46.370834,860.39532 3.21854,0 0,25.74832 3.218541,0 0,3.21854 -6.437081,0"
-         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#ffffff;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         style="font-size:19.03345679999999973px;font-weight:bold;font-stretch:condensed;fill:#646464;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed;fill-opacity:1"
          id="path3813"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cccccc" />
