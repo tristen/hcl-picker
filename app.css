@@ -44,6 +44,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 body {
   background: #202020;
   color: #808080;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   }
 body,
 textarea,
@@ -174,7 +176,7 @@ span.branding {
   }
 span.paraphrase {
   color: #AEAEAE;
-  font-weight: 200;
+  font-weight: 400;
   }
 
 /* ------------------------------------------
@@ -182,6 +184,7 @@ span.paraphrase {
 ---------------------------------------------*/
 #color-picker {
   margin-top: 30px;
+  z-index: 10;
   }
   ul.axis-select {
     position: absolute;
@@ -453,7 +456,7 @@ span.paraphrase {
   Facebook like popups
 -------------------------------------*/
 .tooltip {
-  z-index: 12000;
+  z-index: 5000;
   display: block;
   position: absolute;
   visibility: visible;
