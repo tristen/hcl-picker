@@ -18,7 +18,7 @@
   <div class='heading'>
     <div class='limiter'>
       <h1><span class='branding'>HCL</span> <span class='paraphrase'><a href='http://en.wikipedia.org/wiki/Munsell_color_system' class='acronym'>hue, chroma, lightness</a> colorpicker for data.</span></h1>
-      <a href='#' class='icon' id='visualization-toggle'>&nbsp;</a>
+      <a href='#' class='icon' id='visualization-toggle' rel='tooltip' title='Visualize on a map'>&nbsp;</a>
     </div>
   </div>
 
@@ -90,12 +90,13 @@
         });
 
         $('#visualization-toggle').click(function () {
+            $('.tooltip').remove();
             if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
+                $(this).removeClass('active').attr('title', 'Visualize on a map')
                 $('#visualization').removeClass('active');
                 $('#color-picker').addClass('active');
             } else {
-                $(this).addClass('active');
+                $(this).addClass('active').attr('title', 'Back to colorpicker')
                 $('#color-picker').removeClass('active');
                 $('#visualization').addClass('active');
                 counties.selectAll('path').remove();

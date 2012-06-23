@@ -129,11 +129,14 @@ textarea {
   opacity: 0;
   margin-left: -300px;
   top 140px;
-  -moz-transition: opacity 150ms linear;
-  -o-transition: opacity 150ms linear;
-  -webkit-transition: opacity 150ms linear;
-  transition: opacity 150ms linear;
   }
+  #visualization.section,
+  #color-picker.section.active  {
+    -moz-transition: opacity 150ms linear;
+    -o-transition: opacity 150ms linear;
+    -webkit-transition: opacity 150ms linear;
+    transition: opacity 150ms linear;
+    }
   .section.active {
     opacity: 1;
     }
