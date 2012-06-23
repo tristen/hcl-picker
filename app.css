@@ -116,9 +116,38 @@ textarea {
   background: transparent;♥
 ---------------------------------------------*/
 .limiter {
-  width: 570px;
+  width: 640px;
   margin: 0 auto;
   position: relative;
+  }
+.section {
+  position: absolute;
+  width: 600px;
+  left: 50%;
+  opacity: 0;
+  margin-left: -300px;
+  top 140px;
+  -moz-transition: opacity 150ms linear;
+  -o-transition: opacity 150ms linear;
+  -webkit-transition: opacity 150ms linear;
+  transition: opacity 150ms linear;
+  }
+  .section.active {
+    opacity: 1;
+    }
+#visualization {
+  width: 960px;
+  margin-left: -480px;
+  }
+#footer {
+  position: absolute;
+  width: 600px;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -300px;
+  color: #555;
+  font-size: 11px;
+  text-align: center;
   }
 
 /* ------------------------------------------
@@ -126,7 +155,7 @@ textarea {
 ---------------------------------------------*/
 .heading {
   background: #fff;
-  padding: 40px 0 10px;
+  padding: 20px 0 10px;
   -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   }
@@ -168,7 +197,7 @@ span.paraphrase {
       text-transform: uppercase;
       display: block;
       text-align: center;
-      height: 35px;
+      height: 34px;
       font-size: 11px;
       line-height: 35px;
       border-bottom: 1px solid #222;
@@ -355,7 +384,9 @@ span.paraphrase {
  *  Slider ♥
  *  ------------------------------------------------------- */
 .slider {
-  margin-bottom: 40px;
+  position: absolute;
+  bottom: 0; left: 0;
+  z-index: 90000;
   -moz-box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.15);
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.15);
   }
@@ -381,7 +412,6 @@ span.paraphrase {
   width: 15px;
   height: 35px;
   cursor: default;
-  left: 10px;
   margin: 0;
   top: 0;
   }
@@ -399,24 +429,25 @@ span.paraphrase {
   z-index: 1;
   display: block;
   }
-.ui-slider-vertical .ui-slider-handle {
-  margin-left: 0;
-  margin-bottom: -.6em;
-  }
-.ui-slider-vertical .ui-slider-range {
-  left: 0;
-  width: 100%;
-  }
-.ui-slider-vertical .ui-slider-range-min  { bottom: 0; }
-.ui-slider-vertical .ui-slider-range-max  { top: 0; }
-
 #sl-val {
   position: absolute;
   left: 0;
-  top: 35px;
+  top: 0;
   font-size: 11px;
   color: #A0A0A0;
   }
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+
+/*
+.ui-slider { position: relative; text-align: left; margin-left: 5px;}
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 19px; height: 20px; cursor: default; left:-10px!important; border: 1px solid #444; }
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
+
+.ui-slider-horizontal { height: 35px; }
+.ui-slider-horizontal .ui-slider-handle { top: -.3em; margin-left: -.6em; }
+.ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
+*/
 
 /*-----------------------------------
   Facebook like popups
@@ -472,16 +503,47 @@ span.paraphrase {
   opacity: 1;
   }
 
+
+#visualization-toggle {
+  position: absolute;
+  z-index: 5000;
+  top: 100px;
+  right: 0;
+  background-color: #505050;
+  background-position: -160px 0;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  }
+  #visualization-toggle.active {
+    background-position: -160px -35px;
+    background-color: #505050;
+    }
+  #visualization-toggle.active:active,
+  #visualization-toggle:active {
+    background-color: #383838;
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+    }
+
+
+/*  -------------------------------------------------------
+ *  The Map! ♥
+ *  ------------------------------------------------------- */
+#counties path {
+  stroke: #353535;
+  stroke-width: 0.25px;
+  }
+
 /*  -------------------------------------------------------
  *  little helpers ♥
  *  ------------------------------------------------------- */
 .icon {
-  background-image: url(img/sprite.png);
+  background-image: url(images/sprite.png);
   background-repeat: no-repeat;
   background-position: 0 0;
   display: block;
   text-indent: -999em;
-  width: 20px; height: 20px;
+  width: 40px; height: 35px;
   }
 .clearfix:after {
   content: '.';

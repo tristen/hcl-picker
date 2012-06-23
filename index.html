@@ -9,6 +9,8 @@
 	<script src='scripts/jquery-ui.js'></script>
   <script src='scripts/chroma.js'></script>
   <script src='scripts/bootstrap-tooltip.js'></script>
+  <script src='scripts/d3.js'></script>
+  <script src='scripts/d3.geo.js'></script>
 	<script src='app.js'></script>
 </head>
 <body>
@@ -16,10 +18,11 @@
   <div class='heading'>
     <div class='limiter'>
       <h1><span class='branding'>HCL</span> <span class='paraphrase'><a href='http://en.wikipedia.org/wiki/Munsell_color_system' class='acronym'>hue, chroma, lightness</a> colorpicker for data.</span></h1>
+      <a href='#' class='icon' id='visualization-toggle'>&nbsp;</a>
     </div>
   </div>
 
-  <div id='color-picker' class='clearfix limiter'>
+  <div id='color-picker' class='active section clearfix'>
     <ul class='axis-select'></ul>
     <div class='canvas'>
       <div id='bg'>
@@ -41,19 +44,66 @@
         <a data-type='subtract' class='subtract' href='#' rel='tooltip' title='Remove a swatch'>-</a>
       </div>
     </div>
+    <div class='slider'>
+      <div id='sl-z' class='slider'></div>
+      <div id='sl-val'></div>
+    </div>
   </div>
-  <div class='slider limiter'>
-    <div id='sl-z' class='slider'></div>
-    <div id='sl-val'></div>
+  <div id='visualization' class='section'></div>
+  <div id='footer'>
+    Built off of Gregor Aish's <a href='http://vis4.net/blog/posts/avoid-equidistant-hsv-colors'>demo</a> and color conversion library, <a href='https://github.com/gka/chroma.js'>chroma.js</a>. Map powered by <a href='http://d3js.org'>D3.js</a>
   </div>
-
 <script>
-  $('document').ready(function() {
-    new Colorpicker;
-    $('a[rel=tooltip]').tooltip({
-      live: true
+    $('document').ready(function() {
+        var color = new Colorpicker;
+        var path = d3.geo.path()
+                  .projection(d3.geo.albersUsa()
+                  .scale(960)
+                  .translate([480, 265]));
+
+        var svg = d3.select('#visualization')
+                  .append('svg:svg')
+                  .attr('width', 960)
+                  .attr('height', 500);
+
+        var counties = svg.append('svg:g').attr('id', 'counties');
+        var pad = d3.format('05d');
+        var colorRange = color.colorArray.length + 1;
+        var quantize = d3.scale.quantile().domain([0, 15]).range(d3.range(colorRange));
+
+        var chropleth = function() {
+            d3.json('json/unemployment.json', function (data) {
+                  d3.json('json/us-counties.json', function (json) {
+                    counties.selectAll('path').data(json.features).enter().append('svg:path').attr('style', function (d) {
+                        // TODO Some values return NaN
+                        // TODO For now, just default to a color. This doesn't need to be accurate.
+                        return 'fill:' + color.colorArray[quantize(data[pad(d.id)] - 1)] + ';';
+                    })
+                    .attr('d', path).append('svg:title').text(function (d) {
+                        return d.properties.name + ': ' + data[pad(d.id)] + '%';
+                    });
+                });
+            });
+        }
+        $('a[rel=tooltip]').tooltip({
+              live: true
+        });
+
+        $('#visualization-toggle').click(function () {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+                $('#visualization').removeClass('active');
+                $('#color-picker').addClass('active');
+            } else {
+                $(this).addClass('active');
+                $('#color-picker').removeClass('active');
+                $('#visualization').addClass('active');
+                counties.selectAll('path').remove();
+                chropleth();
+          }
+          return false;
+        });
     });
-  });
 </script>
 </body>
 </html>

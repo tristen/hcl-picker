@@ -12,7 +12,9 @@ var Colorpicker = function() {
 };
 
 Colorpicker.prototype = {
+    colorArray: [],
     init: function(config) {
+        var that = this;
         var getctx = function(id) {return document.getElementById(id).getContext('2d'); };
         var Color = chroma.Color;
         var changeMode = function(mode) {
@@ -258,12 +260,14 @@ Colorpicker.prototype = {
 
             $('#visual-output .swatch').remove();
             $('#code-output').empty();
+            that.colorArray = [];
 
             var textarea = $('#code-output');
             for (i = 0; i < colors.length; i++) {
                 // Color Swatches
                 var swatch = $('<div class="swatch" />');
                 swatch.css({ background: colors[i] });
+                that.colorArray.push(colors[i]);
                 $('#visual-output').append(swatch);
 
                 // Code Snippet
