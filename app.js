@@ -35,6 +35,10 @@ Colorpicker.prototype = {
 
         var changeAxisClick = function(e) {
             updateAxis($(e.target).data('axis'));
+            resetGradient();
+            config.zval = config.zdim[4];
+            renderColorSpace();
+            showGradient();
             return false;
         };
 
@@ -100,13 +104,13 @@ Colorpicker.prototype = {
         };
 
         var updateAxis = function(axis) {
-
             config.x = axis[0];
             config.y = axis[1];
             config.z = axis[2];
 
             $('.axis-select a').removeClass('active');
             $('.axis-select').find('[data-axis="' + axis + '"]').addClass('active');
+
             var i;
 
             for (i = 0; i < config.opt.dimensions.length; i++) {
@@ -126,20 +130,49 @@ Colorpicker.prototype = {
                 min: config.zdim[2],
                 max: config.zdim[3],
                 step: config.zdim[3] > 99 ? 1 : 0.01,
-                value: config.zdim[4]
+                value: config.zval
             });
-            config.zval = config.zdim[4];
             $('label[for=val-z]').html(config.zdim[1]);
-            renderColorSpace();
-
             var handle = $('#sl-z .ui-slider-handle');
-            resetGradient();
             $('#sl-val').html('<span>' + $('#sl-z').slider('value') + '</span>' + axis[2]);
         };
 
-        var setView = function(mode, axis) {
+        var setView = function(mode, axis, reset) {
             changeMode(mode);
             updateAxis(axis);
+            renderColorSpace();
+            showGradient();
+        };
+
+        var unserialize = function(hash) {
+            if (!hash) {
+                // default init settings
+                return {
+                    swatches: 6,
+                    axis: colorspace['hcl'].axis[0],
+                    from: [0,1],
+                    to: [1, 0.5]
+                };
+            }
+            var parts = hash.split('/'),
+                zval = Number(parts[2]);
+            config.zval = zval;
+            $('#sl-val span').html(zval);
+            updateAxis(parts[0]);
+            return {
+                swatches: Number(parts[1]),
+                axis: parts[0],
+                from: getXY(new Color(parts[3])),
+                to: getXY(new Color(parts[4]))
+            };
+        };
+
+        var getXY = function(color) {
+            // inverse operation to getColor
+            var hcl = color.hcl(),
+                x = hcl[config.dx],
+                y = hcl[config.dy];
+            return [x, y];
         };
 
         $('#sl-z').slider({
@@ -153,10 +186,14 @@ Colorpicker.prototype = {
             }
         });
 
-        var swatches = 6;
+        var hash = location.href.split('#/')[1];
+        changeMode('hcl');
+        var state = unserialize(hash);
+
+        var swatches = state.swatches;
         var gradient = {
-            from: [0,1], //x,y
-            to: [1,0.5], //x,y
+            from: state.from,
+            to: state.to, //x,y
             steps: swatches,
             handlesize: 10
         };
@@ -183,7 +220,6 @@ Colorpicker.prototype = {
             gradient.from[1] = config.ydim[2] + (config.ydim[3]-config.ydim[2]) * 0.1;
             gradient.to[0] = config.xdim[2] + (config.xdim[3]-config.xdim[2]) * (8/36);
             gradient.to[1] = config.ydim[2] + (config.ydim[3]-config.ydim[2]) * 0.8;
-            showGradient();
         };
 
         var showGradient = function(from) {
@@ -286,6 +322,16 @@ Colorpicker.prototype = {
                 }
                 return false;
             });
+
+            location.href= '#/'+serialize();
+        };
+
+        var serialize = function() {
+            return config.x+config.y+config.z+'/'+
+                gradient.steps+'/'+
+                config.zval+'/'+
+                getColor(gradient.from[0], gradient.from[1]).hex().substr(1)+'/'+
+                getColor(gradient.to[0], gradient.to[1]).hex().substr(1);
         };
 
         $('.drag').draggable({
@@ -310,10 +356,13 @@ Colorpicker.prototype = {
             }
         });
 
+
         var mode = 'hcl';
-        var axis = colorspace[mode].axis[0];
+        var axis = state.axis;
 
         setView(mode, axis);
+
         showGradient();
+
     }
 };
