@@ -51,7 +51,7 @@
   </div>
   <div id='visualization' class='section'></div>
   <div id='footer'>
-    Built off of Gregor Aish's <a href='http://vis4.net/blog/posts/avoid-equidistant-hsv-colors'>demo</a> and color conversion library, <a href='https://github.com/gka/chroma.js'>chroma.js</a>. Map powered by <a href='http://d3js.org'>D3.js</a>
+    Built off of Gregor Aisch's <a href='http://vis4.net/blog/posts/avoid-equidistant-hsv-colors'>demo</a> and color conversion library, <a href='https://github.com/gka/chroma.js'>chroma.js</a>. Map powered by <a href='http://d3js.org'>D3.js</a>
   </div>
 <script>
     $('document').ready(function() {
@@ -68,15 +68,13 @@
 
         var counties = svg.append('svg:g').attr('id', 'counties');
         var pad = d3.format('05d');
-        var quantize = d3.scale.quantile().domain([0, 15]).range(d3.range(colorRange));
 
         var chropleth = function() {
             d3.json('json/unemployment.json', function (data) {
-                  d3.json('json/us-counties.json', function (json) {
+                var quantize = d3.scale.quantile().domain(d3.values(data)).range(d3.range(color.colorArray.length));
+                d3.json('json/us-counties.json', function (json) {
                     counties.selectAll('path').data(json.features).enter().append('svg:path').attr('style', function (d) {
-                        // TODO Some values return NaN
-                        // TODO For now, just default to a color. This doesn't need to be accurate.
-                        return 'fill:' + color.colorArray[quantize(data[pad(d.id)] - 1)] + ';';
+                        return 'fill:' + color.colorArray[quantize(data[pad(d.id)])] + ';';
                     })
                     .attr('d', path).append('svg:title').text(function (d) {
                         return d.properties.name + ': ' + data[pad(d.id)] + '%';
