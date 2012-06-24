@@ -68,7 +68,6 @@
 
         var counties = svg.append('svg:g').attr('id', 'counties');
         var pad = d3.format('05d');
-        var colorRange = color.colorArray.length + 1;
         var quantize = d3.scale.quantile().domain([0, 15]).range(d3.range(colorRange));
 
         var chropleth = function() {
