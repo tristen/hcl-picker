@@ -256,6 +256,7 @@ span.paraphrase {
   border-radius: 0 2px 2px 0;
   position: relative;
   overflow: auto;
+  -webkit-transform: translate3d(0, 0, 0);
   }
   .sidebar .inner {
     height: 400px;
