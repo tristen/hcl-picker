@@ -9,6 +9,7 @@
 	<script src='scripts/jquery-ui.js'></script>
   <script src='scripts/chroma.js'></script>
   <script src='scripts/bootstrap-tooltip.js'></script>
+  <script src='scripts/spin.min.js'></script>
   <script src='scripts/d3.js'></script>
   <script src='scripts/d3.geo.js'></script>
   <script src='app.js'></script>
@@ -53,6 +54,7 @@
   <div id='footer'>
     Built off of Gregor Aisch's <a href='http://vis4.net/blog/posts/avoid-equidistant-hsv-colors'>demo</a> and color conversion library, <a href='https://github.com/gka/chroma.js'>chroma.js</a>. Map powered by <a href='http://d3js.org'>D3.js</a>
   </div>
+  <div id='load'></div>
 <script>
     $('document').ready(function() {
         var color = new Colorpicker;
@@ -79,6 +81,7 @@
                     .attr('d', path).append('svg:title').text(function (d) {
                         return d.properties.name + ': ' + data[pad(d.id)] + '%';
                     });
+                    loading('stop');
                 });
             });
         }
@@ -97,11 +100,25 @@
                 $('#color-picker').removeClass('active');
                 $('#visualization').addClass('active');
                 counties.selectAll('path').remove();
+                loading('start');
                 chropleth();
           }
           return false;
         });
     });
+</script>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setaccount', 'ua-24600152-1']);
+  _gaq.push(['_trackpageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 </script>
 </body>
 </html>

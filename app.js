@@ -1,3 +1,43 @@
+function loading(state) {
+  var opts = {
+    lines: 15,
+    length: 5,
+    width: 5,
+    radius: 20,
+    color: '#FFF',
+    speed: 2,
+    trail: 100,
+    top: 'auto',
+    left: 'auto'
+  };
+
+  var target = $('#load');
+  if (!this.spinner) this.spinner = new Spinner();
+  if (!this.active) this.active = false;
+
+  switch(state) {
+    case 'start':
+      if(!this.active) {
+        this.spinner = Spinner(opts).spin();
+        target
+          .append(this.spinner.el)
+          .addClass('active');
+
+        this.active = true;
+      }
+    break;
+
+    case 'stop':
+      if (this.spinner) {
+        target.removeClass('active');
+        this.spinner.stop();
+        this.active = false;
+      }
+    break;
+  }
+};
+
+
 var Colorpicker = function() {
     var config = {
         sq: 210,
@@ -49,7 +89,7 @@ Colorpicker.prototype = {
                     ['c', 'chroma', 0,5,1],
                     ['l', 'lightness', 0,1.7,0.6]],
                 axis: ['hlc', 'clh', 'hcl'],
-                labels: ['Hue/Lightness', 'Chroma/Lightness', 'Hue/Chroma']
+                labels: ['hue-lightness', 'chroma-lightness', 'hue-chroma']
             }
         };
 
@@ -67,7 +107,7 @@ Colorpicker.prototype = {
         };
 
         var renderColorSpace = function() {
-            var x, y, xv, color, idx,
+            var x, y, xv, yv, color, idx,
                 dx = config.dx,
                 dy = config.dy,
                 xdim = config.xdim,
@@ -80,6 +120,12 @@ Colorpicker.prototype = {
                 for (y = 0; y < sq; y++) {
 
                     idx = (x + y * imdata.width) * 4;
+
+                    // TODO use the xv commented out to double the colorspace and
+                    // allow the drag handles to move from violet to red
+                    // TODO Condition this. If the mode is H-L then make this value larger
+                    // xv = xdim[2] + ((x/sq) * 2) * (xdim[3] - xdim[2]);
+
                     xv = xdim[2] + (x/sq) * (xdim[3] - xdim[2]);
                     yv = ydim[2] + (y/sq) * (ydim[3] - ydim[2]);
 
@@ -132,7 +178,9 @@ Colorpicker.prototype = {
                 value: config.zval
             });
             $('label[for=val-z]').html(config.zdim[1]);
+
             var handle = $('#sl-z .ui-slider-handle');
+                handle.attr('rel', 'tooltip').attr('title', 'Adjust ' + config.zdim[1]);
             $('#sl-val').html('<span>' + $('#sl-z').slider('value') + '</span>' + axis[2]);
         };
 
@@ -149,8 +197,8 @@ Colorpicker.prototype = {
                 return {
                     swatches: 6,
                     axis: colorspace['hcl'].axis[0],
-                    from: [0,1],
-                    to: [1, 0.5]
+                    from: [0, 1],
+                    to: [1, 0.6]
                 };
             }
             var parts = hash.split('/'),
@@ -179,6 +227,7 @@ Colorpicker.prototype = {
             step: 0.01,
             value: 0.5,
             slide: function(event, ui) {
+                $('.tooltip').remove();
                 $('#sl-val span').html(ui.value);
                 config.zval = ui.value;
                 renderColorSpace();
@@ -194,7 +243,7 @@ Colorpicker.prototype = {
             from: state.from,
             to: state.to, //x,y
             steps: swatches,
-            handlesize: 10
+            handlesize: 15
         };
 
         $('#controls a').click(function () {
@@ -263,15 +312,17 @@ Colorpicker.prototype = {
             ctx.strokeStyle='#fff';
             col_f = getColor(gradient.from[0],gradient.from[1]).hex();
             ctx.fillStyle = col_f;
-            ctx.rect(x0-a,y0-a,a*2,a*2);
+            ctx.arc(x0, y0, a, 0, Math.PI*2);
             ctx.fill();
+            ctx.closePath();
             ctx.stroke();
 
             ctx.beginPath();
             col_t = getColor(gradient.to[0],gradient.to[1]).hex();
             ctx.fillStyle= col_t;
-            ctx.rect(x1-a,y1-a,a*2,a*2);
+            ctx.arc(x1, y1, a, 0, Math.PI*2);
             ctx.fill();
+            ctx.closePath();
             ctx.stroke();
 
             colors.push(col_f);
@@ -287,8 +338,9 @@ Colorpicker.prototype = {
                 col = getColor(fx,fy).hex();
                 colors.push(col);
                 ctx.fillStyle = col;
-                ctx.rect(x-b,y-b,b*2,b*2);
+                ctx.arc(x, y, b, 0, Math.PI*2);
                 ctx.fill();
+                ctx.closePath();
                 ctx.stroke();
             }
             colors.push(col_t);
@@ -352,6 +404,11 @@ Colorpicker.prototype = {
                     gradient.to = [xv,yv];
                     showGradient();
                 }
+
+                // TODO Move the parent position of the color canvas
+                // if (ui.position.left === 410) {
+                //    console.log();
+                // }
             }
         });
 
