@@ -416,7 +416,7 @@ span.paraphrase {
   box-shadow: 0 0 4px rgba(0,0,0,0.15);
   position: absolute;
   z-index: 2;
-  width: 15px;
+  width: 16px;
   height: 35px;
   cursor: default;
   margin: 0;

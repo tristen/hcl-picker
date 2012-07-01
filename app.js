@@ -66,19 +66,18 @@ Colorpicker.prototype = {
             return new Color(xyz, config.mode);
         };
 
-        var bgimg;
         var renderColorSpace = function() {
             var x, y, xv, color, idx,
                 dx = config.dx,
                 dy = config.dy,
                 xdim = config.xdim,
-                ydim=config.ydim,
+                ydim = config.ydim,
                 sq = config.sq,
                 ctx = getctx('colorspace'),
-                imdata = ctx.createImageData(sq,sq);
+                imdata = ctx.createImageData(sq, sq);
 
-            for (x=0; x < sq; x++) {
-                for (y=0; y < sq; y++) {
+            for (x = 0; x < sq; x++) {
+                for (y = 0; y < sq; y++) {
 
                     idx = (x + y * imdata.width) * 4;
                     xv = xdim[2] + (x/sq) * (xdim[3] - xdim[2]);
@@ -200,12 +199,12 @@ Colorpicker.prototype = {
 
         $('#controls a').click(function () {
             var operation = $(this).attr('data-type');
-            if (operation == 'add') {
+            if (operation === 'add') {
                 swatches = swatches + 1;
                 gradient.steps = swatches;
                 showGradient();
             }
-            if (operation == 'subtract') {
+            if (operation === 'subtract') {
                 if (swatches != 1) {
                 swatches = swatches - 1;
                 gradient.steps = swatches;
