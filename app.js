@@ -345,7 +345,7 @@ Colorpicker.prototype = {
             }
             colors.push(col_t);
 
-            $('#visual-output .swatch').remove();
+            $('#visual-output, #legend-output').empty();
             $('#code-output').empty();
             that.colorArray = [];
 
@@ -355,7 +355,7 @@ Colorpicker.prototype = {
                 var swatch = $('<div class="swatch" />');
                 swatch.css({ background: colors[i] });
                 that.colorArray.push(colors[i]);
-                $('#visual-output').append(swatch);
+                $('#visual-output, #legend-output').append(swatch);
 
                 // Code Snippet
                 textarea.append('<span class"value">' + colors[i] + '</span>');

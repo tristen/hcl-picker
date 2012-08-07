@@ -141,8 +141,8 @@ textarea {
     opacity: 1;
     }
 #visualization {
-  width: 960px;
-  margin-left: -480px;
+  width:960px;
+  margin-left:-480px;
   }
 #footer {
   position: absolute;
@@ -531,53 +531,70 @@ span.paraphrase {
     }
   #visualization-toggle.active:active,
   #visualization-toggle:active {
-    background-color: #383838;
-    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+    background-color:#383838;
+    -moz-box-shadow:inset 0 2px 4px rgba(0, 0, 0, 0.15);
+         box-shadow:inset 0 2px 4px rgba(0, 0, 0, 0.15);
     }
+
+#legend {
+  background:#101010;
+  color:#fff;
+  position:absolute;
+  bottom:0;
+  right:0;
+  padding:15px;
+  }
+  #legend .swatch {
+    width:30px;
+    height:10px;
+    float:left;
+    margin:5px 0 10px;
+    }
+    #legend .key.high { float:left; }
+    #legend .key.low  { float:right; }
 
 /*Loading*/
 #load {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 50%;
-  top: 50%;
-  margin-left: -50px;
+  position:absolute;
+  width:50px;
+  height:50px;
+  left:50%;
+  top:50%;
+  margin-left:-50px;
   margin-top: -50px;
-  z-index: 1000;
-  display: none;
+  z-index:1000;
+  display:none;
   }
   #load.active {
-    display: block;
+    display:block;
     }
 
 /*  -------------------------------------------------------
  *  The Map! ♥
  *  ------------------------------------------------------- */
 #counties path {
-  stroke: #353535;
-  stroke-width: 0.25px;
+  stroke:#353535;
+  stroke-width:0.25px;
   }
 
 /*  -------------------------------------------------------
  *  little helpers ♥
  *  ------------------------------------------------------- */
 .icon {
-  background-image: url(images/sprite.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  display: block;
-  text-indent: -999em;
-  width: 40px; height: 35px;
+  background-image:url(images/sprite.png);
+  background-repeat:no-repeat;
+  background-position:0 0;
+  display:block;
+  text-indent:-999em;
+  width:40px; height: 35px;
   }
 .clearfix:after {
-  content: '.';
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
+  content:'';
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
   }
 
-* html .clearfix { height: 1%; } /* IE6 */
-*:first-child + html .clearfix { min-height: 1%; } /* IE7 */
+* html .clearfix { height:1%; } /* IE6 */
+*:first-child + html .clearfix { min-height:1%; } /* IE7 */
