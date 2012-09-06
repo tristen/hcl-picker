@@ -429,7 +429,7 @@ span.paraphrase {
 .ui-slider .ui-slider-handle.ui-state-hover,
 .ui-slider .ui-slider-handle.ui-state-active {
   background-color: #252525;
-  cursor: move;
+  cursor: ew-resize;
   }
 .ui-slider .ui-slider-range {
   background: #808080;
