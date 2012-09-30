@@ -159,16 +159,16 @@
               picker = $('#color-picker').detach();
               vis.appendTo('#modes');
               vis = null;
+              chropleth();
+              loading('start');
           }, function() {
-              $('.tooltip').remove();
+              loading('stop');
               $('#load').removeClass('active');
               $(this).removeClass('active').attr('title', 'Visualize on a map')
               vis = $('#visualization').detach();
               picker.appendTo('#modes');
               picker = null;
               counties.selectAll('path').remove();
-              loading('start');
-              chropleth();
         });
     });
   </script>
