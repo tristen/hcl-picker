@@ -74,7 +74,7 @@ h3 {
   }
 small {
   font-size: 11px;
-  color: #999;
+  color: #a0a0a0;
   display: block;
   }
 a {
@@ -122,24 +122,11 @@ textarea {
   margin: 0 auto;
   position: relative;
   }
-.section {
-  position: absolute;
-  width: 600px;
-  left: 50%;
-  opacity: 0;
-  margin-left: -300px;
-  top 140px;
+#color-picker {
+  margin-top: 30px;
+  z-index: 10;
+  position:relative;
   }
-  #visualization.section,
-  #color-picker.section.active  {
-    -moz-transition: opacity 150ms linear;
-    -o-transition: opacity 150ms linear;
-    -webkit-transition: opacity 150ms linear;
-    transition: opacity 150ms linear;
-    }
-  .section.active {
-    opacity: 1;
-    }
 #visualization {
   width:960px;
   margin-left:-480px;
@@ -159,11 +146,19 @@ textarea {
   General Styling ♥
 ---------------------------------------------*/
 .heading {
-  background: #fff;
-  padding: 20px 0 10px;
-  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  background:#fff;
+  height:150px;
   }
+  .heading h1 {
+    padding-top:60px;
+    display:block;
+    }
+    .heading h1 small {
+      font-weight:normal;
+      margin-left:75px;
+      margin-top:-25px;
+      }
+
 span.branding {
   background: transparent url(images/sprite.png) no-repeat 0 0;
   color: #fff;
@@ -171,23 +166,23 @@ span.branding {
   font-size: 14px;
   width: 60px;
   height: 60px;
-  line-height: 60px;
+  line-height: 50px;
   display: inline-block;
   text-align: center;
   margin-right: 10px;
   text-indent: -999em;
   }
 span.paraphrase {
-  color: #AEAEAE;
+  color: #666;
   font-weight: 400;
   }
 
 /* ------------------------------------------
   Color Picker ♥
 ---------------------------------------------*/
-#color-picker {
-  margin-top: 30px;
-  z-index: 10;
+#modes {
+  position:relative;
+  padding:10px 0 80px;
   }
   ul.axis-select {
     position: absolute;
@@ -517,8 +512,8 @@ span.paraphrase {
 
 #visualization-toggle {
   position: absolute;
-  z-index: 5000;
-  top: 100px;
+  z-index: 900;
+  top: 190px;
   right: 0;
   background-color: #505050;
   background-position: -160px 0;

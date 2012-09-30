@@ -57,12 +57,12 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="-317.53974"
-     inkscape:cy="183.07896"
+     inkscape:zoom="22.627417"
+     inkscape:cx="-475.42978"
+     inkscape:cy="176.59106"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      inkscape:window-width="1280"
      inkscape:window-height="752"
      inkscape:window-x="4"
@@ -102,19 +102,22 @@
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
-       inkscape:export-filename="/Users/tristen/Desktop/hcl-picker/images/canvas.png"
-       style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       style="color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect3809"
        width="32"
        height="32"
-       x="-308"
+       x="-403"
        y="851.36218" />
     <path
        id="path4645"
-       d="m -295,859.36218 0,18 2,0 0,-8 4,0 0,-2 -4,0 0,-6 4,0 0,-2 z"
+       d="m -390,859.36218 0,18 2,0 0,-8 4,0 0,-2 -4,0 0,-6 4,0 0,-2 z"
        style="font-size:19.0334568px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccccccc" />
+       sodipodi:nodetypes="ccccccccccc"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -144,12 +147,12 @@
        inkscape:connector-curvature="0" />
     <rect
        y="851.36218"
-       x="-273.5"
+       x="-272.5"
        height="32"
        width="32"
        id="rect129909"
-       style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="/Users/tristen/Desktop/hcl-picker/images/canvas.png"
+       style="color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <image
@@ -2445,9 +2448,12 @@
        id="path7656"
        inkscape:connector-curvature="0" />
     <g
-       transform="translate(-288.5,-12)"
+       transform="translate(-287.5,-12)"
        id="g8210"
-       style="font-size:52.58620453px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica">
+       style="font-size:52.58620453px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          sodipodi:nodetypes="cccccccccccc"
          inkscape:connector-curvature="0"
@@ -2496,26 +2502,35 @@
        inkscape:connector-curvature="0"
        id="path3797"
        style="font-size:19.0334568px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#646464;fill-opacity:1;stroke:none;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
-       d="m -254,872.36218 0,4 c 0,0 0,0 -3,0 -3,0 -3,0 -3,-4 l 0,-7 0,-3 c 0,-4 0,-4 3,-4 l 3,0 0,4 -2,0 0,-2 c 0,0 0,0 -1,0 -1,0 -1,0 -1,1 l 0,4 0,8 c 0,1 0.20261,1 1,1 0.79739,0 1,0 1,0 l 0,-2" />
+       d="m -253,872.36218 0,4 c 0,0 0,0 -3,0 -3,0 -3,0 -3,-4 l 0,-7 0,-3 c 0,-4 0,-4 3,-4 l 3,0 0,4 -2,0 0,-2 c 0,0 0,0 -1,0 -1,0 -1,0 -1,1 l 0,4 0,8 c 0,1 0.20261,1 1,1 0.79739,0 1,0 1,0 l 0,-2"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        sodipodi:nodetypes="cccccc"
        inkscape:connector-curvature="0"
        id="path3799"
        style="font-size:19.0334568px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#646464;fill-opacity:1;stroke:none;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
-       d="m -252,858.36218 2,0 0,16 3,0 0,2 -5,0" />
+       d="m -251,858.36218 2,0 0,16 3,0 0,2 -5,0"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="font-size:19.0334568px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#646464;fill-opacity:1;stroke:none;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
-       d="m -295,858.36218 0,18 2,0 0,-8 4,0 0,-2 -4,0 0,-6 4,0 0,-2 z"
+       d="m -390,858.36218 0,18 2,0 0,-8 4,0 0,-2 -4,0 0,-6 4,0 0,-2 z"
        id="path3813"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccccccc" />
+       sodipodi:nodetypes="ccccccccccc"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <rect
        y="851.36218"
        x="-343"
        height="32"
        width="32"
        id="rect3833"
-       style="color:#000000;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
@@ -2527,7 +2542,7 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <path
-         d="m 31.5,871.36218 2,0 0,16 4,0 0,2 -10,4e-5 0,-2 4,0"
+         d="m 31.5,871.36218 2,0 0,16 3,0 0,2 -8,4e-5 0,-2 3,0"
          style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#ffffff;fill-opacity:1;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
          id="path3837"
          inkscape:connector-curvature="0"
@@ -2545,18 +2560,155 @@
          inkscape:connector-curvature="0"
          id="path3841"
          style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#646464;fill-opacity:1;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
-         d="m 31.5,871.36218 2,0 0,16 4,0 0,2 -10,4e-5 0,-2 4,0" />
+         d="m 31.5,871.36218 2,0 0,16 3,0 0,2 -8,4e-5 0,-2 3,0" />
     </g>
     <g
        style="font-size:52.58620453px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#646464;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica"
        id="g3793"
-       transform="translate(-288.5,-13)">
+       transform="translate(-287.5,-13)"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          d="m 19.5,871.36218 2,0 0,8 3,0 0,-8 2,0 0,18 -2,0 0,-8 -3,0 0,8 -2,0"
          style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#646464;fill-opacity:1;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
          id="path3795"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cccccccccccc" />
+    </g>
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       style="color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4647"
+       width="16"
+       height="16"
+       x="-311"
+       y="757.36218" />
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       style="font-size:52.58620453px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica"
+       id="g4649"
+       transform="matrix(0.5,0,0,0.5,-318.5,325.68109)">
+      <path
+         d="m 19.5,871.36218 2,0 0,8 3,0 0,-8 2,0 0,18 -2,0 0,-8 -3,0 0,8 -2,0"
+         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#ffffff;fill-opacity:1;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         id="path4651"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccccccc" />
+      <path
+         d="m 34.5,885.36218 0,4 c 0,0 0,0 -3,0 -3,0 -3,0 -3,-4 l 0,-7 0,-3 c 0,-4 0,-4 3,-4 l 3,0 0,4 -2,0 0,-2 c 0,0 0,0 -1,0 -1,0 -1,0 -1,1 l 0,4 0,8 c 0,1 0.202605,1 1,1 0.797394,0 1,0 1,0 l 0,-2"
+         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#ffffff;fill-opacity:1;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         id="path4653"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cczcccccccccccczcc" />
+      <path
+         d="m 36.5,871.36218 2,0 0,16 3,0 0,2 -5,0"
+         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#ffffff;fill-opacity:1;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         id="path4655"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccc" />
+    </g>
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       d="m -301.5,767.86218 0,2 c 0,0 0,0 -1.5,0 -1.5,0 -1.5,0 -1.5,-2 l 0,-3.5 0,-1.5 c 0,-2 0,-2 1.5,-2 l 1.5,0 0,2 -1,0 0,-1 c 0,0 0,0 -0.5,0 -0.5,0 -0.5,0 -0.5,0.5 l 0,2 0,4 c 0,0.5 0.10131,0.5 0.5,0.5 0.39869,0 0.5,0 0.5,0 l 0,-1"
+       style="font-size:19.0334568px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#646464;fill-opacity:1;stroke:none;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+       id="path4657"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cczcccccccccccczcc" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       d="m -300.5,760.86218 1,0 0,8 1.5,0 0,1 -2.5,0"
+       style="font-size:19.0334568px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#646464;fill-opacity:1;stroke:none;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+       id="path4659"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       transform="matrix(0.5,0,0,0.5,-318.25,325.18109)"
+       id="g4661"
+       style="font-size:52.58620453px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#646464;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica">
+      <path
+         sodipodi:nodetypes="cccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path4663"
+         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#646464;fill-opacity:1;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         d="m 19.5,871.36218 2,0 0,8 3,0 0,-8 2,0 0,18 -2,0 0,-8 -3,0 0,8 -2,0" />
+    </g>
+    <rect
+       y="927.36218"
+       x="-403"
+       height="16"
+       width="16"
+       id="rect5122"
+       style="color:#000000;fill:none;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       sodipodi:nodetypes="ccccccccccc"
+       inkscape:connector-curvature="0"
+       style="font-size:19.0334568px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+       d="m -396,931.36218 0,9 1,0 0,-4 2,0 0,-1 -2,0 0,-3 2,0 0,-1 z"
+       id="path5124" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       sodipodi:nodetypes="ccccccccccc"
+       inkscape:connector-curvature="0"
+       id="path5126"
+       d="m -396,930.86218 0,9 1,0 0,-4 2,0 0,-1 -2,0 0,-3 2,0 0,-1 z"
+       style="font-size:19.0334568px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#646464;fill-opacity:1;stroke:none;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       style="color:#000000;fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect5636"
+       width="16"
+       height="16"
+       x="-488"
+       y="867.36218" />
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       transform="matrix(-0.5,0,0,-0.5,-463.75,1316.0433)"
+       id="g5638"
+       style="font-size:52.58620453px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica">
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="path5640"
+         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#ffffff;fill-opacity:1;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         d="m 31.5,871.36218 2,0 0,16 3,0 0,2 -8,4e-5 0,-2 3,0" />
+    </g>
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/Desktop/favicon.png"
+       style="font-size:52.58620453px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#646464;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica"
+       id="g5642"
+       transform="matrix(-0.5,0,0,-0.5,-463.75,1315.0433)">
+      <path
+         d="m 31.5,871.36218 2,0 0,16 3,0 0,2 -8,4e-5 0,-2 3,0"
+         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#646464;fill-opacity:1;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         id="path5644"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
     </g>
   </g>
 </svg>

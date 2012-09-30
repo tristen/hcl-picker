@@ -4,7 +4,8 @@
   <meta charset='utf-8' />
   <title>Colorpicker for Data</title>
   <link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon' />
-  <link rel='stylesheet' href='app.css' type='text/css' />
+  <link rel='stylesheet' href='app.css' />
+  <link href='http://tristen.ca/global.css' rel='stylesheet'>
 	<script src='scripts/jquery.min.js'></script>
 	<script src='scripts/jquery-ui.js'></script>
   <script src='scripts/chroma.js'></script>
@@ -16,56 +17,106 @@
 </head>
 <body>
 
+ <div id='masthead'>
+  <div class='limiter clearfix'>
+    <div class='col4'>
+      <div class='inner'>
+        <h2>Tristen Brown</h2>
+        <p>A Coder/Designer at <a href='http://mapbox.com'>MapBox.</a></p>
+        <a href='http://tristen.ca' class='icon home' title='Homepage'>Home</a>
+        <a href='http://twitter.com/fallsemo' class='icon twitter' title='Twitter'>Twitter</a>
+        <a href='http://github.com/tristen' class='icon github' title='GitHub'>Github</a>
+      </div>
+    </div>
+    <div class='col4'>
+      <div class='inner'>
+        <h3>Projects</h3>
+        <ul>
+          <li>
+            <a href='http://tristen.ca/forsythe/'>Forsythe Sans</a>
+            <p>A tall open type font.</p>
+          </li>
+          <li>
+            <a href='http://tristen.ca/tablesort/demo/'>tablesort</a>
+             <p>A dependency free sorting component for tables.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class='col4'>
+      <div class='inner'>
+        <h3>&nbsp;</h3>
+        <ul>
+          <li>
+            <a href='http://tristen.ca/hcl-picker/#/hlc/6/1/20313E/EFEE68'>HCL picker</a>
+             <p>A hue, chroma, lightness color picker.</p>
+          </li>
+          <li>
+            <a href='https://github.com/tristen/superman'>Superman</a>
+             <p>A dark vim theme.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a href='#' id='t-toggle'><span>t</span></a>
+  </div>
+</div>
+
   <div class='heading'>
     <div class='limiter'>
-      <h1><span class='branding'>HCL</span> <span class='paraphrase'><a href='http://en.wikipedia.org/wiki/Munsell_color_system' class='acronym'>hue, chroma, lightness</a> colorpicker for data.</span></h1>
+      <h1>
+        <span class='branding'>HCL</span>
+        <span class='paraphrase'><a href='http://en.wikipedia.org/wiki/Munsell_color_system' class='acronym'>hue, chroma, lightness</a> colorpicker for data.</span>
+        <small>Built off of Gregor Aisch's <a href='http://vis4.net/blog/posts/avoid-equidistant-hsv-colors'>demo</a> and color conversion library, <a href='https://github.com/gka/chroma.js'>chroma.js</a>. Map powered by <a href='http://d3js.org'>D3.js</a></small>
+      </h1>    
       <a href='#' class='icon' id='visualization-toggle' rel='tooltip' title='Visualize on a map'>&nbsp;</a>
     </div>
   </div>
 
-  <div id='color-picker' class='active section clearfix'>
-    <ul class='axis-select'></ul>
-    <div class='canvas'>
-      <div id='bg'>
-        <canvas id='colorspace' width='210' height='210'></canvas>
+  <div id='modes' class='clearfix'>
+    <div id='color-picker' class='active section'>
+      <div class='limiter clearfix'>
+          <ul class='axis-select'></ul>
+          <div class='canvas'>
+            <div id='bg'>
+              <canvas id='colorspace' width='210' height='210'></canvas>
+            </div>
+            <canvas id='grad' width='440' height='440'></canvas>
+            <div class='drag_cont'>
+              <div class='drag from'></div>
+              <div class='drag to'></div>
+            </div>
+          </div>
+          <div class='sidebar'>
+            <div class='inner'>
+              <div id='visual-output'></div>
+              <div id='code-output'></div>
+            </div>
+            <div id='controls'>
+              <a data-type='add' href='#' rel='tooltip' title='Add a swatch' >+</a>
+              <a data-type='subtract' class='subtract' href='#' rel='tooltip' title='Remove a swatch'>-</a>
+            </div>
+          </div>
+          <div class='slider'>
+            <div id='sl-z' class='slider'></div>
+            <div id='sl-val'></div>
+          </div>
+        </div>
       </div>
-      <canvas id='grad' width='440' height='440'></canvas>
-      <div class='drag_cont'>
-        <div class='drag from'></div>
-        <div class='drag to'></div>
+    <div id='visualization' class='section'>
+      <div id='legend'>
+        <h4>U.S Unemployment 2008</h4>
+        <ul id='legend-output' class='clearfix'></ul>
+        <div class='clearfix'>
+          <span class='key high'>High</span>
+          <span class='key low'>Low</span>
+        </div>
       </div>
     </div>
-    <div class='sidebar'>
-      <div class='inner'>
-        <div id='visual-output'></div>
-        <div id='code-output'></div>
-      </div>
-      <div id='controls'>
-        <a data-type='add' href='#' rel='tooltip' title='Add a swatch' >+</a>
-        <a data-type='subtract' class='subtract' href='#' rel='tooltip' title='Remove a swatch'>-</a>
-      </div>
-    </div>
-    <div class='slider'>
-      <div id='sl-z' class='slider'></div>
-      <div id='sl-val'></div>
-    </div>
-  </div>
-  <div id='visualization' class='section'>
-    <div id='legend'>
-      <h4>U.S Unemployment 2008</h4>
-      <ul id='legend-output' class='clearfix'></ul>
-      <div class='clearfix'>
-        <span class='key high'>High</span>
-        <span class='key low'>Low</span>
-      </div>
-    </div>
-  </div>
-  <div id='footer'>
-    Built off of Gregor Aisch's <a href='http://vis4.net/blog/posts/avoid-equidistant-hsv-colors'>demo</a> and color conversion library, <a href='https://github.com/gka/chroma.js'>chroma.js</a>. Map powered by <a href='http://d3js.org'>D3.js</a>
-  </div>
   <div id='load'></div>
+  </div>
 <script>
-    $('document').ready(function() {
+    $(document).ready(function() {
         var color = new Colorpicker;
         var path = d3.geo.path()
                   .projection(d3.geo.albersUsa()
@@ -98,23 +149,33 @@
               live: true
         });
 
-        $('#visualization-toggle').click(function () {
-            $('.tooltip').remove();
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active').attr('title', 'Visualize on a map')
-                $('#visualization').removeClass('active');
-                $('#color-picker').addClass('active');
-            } else {
-                $(this).addClass('active').attr('title', 'Back to colorpicker')
-                $('#color-picker').removeClass('active');
-                $('#visualization').addClass('active');
-                counties.selectAll('path').remove();
-                loading('start');
-                chropleth();
-          }
-          return false;
+        // Remove vis first.
+        var vis = $('#visualization').detach(),
+            picker;
+
+        $('#visualization-toggle').toggle(function () {
+              $('.tooltip').remove();
+              $(this).addClass('active').attr('title', 'Back to colorpicker')
+              picker = $('#color-picker').detach();
+              vis.appendTo('#modes');
+              vis = null;
+          }, function() {
+              $('.tooltip').remove();
+              $('#load').removeClass('active');
+              $(this).removeClass('active').attr('title', 'Visualize on a map')
+              vis = $('#visualization').detach();
+              picker.appendTo('#modes');
+              picker = null;
+              counties.selectAll('path').remove();
+              loading('start');
+              chropleth();
         });
     });
+  </script>
+<script src='http://tristen.ca/site.js'></script>
+<script>
+  var masthead = new Tristen();
+  masthead.masthead();
 </script>
 <script>
   var _gaq = _gaq || [];
