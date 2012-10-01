@@ -68,12 +68,14 @@
         <span class='branding'>HCL</span>
         <span class='paraphrase'><a href='http://en.wikipedia.org/wiki/Munsell_color_system' class='acronym'>hue, chroma, lightness</a> colorpicker for data.</span>
         <small>Built off of Gregor Aisch's <a href='http://vis4.net/blog/posts/avoid-equidistant-hsv-colors'>demo</a> and color conversion library, <a href='https://github.com/gka/chroma.js'>chroma.js</a>. Map powered by <a href='http://d3js.org'>D3.js</a></small>
-      </h1>    
-      <a href='#' class='icon' id='visualization-toggle' rel='tooltip' title='Visualize on a map'>&nbsp;</a>
+      </h1>
     </div>
   </div>
 
   <div id='modes' class='clearfix'>
+    <div class='limiter'>
+      <a href='#' class='icon' id='visualization-toggle' rel='tooltip' title='Visualize on a map'>&nbsp;</a>
+    </div>
     <div id='color-picker' class='active section'>
       <div class='limiter clearfix'>
           <ul class='axis-select'></ul>
@@ -103,14 +105,13 @@
           </div>
         </div>
       </div>
-    <div id='visualization' class='section'>
-      <div id='legend'>
-        <h4>U.S Unemployment 2008</h4>
-        <ul id='legend-output' class='clearfix'></ul>
-        <div class='clearfix'>
-          <span class='key high'>High</span>
-          <span class='key low'>Low</span>
-        </div>
+    <div id='visualization' class='section'></div>
+    <div id='legend'>
+      <h4>U.S Unemployment 2008</h4>
+      <ul id='legend-output' class='clearfix'></ul>
+      <div class='clearfix'>
+        <span class='key high'>High</span>
+        <span class='key low'>Low</span>
       </div>
     </div>
   <div id='load'></div>
@@ -157,6 +158,7 @@
               $('.tooltip').remove();
               $(this).addClass('active').attr('title', 'Back to colorpicker')
               picker = $('#color-picker').detach();
+              $('#legend').addClass('active');
               vis.appendTo('#modes');
               vis = null;
               chropleth();
@@ -166,6 +168,7 @@
               $('#load').removeClass('active');
               $(this).removeClass('active').attr('title', 'Visualize on a map')
               vis = $('#visualization').detach();
+              $('#legend').removeClass('active');
               picker.appendTo('#modes');
               picker = null;
               counties.selectAll('path').remove();

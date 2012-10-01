@@ -149,10 +149,9 @@ textarea {
 ---------------------------------------------*/
 .heading {
   background:#fff;
-  height:150px;
+  padding:100px 0 30px;
   }
   .heading h1 {
-    padding-top:60px;
     display:block;
     }
     .heading h1 small {
@@ -515,7 +514,7 @@ span.paraphrase {
 #visualization-toggle {
   position: absolute;
   z-index: 900;
-  top: 190px;
+  top: 30px;
   right: 0;
   background-color: #505050;
   background-position: -160px 0;
@@ -536,11 +535,15 @@ span.paraphrase {
 #legend {
   background:#101010;
   color:#fff;
-  position:absolute;
-  bottom:60px;
+  position:fixed;
+  bottom:0;
   right:0;
   padding:15px;
+  display:none;
   }
+  #legend.active {
+    display:block;
+    }
   #legend .swatch {
     width:30px;
     height:10px;
