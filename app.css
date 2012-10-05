@@ -259,13 +259,13 @@ span.paraphrase {
     overflow-y: auto;
     }
   .sidebar .inner::-webkit-scrollbar {
-    background: #383838;
+    background: #353535;
     width: 15px;
     }
   .sidebar .inner::-webkit-scrollbar-thumb {
     background: #505050;
     border-radius: 15px;
-    border: 5px #383838 solid;
+    border: 5px #353535 solid;
     }
   .sidebar .inner:hover::-webkit-scrollbar-thumb {
     background: #949494;
