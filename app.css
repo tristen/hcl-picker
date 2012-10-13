@@ -149,7 +149,7 @@ textarea {
 ---------------------------------------------*/
 .heading {
   background:#fff;
-  padding:60px 0 30px;
+  padding:50px 0 30px;
   }
   .heading h1 {
     display:block;
@@ -183,7 +183,7 @@ span.paraphrase {
 ---------------------------------------------*/
 #modes {
   position:relative;
-  padding:10px 0 80px;
+  padding:0 0 50px;
   }
   ul.axis-select {
     position: absolute;
@@ -259,13 +259,13 @@ span.paraphrase {
     overflow-y: auto;
     }
   .sidebar .inner::-webkit-scrollbar {
-    background: #383838;
+    background: #353535;
     width: 15px;
     }
   .sidebar .inner::-webkit-scrollbar-thumb {
     background: #505050;
     border-radius: 15px;
-    border: 5px #383838 solid;
+    border: 5px #353535 solid;
     }
   .sidebar .inner:hover::-webkit-scrollbar-thumb {
     background: #949494;
