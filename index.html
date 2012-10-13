@@ -67,15 +67,16 @@
       <h1>
         <span class='branding'>HCL</span>
         <span class='paraphrase'><a href='http://en.wikipedia.org/wiki/Munsell_color_system' class='acronym'>hue, chroma, lightness</a> colorpicker for data.</span>
-        <small>Built off of Gregor Aisch's <a href='http://vis4.net/blog/posts/avoid-equidistant-hsv-colors'>demo</a> and color conversion library, <a href='https://github.com/gka/chroma.js'>chroma.js</a>. Map powered by <a href='http://d3js.org'>D3.js</a></small>
+        <small>Built off Gregor Aisch's <a href='http://vis4.net/blog/posts/avoid-equidistant-hsv-colors'>demo</a> and color conversion library <a href='https://github.com/gka/chroma.js'>chroma.js</a>. Map powered by <a href='http://d3js.org'>D3</a></small>
       </h1>
     </div>
   </div>
 
+  <div class='limiter'>
+    <a href='#' class='icon' id='visualization-toggle' rel='tooltip' title='Visualize on a map'>&nbsp;</a>
+  </div>
+
   <div id='modes' class='clearfix'>
-    <div class='limiter'>
-      <a href='#' class='icon' id='visualization-toggle' rel='tooltip' title='Visualize on a map'>&nbsp;</a>
-    </div>
     <div id='color-picker' class='active section'>
       <div class='limiter clearfix'>
           <ul class='axis-select'></ul>
@@ -133,9 +134,9 @@
         var pad = d3.format('05d');
 
         var chropleth = function() {
-            d3.json('json/unemployment.json', function (data) {
+            d3.json('json/unemployment.json', function(data) {
                 var quantize = d3.scale.quantile().domain(d3.values(data)).range(d3.range(color.colorArray.length));
-                d3.json('json/us-counties.json', function (json) {
+                d3.json('json/us-counties.json', function(json) {
                     counties.selectAll('path').data(json.features).enter().append('svg:path').attr('style', function (d) {
                         return 'fill:' + color.colorArray[quantize(data[pad(d.id)])] + ';';
                     })
