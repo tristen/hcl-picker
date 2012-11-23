@@ -46,7 +46,7 @@ var Colorpicker = function() {
         x: '',
         y: '',
         z: '',
-        zval: 0.5
+        zval: 1
     };
     this.init(config);
 };
@@ -225,7 +225,7 @@ Colorpicker.prototype = {
         $('#sl-z').slider({
             range: 'min',
             step: 0.01,
-            value: 0.5,
+            value: 1,
             slide: function(event, ui) {
                 $('.tooltip').remove();
                 $('#sl-val span').html(ui.value);

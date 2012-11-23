@@ -42,7 +42,7 @@
     <div class='limiter'>
       <h1>
         <span class='branding'>HCL</span>
-        <span class='paraphrase'><a href='http://en.wikipedia.org/wiki/Munsell_color_system' class='acronym'>hue, chroma, lightness</a> colorpicker for data.</span>
+        <span class='paraphrase'><a href='http://en.wikipedia.org/wiki/Munsell_color_system' class='acronym'>hue, chroma, lightness</a> colorpicker for data.</span><a href='https://twitter.com/share' class='twitter-share-button' data-url='http://goo.gl/41v6o' data-text='A Colorpicker for Data:' data-via='fallsemo' data-count='none'>Tweet</a>
         <small>Built off Gregor Aisch's <a href='http://vis4.net/blog/posts/avoid-equidistant-hsv-colors'>demo</a> and color conversion library <a href='https://github.com/gka/chroma.js'>chroma.js</a>. Map powered by <a href='http://d3js.org'>D3</a></small>
       </h1>
     </div>
@@ -95,6 +95,7 @@
   </div>
 <script>
   $(document).ready(function() {
+        if (location.hash === '') location.hash = '/hlc/6/1/16534C/E2E062';
         var color = new Colorpicker;
         var path = d3.geo.path()
                   .projection(d3.geo.albersUsa()
@@ -157,7 +158,7 @@
   var masthead = new Tristen();
   masthead.masthead();
 </script>
-<script type="text/javascript">
+<script>
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-15498769-1']);
@@ -169,6 +170,17 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+</script>
+<script>
+  !function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id)) {
+      js = d.createElement(s);
+      js.id = id;
+      js.src = '//platform.twitter.com/widgets.js';
+      fjs.parentNode.insertBefore(js,fjs);
+    }
+  }(document,'script','twitter-wjs');
 </script>
 </body>
 </html>
