@@ -18,30 +18,46 @@ function loading(state) {
     switch(state) {
         case 'start':
             if(!this.active) {
-            this.spinner = Spinner(opts).spin();
-            target
-                .append(this.spinner.el)
-                .addClass('active');
+                this.spinner = Spinner(opts).spin();
+                target
+                    .append(this.spinner.el)
+                    .addClass('active');
 
-            this.active = true;
-        }
-        break;
+                this.active = true;
+            }
+            break;
 
         case 'stop':
             if (this.spinner) {
-            target.removeClass('active');
-            this.spinner.stop();
-            this.active = false;
-        }
-        break;
+                target.removeClass('active');
+                this.spinner.stop();
+                this.active = false;
+            }
+            break;
     }
 }
+
+var colorspace = {
+    'hcl': {
+        dimensions: [
+            ['h', 'hue', 0, 360, 0],
+            ['c', 'chroma', 0, 5, 1],
+            ['l', 'lightness', 0, 1.7, 0.6]],
+        axis: [
+            ['hlc', 'hue-lightness'],
+            ['clh', 'chroma-lightness'],
+            ['hcl', 'hue-chroma']]
+    }
+};
+
+var Color = chroma.Color;
 
 function Colorpicker() {
     var config = {
         sq: 210,
         scale: 2,
-        mode: 'hcl',
+        axis: 'hcl',
+        opt: colorspace.hcl,
         x: '',
         y: '',
         z: '',
@@ -53,72 +69,20 @@ function Colorpicker() {
 Colorpicker.prototype = {
     colorArray: [],
     init: function(config) {
-        var getctx = function(id) {
+
+        function getctx(id) {
             return document.getElementById(id).getContext('2d');
-        };
-        var Color = chroma.Color;
-
-        function changeMode(mode) {
-            config.mode = mode;
-            var modeopt = colorspace[mode];
-            config.opt = modeopt;
-
-            var mode_links = d3.select('.axis-select')
-                .selectAll('li')
-                .data(modeopt.axis);
-
-            mode_links.exit().remove();
-            mode_links.enter().append('li');
-
-            var a = mode_links.selectAll('a');
-
-            a.data(function(d) { return [d]; })
-                .enter().append('a');
-
-            a.attr({
-                    href: '#',
-                    'class': function(d) { return 'mode-select ' + d[0]; },
-                    'title': function(d) { return d[1]; },
-                    rel: 'tooltip'
-                })
-                .text(function(d) { return d[0][0] + '–' + d[0][1]; })
-                .on('click', function(d) {
-                    updateAxis(d[0]);
-                    resetGradient();
-                    config.zval = config.zdim[4];
-                    renderColorSpace();
-                    showGradient();
-                    d3.selectAll('a.mode-select').classed('active', function(_) {
-                        return _[0] == d[0];
-                    });
-                    return d3.event.preventDefault();
-                });
         }
-
-        var colorspace = {
-            'hcl': {
-                dimensions: [
-                    ['h', 'hue', 0, 360, 0],
-                    ['c', 'chroma', 0, 5, 1],
-                    ['l', 'lightness', 0, 1.7, 0.6]],
-                axis: [
-                    ['hlc', 'hue-lightness'],
-                    ['clh', 'chroma-lightness'],
-                    ['hcl', 'hue-chroma']]
-            }
-        };
 
         function getColor(x,y) {
             var xyz = [];
-            var dx = config.dx;
-            var dy = config.dy;
-            var dz = config.dz;
 
-            xyz[dx] = x;
-            xyz[dy] = y;
-            xyz[dz] = config.zval;
+            xyz[config.dx] = x;
+            xyz[config.dy] = y;
+            xyz[config.dz] = config.zval;
 
-            return new Color(xyz, config.mode);
+            var c = new Color(xyz, 'hcl');
+            return c;
         }
 
         function renderColorSpace() {
@@ -138,14 +102,13 @@ Colorpicker.prototype = {
 
                     // TODO use the xv commented out to double the colorspace and
                     // allow the drag handles to move from violet to red
-                    // TODO Condition this. If the mode is H-L then make this value larger
+                    // TODO Condition this. If the axis is H-L then make this value larger
                     // xv = xdim[2] + ((x/sq) * 2) * (xdim[3] - xdim[2]);
 
                     xv = xdim[2] + (x/sq) * (xdim[3] - xdim[2]);
                     yv = ydim[2] + (y/sq) * (ydim[3] - ydim[2]);
 
-                    color = getColor(xv, yv).rgb;
-
+                    color = getColor(xv, yv);
                     if (isNaN(color[0])) {
                         imdata.data[idx] = 255;
                         imdata.data[idx+1] = 0;
@@ -170,8 +133,8 @@ Colorpicker.prototype = {
 
             var i;
 
-            for (i = 0; i < config.opt.dimensions.length; i++) {
-                var dim = config.opt.dimensions[i];
+            for (i = 0; i < colorspace.hcl.dimensions.length; i++) {
+                var dim = colorspace.hcl.dimensions[i];
                 if (dim[0] === config.x) {
                     config.dx = i;
                     config.xdim = dim;
@@ -183,55 +146,34 @@ Colorpicker.prototype = {
                     config.zdim = dim;
                 }
             }
+
             $('#sl-z').slider({
                 min: config.zdim[2],
                 max: config.zdim[3],
                 step: config.zdim[3] > 99 ? 1 : 0.01,
                 value: config.zval
             });
+
             $('label[for=val-z]').html(config.zdim[1]);
 
             var handle = $('#sl-z .ui-slider-handle');
                 handle.attr('rel', 'tooltip').attr('title', 'Adjust ' + config.zdim[1]);
+
             $('#sl-val').html('<span>' + $('#sl-z').slider('value') + '</span>' + axis[2]);
         }
 
-        function setView(mode, axis, reset) {
-            changeMode(mode);
-            updateAxis(axis);
+        function setView(state, reset) {
+            updateAxis(state.axis);
+            config.zval = config.zdim[4];
             renderColorSpace();
+            resetGradient();
             showGradient();
-        }
-
-        function unserialize(hash) {
-            if (!hash) {
-                // default init settings
-                return {
-                    swatches: 6,
-                    axis: colorspace.hcl.axis[0],
-                    from: [0, 1],
-                    to: [1, 0.6]
-                };
-            }
-            var parts = hash.split('/'),
-                zval = Number(parts[2]);
-            config.zval = zval;
-            $('#sl-val span').html(zval);
-            updateAxis(parts[0]);
-            return {
-                swatches: Number(parts[1]),
-                axis: parts[0],
-                from: getXY(new Color(parts[3])),
-                to: getXY(new Color(parts[4]))
-            };
         }
 
         function getXY(color) {
             // inverse operation to getColor
-            var hcl = color.hcl(),
-                x = hcl[config.dx],
-                y = hcl[config.dy];
-            return [x, y];
+            var hcl = color.hcl();
+            return [hcl[config.dx], hcl[config.dy]];
         }
 
         $('#sl-z').slider({
@@ -246,18 +188,17 @@ Colorpicker.prototype = {
             }
         });
 
-        $('#controls a').click(function () {
+        $('#controls a').click(function() {
             var operation = $(this).attr('data-type');
             if (operation === 'add') {
                 swatches = swatches + 1;
                 gradient.steps = swatches;
                 showGradient();
-            }
-            if (operation === 'subtract') {
+            } else if (operation === 'subtract') {
                 if (swatches != 1) {
-                swatches = swatches - 1;
-                gradient.steps = swatches;
-                showGradient();
+                    swatches = swatches - 1;
+                    gradient.steps = swatches;
+                    showGradient();
                 }
             }
             return false;
@@ -330,12 +271,12 @@ Colorpicker.prototype = {
             for (i = 1; i < gradient.steps-1; i++) {
                 fx = gradient.from[0] + (i/(gradient.steps-1)) * (gradient.to[0]-gradient.from[0]);
                 fy = gradient.from[1] + (i/(gradient.steps-1)) * (gradient.to[1]-gradient.from[1]);
-                x = toX(fx, config.xdim) + 10;
-                y = toX(fy, config.ydim) + 10;
+                x = toX(fx, config.xdim[2]) + 10;
+                y = toX(fy, config.ydim[2]) + 10;
 
                 ctx.beginPath();
                 ctx.strokeStyle = 'rgba(255,255,255,0.25)';
-                col = getColor(fx,fy).hex();
+                col = getColor(fx, fy).hex();
                 colors.push(col);
                 ctx.fillStyle = col;
                 ctx.arc(x, y, b, 0, Math.PI*2);
@@ -355,7 +296,6 @@ Colorpicker.prototype = {
             ['#visual-output', '#legend-output'].forEach(function(id) {
                 var output = d3.select(id)
                     .selectAll('div.swatch').data(colors);
-
                 output.exit().remove();
                 output.enter().append('div').attr('class', 'swatch');
                 output.style('background', String);
@@ -363,13 +303,9 @@ Colorpicker.prototype = {
 
             var output = d3.select('#code-output')
                 .selectAll('span.value').data(colors);
-
             output.exit().remove();
-
-            output.enter().append('span')
-                .attr('class', 'value')
+            output.enter().append('span').attr('class', 'value')
                 .on('click', selectThis);
-
             output.text(String);
         }
 
@@ -385,8 +321,30 @@ Colorpicker.prototype = {
             }
         }
 
+        function unserialize(hash) {
+            if (!hash) {
+                // default init settings
+                return {
+                    swatches: 6,
+                    axis: colorspace.hcl.axis[0],
+                    from: [0, 1],
+                    to: [1, 0.6]
+                };
+            }
+            var parts = hash.split('/'),
+                zval = Number(parts[2]);
+            config.zval = zval;
+            $('#sl-val span').html(zval);
+            return {
+                swatches: Number(parts[1]),
+                axis: parts[0],
+                from: getXY(new Color(parts[3])),
+                to: getXY(new Color(parts[4]))
+            };
+        }
+
         function serialize() {
-            return config.x+config.y+config.z + '/' +
+            return config.x + config.y+config.z + '/' +
                 gradient.steps + '/' +
                 config.zval + '/' +
                 getColor(gradient.from[0], gradient.from[1]).hex().substr(1) + '/' +
@@ -420,13 +378,44 @@ Colorpicker.prototype = {
             }
         });
 
-        var hash = location.href.split('#/')[1];
+        function axisLinks() {
+            var axis_links = d3.select('.axis-select')
+                .selectAll('li')
+                .data(colorspace.hcl.axis);
 
-        changeMode('hcl');
+            axis_links.exit().remove();
+            axis_links.enter().append('li');
 
-        var state = unserialize(hash);
+            var alink = axis_links.selectAll('a');
 
-        var swatches = state.swatches;
+            alink.data(function(d) { return [d]; })
+                .enter().append('a')
+                .attr({
+                    href: '#',
+                    'class': function(d) { return 'axis-select ' + d[0]; },
+                    'title': function(d) { return d[1]; },
+                    rel: 'tooltip'
+                })
+                .classed('active', function(d) {
+                    return d[0] == config.axis;
+                })
+                .text(function(d) { return d[0][0] + '–' + d[0][1]; })
+                .on('click', function(d) {
+                    updateAxis(d[0]);
+                    resetGradient();
+                    renderColorSpace();
+                    showGradient();
+                    d3.selectAll('a.axis-select').classed('active', function(_) {
+                        return _[0] == d[0];
+                    });
+                    return d3.event.preventDefault();
+                });
+        }
+
+        var hash = location.hash.slice(2),
+            state = unserialize(hash),
+            swatches = state.swatches;
+
         var gradient = {
             from: state.from,
             to: state.to, //x,y
@@ -434,11 +423,9 @@ Colorpicker.prototype = {
             handlesize: 15
         };
 
-        var mode = 'hcl';
-        var axis = state.axis;
-
-        setView(mode, axis);
-
+        config.axis = state.axis;
+        setView(state);
+        axisLinks();
         showGradient();
     }
 };

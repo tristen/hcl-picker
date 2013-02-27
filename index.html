@@ -98,14 +98,14 @@
         if (location.hash === '') location.hash = '/hlc/6/1/16534C/E2E062';
         var color = new Colorpicker;
         var path = d3.geo.path()
-                  .projection(d3.geo.albersUsa()
-                  .scale(960)
-                  .translate([480, 265]));
+            .projection(d3.geo.albersUsa()
+            .scale(960)
+            .translate([480, 265]));
 
         var svg = d3.select('#visualization')
-                  .append('svg:svg')
-                  .attr('width', 960)
-                  .attr('height', 500);
+            .append('svg:svg')
+            .attr('width', 960)
+            .attr('height', 500);
 
         var counties = svg.append('svg:g').attr('id', 'counties');
         var pad = d3.format('05d');
@@ -124,6 +124,7 @@
                 });
             });
         }
+
         $('a[rel=tooltip]').tooltip({
               live: true
         });
