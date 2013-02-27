@@ -37,6 +37,19 @@ function loading(state) {
     }
 }
 
+function autoscale(canvas) {
+    var ctx = canvas.getContext('2d');
+    var ratio = window.devicePixelRatio || 1;
+    if (1 != ratio) {
+        canvas.style.width = canvas.width + 'px';
+        canvas.style.height = canvas.height + 'px';
+        canvas.width *= ratio;
+        canvas.height *= ratio;
+        ctx.scale(ratio, ratio);
+    }
+    return ctx;
+}
+
 function debounce(func, wait, immediate) {
     var timeout;
     return function() {
@@ -85,8 +98,12 @@ Colorpicker.prototype = {
     colorArray: [],
     init: function(config) {
 
-        function getctx(id) {
+        function getctx(id, autoscale) {
             return document.getElementById(id).getContext('2d');
+        }
+
+        function getretinactx(id) {
+            return autoscale(document.getElementById(id));
         }
 
         function getColor(x,y) {
@@ -100,6 +117,7 @@ Colorpicker.prototype = {
             return c;
         }
 
+        var colorctx = getctx('colorspace');
         function renderColorSpace() {
             var x, y, xv, yv, color, idx,
                 dx = config.dx,
@@ -107,7 +125,7 @@ Colorpicker.prototype = {
                 xdim = config.xdim,
                 ydim = config.ydim,
                 sq = config.sq,
-                ctx = getctx('colorspace'),
+                ctx = colorctx,
                 imdata = ctx.createImageData(sq, sq);
 
             for (x = 0; x < sq; x++) {
@@ -226,6 +244,8 @@ Colorpicker.prototype = {
             gradient.to[1] = config.ydim[2] + (config.ydim[3]-config.ydim[2]) * 0.8;
         }
 
+        var gradctx = getretinactx('grad');
+
         function showGradient(from) {
             // draw line
             var colors = [], col_f, col_t, col;
@@ -237,9 +257,9 @@ Colorpicker.prototype = {
             var x0 = toX(gradient.from[0], config.xdim)+10,
                 x1 = toX(gradient.to[0], config.xdim)+10,
                 y0 = toX(gradient.from[1], config.ydim)+10,
-                y1 = toX(gradient.to[1], config.ydim)+10,
+                y1 = toX(gradient.to[1], config.ydim)+10;
 
-            ctx = getctx('grad');
+            var ctx = gradctx;
             ctx.clearRect(0,0,600,600);
 
             $('.drag.from').css({
