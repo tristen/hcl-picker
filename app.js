@@ -17,7 +17,7 @@ function loading(state) {
 
     switch(state) {
         case 'start':
-            if(!this.active) {
+            if (!this.active) {
                 this.spinner = Spinner(opts).spin();
                 target
                     .append(this.spinner.el)
@@ -35,6 +35,21 @@ function loading(state) {
             }
             break;
     }
+}
+
+function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+        var context = this, args = arguments;
+        var later = function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+    };
 }
 
 var colorspace = {
@@ -108,7 +123,7 @@ Colorpicker.prototype = {
                     xv = xdim[2] + (x/sq) * (xdim[3] - xdim[2]);
                     yv = ydim[2] + (y/sq) * (ydim[3] - ydim[2]);
 
-                    color = getColor(xv, yv);
+                    color = getColor(xv, yv).rgb;
                     if (isNaN(color[0])) {
                         imdata.data[idx] = 255;
                         imdata.data[idx+1] = 0;
@@ -289,8 +304,12 @@ Colorpicker.prototype = {
 
             updateSwatches(colors);
 
-            location.href = '#/' + serialize();
+            updateLocation();
         }
+
+        var updateLocation = debounce(function() {
+            location.href = '#/' + serialize();
+        }, 100);
 
         function updateSwatches(colors) {
             ['#visual-output', '#legend-output'].forEach(function(id) {
@@ -333,8 +352,12 @@ Colorpicker.prototype = {
             }
             var parts = hash.split('/'),
                 zval = Number(parts[2]);
+
             config.zval = zval;
             $('#sl-val span').html(zval);
+
+            updateAxis(parts[0]);
+
             return {
                 swatches: Number(parts[1]),
                 axis: parts[0],
@@ -412,9 +435,9 @@ Colorpicker.prototype = {
                 });
         }
 
-        var hash = location.hash.slice(2),
-            state = unserialize(hash),
-            swatches = state.swatches;
+        var hash = location.hash.slice(2);
+        var state = unserialize(hash);
+        var swatches = state.swatches;
 
         var gradient = {
             from: state.from,
