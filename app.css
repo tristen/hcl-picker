@@ -547,8 +547,8 @@ span.paraphrase {
     float:left;
     margin:5px 0 10px;
     }
-    #legend .key.high { float:left; }
-    #legend .key.low  { float:right; }
+    #legend .key.low { float:left; }
+    #legend .key.high  { float:right; }
 
 /*Loading*/
 #load {
