@@ -5,7 +5,6 @@
   <title>Colorpicker for Data | Tristen</title>
   <link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon' />
   <link rel='stylesheet' href='app.css' />
-  <link href='http://tristen.ca/global.css' rel='stylesheet'>
 	<script src='scripts/jquery.min.js'></script>
 	<script src='scripts/jquery-ui.js'></script>
   <script src='scripts/chroma.js'></script>
@@ -16,28 +15,6 @@
   <script src='app.js'></script>
 </head>
 <body>
-
-<div id='masthead'>
-  <div class='limiter col12 clearfix'>
-    <div class='col3'>
-      <div class='inner'>
-        <h2>Tristen Brown</h2>
-        <p>A Coder/Designer at <a href='http://mapbox.com'>MapBox.</a></p>
-        <a href='http://tristen.ca' class='icon home' title='Homepage'>Home</a>
-        <a href='http://tristen.ca/blog' class='icon blog' title='Blog'>Blog</a>
-        <a href='http://twitter.com/fallsemo' class='icon twitter' title='Twitter'>Twitter</a>
-        <a href='http://github.com/tristen' class='icon github' title='GitHub'>Github</a>
-      </div>
-    </div>
-    <div class='col col9'>
-      <div class='inner'>
-        <h3>Projects</h3>
-        <ul id='tristen-projects'></ul>
-      </div>
-    </div>
-    <a href='#' id='t-toggle'><span>t</span></a>
-  </div>
-</div>
 
   <div class='heading'>
     <div class='limiter'>
@@ -154,13 +131,6 @@
               counties.selectAll('path').remove();
         });
     });
-  </script>
-<script src='http://tristen.ca/site.js'></script>
-<script>
-  var masthead = new Tristen();
-  masthead.masthead();
-</script>
-<script>
   !function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (!d.getElementById(id)) {
@@ -170,9 +140,7 @@
       fjs.parentNode.insertBefore(js,fjs);
     }
   }(document,'script','twitter-wjs');
-</script>
 
-<script>
 var analytics=analytics||[];(function(){var e=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group"],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
 analytics.load("ppyh4q5xb3");
 </script>
