@@ -28,16 +28,16 @@ function debounce(func, wait, immediate) {
 }
 
 var colorspace = {
-  'lab': {
+  'lch': {
     dimensions: [
-      ['h', 'hue', 0, 360, 0],
+      ['l', 'lightness', 0, 1.7, 0.6],
       ['c', 'chroma', 0, 5, 1],
-      ['l', 'lightness', 0, 1.7, 0.6]
+      ['h', 'hue', 0, 360, 0],
     ],
     axis: [
       ['hlc', 'hue-lightness'],
       ['clh', 'chroma-lightness'],
-      ['lab', 'hue-chroma']
+      ['lch', 'lightness-chroma-hue']
     ]
   }
 };
@@ -46,8 +46,8 @@ function Colorpicker() {
   var config = {
     sq: 210,
     scale: 2,
-    axis: 'lab',
-    opt: colorspace.lab,
+    axis: 'lch',
+    opt: colorspace.lch,
     x: '',
     y: '',
     z: '',
@@ -75,7 +75,7 @@ Colorpicker.prototype = {
       xyz[config.dy] = y;
       xyz[config.dz] = config.zval;
 
-      var c = chroma(xyz, 'lab');
+      var c = chroma(xyz, 'lch');
       return c;
     }
 
@@ -129,8 +129,8 @@ Colorpicker.prototype = {
 
       var i;
 
-      for (i = 0; i < colorspace.lab.dimensions.length; i++) {
-        var dim = colorspace.lab.dimensions[i];
+      for (i = 0; i < colorspace.lch.dimensions.length; i++) {
+        var dim = colorspace.lch.dimensions[i];
         if (dim[0] === config.x) {
           config.dx = i;
           config.xdim = dim;
@@ -150,12 +150,12 @@ Colorpicker.prototype = {
         value: config.zval
       });
 
-      $('label[for=val-z]').html(config.zdim[1]);
+      $('lchel[for=val-z]').html(config.zdim[1]);
 
-      var handle = $('#sl-z .ui-slider-handle');
-      handle.attr('data-tooltip', 'Adjust ' + config.zdim[1]);
+      d3.select('#sl-z').select('.ui-slider-handle')
+        .attr('data-tooltip', 'Adjust ' + config.zdim[1]);
 
-      $('#sl-val').html('<span>' + $('#sl-z').slider('value') + '</span>' + axis[2]);
+      d3.select('#sl-val').html('<span>' + $('#sl-z').slider('value') + '</span>' + axis[2]);
     }
 
     function setView(state, reset) {
@@ -168,8 +168,8 @@ Colorpicker.prototype = {
 
     function getXY(color) {
       // inverse operation to getColor
-      var lab = color.lab();
-      return [lab[config.dx], lab[config.dy]];
+      var lch = color.lch();
+      return [lch[config.dx], lch[config.dy]];
     }
 
     $('#sl-z').slider({
@@ -184,20 +184,22 @@ Colorpicker.prototype = {
       }
     });
 
-    $('#controls a').click(function() {
-      var operation = $(this).attr('data-type');
-      if (operation === 'add') {
-        swatches = swatches + 1;
-        gradient.steps = swatches;
-        showGradient();
-      } else if (operation === 'subtract') {
-        if (swatches != 1) {
-          swatches = swatches - 1;
+    d3.select('#controls').selectAll('a')
+      .on('click', function() {
+        d3.event.preventDefault();
+        d3.event.stopPropagation();
+        var operation = d3.select(this).attr('data-type');
+        if (operation === 'add') {
+          swatches = swatches + 1;
           gradient.steps = swatches;
           showGradient();
+        } else if (operation === 'subtract') {
+          if (swatches != 1) {
+            swatches = swatches - 1;
+            gradient.steps = swatches;
+            showGradient();
+          }
         }
-      }
-      return false;
     });
 
     function resetGradient() {
@@ -286,9 +288,7 @@ Colorpicker.prototype = {
       }
 
       colors.push(col_t);
-
       updateSwatches(colors);
-
       updateLocation();
     }
 
@@ -309,11 +309,11 @@ Colorpicker.prototype = {
         .selectAll('span.value').data(colors);
       output.exit().remove();
       output.enter().append('span').attr('class', 'value')
-        .on('click', selectThis);
+        .on('click', selectHex);
       output.text(String);
     }
 
-    function selectThis() {
+    function selectHex() {
       if (document.selection) {
         var rangeD = document.body.createTextRange();
         rangeD.moveToElementText(this);
@@ -330,17 +330,16 @@ Colorpicker.prototype = {
         // default init settings
         return {
           swatches: 6,
-          axis: colorspace.lab.axis[0],
+          axis: colorspace.lch.axis[0],
           from: [0, 1],
           to: [1, 0.6]
         };
       }
-      var parts = hash.split('/'),
-        zval = Number(parts[2]);
+      var parts = hash.split('/');
+      var zval = Number(parts[2]);
 
       config.zval = zval;
-      $('#sl-val span').html(zval);
-
+      d3.select('#sl-val').select('span').html(zval);
       updateAxis(parts[0]);
 
       return {
@@ -378,18 +377,13 @@ Colorpicker.prototype = {
           gradient.to = [xv, yv];
           showGradient();
         }
-
-        // TODO Move the parent position of the color canvas
-        // if (ui.position.left === 410) {
-        //    console.log();
-        // }
       }
     });
 
     function axisLinks() {
       var axis_links = d3.select('.axis-select')
         .selectAll('li')
-        .data(colorspace.lab.axis);
+        .data(colorspace.lch.axis);
 
       axis_links.exit().remove();
       axis_links.enter().append('li');
@@ -401,7 +395,7 @@ Colorpicker.prototype = {
         })
         .enter().append('a')
         .attr({
-          href: '#',
+          'href': '#',
           'class': function(d) {
             return 'axis-select ' + d[0];
           },
@@ -416,6 +410,8 @@ Colorpicker.prototype = {
           return d[0][0] + '–' + d[0][1];
         })
         .on('click', function(d) {
+          d3.event.preventDefault();
+          d3.event.stopPropagation();
           updateAxis(d[0]);
           resetGradient();
           renderColorSpace();
@@ -423,7 +419,6 @@ Colorpicker.prototype = {
           d3.selectAll('a.axis-select').classed('active', function(_) {
             return _[0] == d[0];
           });
-          return d3.event.preventDefault();
         });
     }
 
@@ -464,7 +459,7 @@ function load() {
   var mode = d3.selectAll('.js-mode');
   var vizs = d3.select('#visualization');
   var pick = d3.select('#picker');
-  
+
   if (location.hash === '') location.hash = '/hlc/6/1/16534C/E2E062';
   var color = new Colorpicker();
   var path = d3.geo.path()
@@ -480,8 +475,8 @@ function load() {
   var pad = d3.format('05d');
 
   mode.on('click', function() {
-    d3.event.preventDefault();  
-    d3.event.stopPropagation();  
+    d3.event.preventDefault();
+    d3.event.stopPropagation();
 
     var el = d3.select(this);
     mode.classed('active', false);
