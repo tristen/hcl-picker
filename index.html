@@ -2,144 +2,88 @@
 <html>
   <head>
   <meta charset='utf-8' />
-  <title>Colorpicker for Data | Tristen</title>
-  <link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon' />
-  <link rel='stylesheet' href='app.css' />
-	<script src='scripts/jquery.min.js'></script>
-	<script src='scripts/jquery-ui.js'></script>
-  <script src='scripts/chroma.js'></script>
-  <script src='scripts/bootstrap-tooltip.js'></script>
-  <script src='scripts/spin.min.js'></script>
-  <script src='scripts/d3.v3.min.js'></script>
-  <script src='scripts/d3.geo.js'></script>
-  <script src='app.js'></script>
+  <title>Colorpicker for Data | tristen</title>
+  <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon' />
+  <link rel='stylesheet' href='base.css' />
+  <link rel='stylesheet' href='site.css' />
 </head>
 <body>
 
-  <div class='heading'>
-    <div class='limiter'>
-      <h1>
-        <span class='branding'>HCL</span>
-        <span class='paraphrase'><a href='http://en.wikipedia.org/wiki/Munsell_color_system' class='acronym'>hue, chroma, lightness</a> colorpicker for data.</span><a href='https://twitter.com/share' class='twitter-share-button' data-url='http://tristen.ca/hcl-picker/' data-text='A Colorpicker for Data:' data-via='fallsemo' data-count='none'>Tweet</a>
-        <small>Built off Gregor Aisch's <a href='http://vis4.net/blog/posts/avoid-equidistant-hsv-colors'>demo</a> and color conversion library <a href='https://github.com/gka/chroma.js'>chroma.js</a>. Map powered by <a href='http://d3js.org'>D3</a></small>
-      </h1>
-    </div>
+<header class='fill-white'>
+  <div class='limiter clearfix'>
+    <a href='/' class='sprite logo'>HCL</a>
+    <a href='http://en.wikipedia.org/wiki/Munsell_color_system'>hue, saturation, lightness</a> colorpicker for data. <a href='https://twitter.com/share' class='twitter-share-button' data-url='http://tristen.ca/hcl-picker/' data-text='A Colorpicker for Data:' data-via='fallsemo' data-count='none'>Tweet</a>
+
+    <small>Built off Gregor Aisch's <a href='http://vis4.net/blog/posts/avoid-equidistant-hsv-colors'>demo</a> and color conversion library <a href='https://github.com/gka/chroma.js'>chroma.js</a>. Map powered by <a href='http://d3js.org'>D3</a></small>
+  </div>
+</header>
+
+<div class='limiter pad4y'>
+
+  <div class='pin-right'>
+    <a href='#picker' class='sprite icon picker js-mode' data-tooltip='Colorpicker'></a>
+    <a href='#visualization' class='sprite icon map js-mode' data-tooltip='Visualize on a map'></a>
   </div>
 
-  <div class='limiter'>
-    <a href='#' class='icon' id='visualization-toggle' rel='tooltip' title='Visualize on a map'>&nbsp;</a>
-  </div>
-
-  <div id='modes' class='clearfix'>
-    <div id='color-picker' class='active section'>
-      <div class='limiter clearfix'>
-          <ul class='axis-select'></ul>
-          <div class='canvas'>
-            <div id='bg'>
-              <canvas id='colorspace' width='210' height='210'></canvas>
-            </div>
-            <canvas id='grad' width='440' height='440'></canvas>
-            <div class='drag_cont'>
-              <div class='drag from'></div>
-              <div class='drag to'></div>
-            </div>
-          </div>
-          <div class='sidebar'>
-            <div class='inner'>
-              <div id='visual-output'></div>
-              <div id='code-output'></div>
-            </div>
-            <div id='controls'>
-              <a data-type='add' href='#' rel='tooltip' title='Add a swatch' >+</a>
-              <a data-type='subtract' class='subtract' href='#' rel='tooltip' title='Remove a swatch'>-</a>
-            </div>
-          </div>
-          <div class='slider'>
-            <div id='sl-z' class='slider'></div>
-            <div id='sl-val'></div>
-          </div>
-        </div>
+  <section id='picker' class='active contain'>
+    <ul class='axis-select'></ul>
+    <div class='canvas fl'>
+      <div id='bg'>
+        <canvas id='colorspace' width='210' height='210'></canvas>
       </div>
-    <div id='visualization' class='section'></div>
-    <div id='legend'>
+      <canvas id='grad' width='440' height='440'></canvas>
+      <div class='drag_cont'>
+        <div class='drag from'></div>
+        <div class='drag to'></div>
+      </div>
+      <div class='slider contain'>
+        <div id='sl-z' class='slider'></div>
+        <small id='sl-val' class='quiet'></small>
+      </div>
+    </div>
+
+    <div class='sidebar'>
+      <div class='inner'>
+        <div id='visual-output'></div>
+        <div id='code-output'></div>
+      </div>
+      <div id='controls'>
+        <a data-type='add' href='#' data-tooltip='Add a swatch' >+</a>
+        <a data-type='subtract' class='subtract' href='#' data-tooltip='Remove a swatch'>-</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id='visualization' class='hidden'>
+    <div id='legend' class='legend'>
       <h4>U.S Unemployment 2008</h4>
       <ul id='legend-output' class='clearfix'></ul>
       <div class='clearfix'>
         <span class='key low'>Low</span>
-		<span class='key high'>High</span>
+    <span class='key high'>High</span>
       </div>
     </div>
-  <div id='load'></div>
-  </div>
+  </section>
+
+</div>
+
+<script src='js/jquery.min.js'></script>
+<script src='js/jquery-ui.js'></script>
+<script src='js/chroma.min.js'></script>
+<script src='js/d3.v3.min.js'></script>
+<script src='js/d3.geo.js'></script>
+<script src='app.js'></script>
 <script>
-  $(document).ready(function() {
-        if (location.hash === '') location.hash = '/hlc/6/1/16534C/E2E062';
-        var color = new Colorpicker;
-        var path = d3.geo.path()
-            .projection(d3.geo.albersUsa()
-            .scale(960)
-            .translate([480, 265]));
-
-        var svg = d3.select('#visualization')
-            .append('svg:svg')
-            .attr('width', 960)
-            .attr('height', 500);
-
-        var counties = svg.append('svg:g').attr('id', 'counties');
-        var pad = d3.format('05d');
-
-        var chropleth = function() {
-            d3.json('json/unemployment.json', function(data) {
-                var quantize = d3.scale.quantile().domain(d3.values(data)).range(d3.range(color.colorArray.length));
-                d3.json('json/us-counties.json', function(json) {
-                    counties.selectAll('path').data(json.features).enter().append('svg:path').attr('style', function (d) {
-                        return 'fill:' + color.colorArray[quantize(data[pad(d.id)])] + ';';
-                    })
-                    .attr('d', path).append('svg:title').text(function (d) {
-                        return d.properties.name + ': ' + data[pad(d.id)] + '%';
-                    });
-                    loading('stop');
-                });
-            });
-        }
-
-        $('a[rel=tooltip]').tooltip({
-              live: true
-        });
-
-        // Remove vis first.
-        var vis = $('#visualization').detach(),
-            picker;
-
-        $('#visualization-toggle').toggle(function () {
-              $('.tooltip').remove();
-              $(this).addClass('active').attr('title', 'Back to colorpicker')
-              picker = $('#color-picker').detach();
-              $('#legend').addClass('active');
-              vis.appendTo('#modes');
-              vis = null;
-              chropleth();
-              loading('start');
-          }, function() {
-              loading('stop');
-              $('#load').removeClass('active');
-              $(this).removeClass('active').attr('title', 'Visualize on a map')
-              vis = $('#visualization').detach();
-              $('#legend').removeClass('active');
-              picker.appendTo('#modes');
-              picker = null;
-              counties.selectAll('path').remove();
-        });
-    });
-  !function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (!d.getElementById(id)) {
-      js = d.createElement(s);
-      js.id = id;
-      js.src = '//platform.twitter.com/widgets.js';
-      fjs.parentNode.insertBefore(js,fjs);
-    }
-  }(document,'script','twitter-wjs');
+!function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (!d.getElementById(id)) {
+    js = d.createElement(s);
+    js.id = id;
+    js.src = '//platform.twitter.com/widgets.js';
+    fjs.parentNode.insertBefore(js,fjs);
+  }
+}(document,'script','twitter-wjs');
 
 var analytics=analytics||[];(function(){var e=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group"],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
 analytics.load("ppyh4q5xb3");
