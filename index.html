@@ -2,145 +2,112 @@
 <html>
   <head>
   <meta charset='utf-8' />
-  <title>Colorpicker for Data | Tristen</title>
-  <link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon' />
-  <link rel='stylesheet' href='app.css' />
-	<script src='scripts/jquery.min.js'></script>
-	<script src='scripts/jquery-ui.js'></script>
-  <script src='scripts/chroma.js'></script>
-  <script src='scripts/bootstrap-tooltip.js'></script>
-  <script src='scripts/spin.min.js'></script>
-  <script src='scripts/d3.v3.min.js'></script>
-  <script src='scripts/d3.geo.js'></script>
-  <script src='app.js'></script>
+  <title>Colorpicker for data | tristen</title>
+
+  <meta name='twitter:site' content='@fallsemo' />
+  <meta property='og:site_name' content='Colorpicker for data' />
+  <meta name='twitter:url' content='http://tristen.ca/hcl-picker/' />
+  <meta name='twitter:domain' content='http://tristen.ca/hcl-picker/' />
+  <meta property='og:url' content='http://tristen.ca/hcl-picker/' />
+  <meta name='twitter:title' content='Colorpicker for data' />
+  <meta property='og:title' content='Colorpicker for data' />
+  <meta name='twitter:description' content='Avoiding equidistant HSV colors' />
+  <meta property='og:description' content='Avoiding equidistant HSV colors' />
+  <meta name='twitter:image' content='img/twitter-card.png' />
+  <meta name='st:image' content='img/twitter-card.png' />
+  <meta property='og:image' content='img/twitter-card.png' />
+  <meta property='og:type' content='website' />
+  <meta name='twitter:card' content='summary_large_image' />
+  <link rel='shortcut icon' href='img/favicon.png' type='image/x-icon' />
+  <link rel='stylesheet' href='base.css' />
+  <link rel='stylesheet' href='site.css' />
 </head>
 <body>
 
-  <div class='heading'>
-    <div class='limiter'>
-      <h1>
-        <span class='branding'>HCL</span>
-        <span class='paraphrase'><a href='http://en.wikipedia.org/wiki/Munsell_color_system' class='acronym'>hue, chroma, lightness</a> colorpicker for data.</span><a href='https://twitter.com/share' class='twitter-share-button' data-url='http://tristen.ca/hcl-picker/' data-text='A Colorpicker for Data:' data-via='fallsemo' data-count='none'>Tweet</a>
-        <small>Built off Gregor Aisch's <a href='http://vis4.net/blog/posts/avoid-equidistant-hsv-colors'>demo</a> and color conversion library <a href='https://github.com/gka/chroma.js'>chroma.js</a>. Map powered by <a href='http://d3js.org'>D3</a></small>
-      </h1>
+<header class='fill-white pad2y space-bottom2'>
+  <div class='limiter clearfix'>
+    <div class='col8 margin2'>
+      <a href='/' class='sprite logo fl'>HCL</a>
+      <div class='fl pad1x pad0y'>
+        <h1>Colorpicker for data</h1>
+        <span class='quiet'>Built off Gregor Aisch's <a href='http://vis4.net/blog/posts/avoid-equidistant-hsv-colors'>article</a> and color conversion library <a href='https://github.com/gka/chroma.js'>chroma.js</a>. Map powered by <a href='http://d3js.org'>D3</a>.</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class='limiter'>
+
+  <div class='col12 clearfix'>
+    <div class='pill col4 margin4 clearfix'><!--
+      --><a href='#picker' class='button active col6 js-mode'>
+        <span class='sprite icon picker'></span> Colorpicker
+      </a><!--
+      --><a href='#visualization' class='button col6 js-mode'>
+        <span class='sprite icon map'></span> Visualized
+      </a>
     </div>
   </div>
 
-  <div class='limiter'>
-    <a href='#' class='icon' id='visualization-toggle' rel='tooltip' title='Visualize on a map'>&nbsp;</a>
-  </div>
-
-  <div id='modes' class='clearfix'>
-    <div id='color-picker' class='active section'>
-      <div class='limiter clearfix'>
-          <ul class='axis-select'></ul>
-          <div class='canvas'>
-            <div id='bg'>
-              <canvas id='colorspace' width='210' height='210'></canvas>
-            </div>
-            <canvas id='grad' width='440' height='440'></canvas>
-            <div class='drag_cont'>
-              <div class='drag from'></div>
-              <div class='drag to'></div>
-            </div>
-          </div>
-          <div class='sidebar'>
-            <div class='inner'>
-              <div id='visual-output'></div>
-              <div id='code-output'></div>
-            </div>
-            <div id='controls'>
-              <a data-type='add' href='#' rel='tooltip' title='Add a swatch' >+</a>
-              <a data-type='subtract' class='subtract' href='#' rel='tooltip' title='Remove a swatch'>-</a>
-            </div>
-          </div>
-          <div class='slider'>
-            <div id='sl-z' class='slider'></div>
-            <div id='sl-val'></div>
-          </div>
-        </div>
+  <section id='picker' class='picker active contain space-bottom2 space-top2'>
+    <nav class='axis-select pin-topleft'></nav>
+    <div class='canvas fl'>
+      <div id='bg'>
+        <canvas id='colorspace' width='210' height='210'></canvas>
       </div>
-    <div id='visualization' class='section'></div>
-    <div id='legend'>
+      <canvas id='grad' width='440' height='440'></canvas>
+      <div class='drag_cont'>
+        <div class='drag from'></div>
+        <div class='drag to'></div>
+      </div>
+      <input id='slider' class='slider col12' type='range' value='0' min='0' max='1' step='0.05' data-tooltip='Adjust chroma' />
+
+      <div class='slider-output pin-bottomleft'>
+        <span class='js-slider-title'></span>
+        <span class='js-slider-value'></span>
+      </div>
+    </div>
+    <div class='sidebar'>
+      <div class='output pad1'>
+        <div id='visual-output' class='fl'></div>
+        <div id='code-output' class='fl hexes quiet'></div>
+      </div>
+
+      <a href='#' id='select' class='pin-bottom button col12 js-select select-all control unround'>
+        Select all
+        <div class='sprite icon clipboard'></div>
+      </a>
+
+      <div id='controls' class='controls pill unround pin-bottom col12 clearfix'><!--
+        --><a href='#' class='col6 button unround js-add' data-tooltip='Add a swatch' >
+          <span class='icon sprite plus'></span>
+        </a><!--
+        --><a href='#' class='col6 button round-bottomright js-subtract' data-tooltip='Remove a swatch'>
+          <span class='icon sprite minus'></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id='visualization' class='hidden'>
+    <div id='legend' class='legend dark pin-bottomright pad1'>
       <h4>U.S Unemployment 2008</h4>
       <ul id='legend-output' class='clearfix'></ul>
       <div class='clearfix'>
-        <span class='key low'>Low</span>
-		<span class='key high'>High</span>
+        <span class='fl'>Low</span>
+        <span class='fr'>High</span>
       </div>
     </div>
-  <div id='load'></div>
-  </div>
+  </section>
+
+</div>
+
+<script src='js/chroma.js'></script>
+<script src='js/d3.v3.min.js'></script>
+<script src='js/d3.geo.js'></script>
+<script src='js/ZeroClipboard.min.js'></script>
+<script src='app.js'></script>
 <script>
-  $(document).ready(function() {
-        if (location.hash === '') location.hash = '/hlc/6/1/16534C/E2E062';
-        var color = new Colorpicker;
-        var path = d3.geo.path()
-            .projection(d3.geo.albersUsa()
-            .scale(960)
-            .translate([480, 265]));
-
-        var svg = d3.select('#visualization')
-            .append('svg:svg')
-            .attr('width', 960)
-            .attr('height', 500);
-
-        var counties = svg.append('svg:g').attr('id', 'counties');
-        var pad = d3.format('05d');
-
-        var chropleth = function() {
-            d3.json('json/unemployment.json', function(data) {
-                var quantize = d3.scale.quantile().domain(d3.values(data)).range(d3.range(color.colorArray.length));
-                d3.json('json/us-counties.json', function(json) {
-                    counties.selectAll('path').data(json.features).enter().append('svg:path').attr('style', function (d) {
-                        return 'fill:' + color.colorArray[quantize(data[pad(d.id)])] + ';';
-                    })
-                    .attr('d', path).append('svg:title').text(function (d) {
-                        return d.properties.name + ': ' + data[pad(d.id)] + '%';
-                    });
-                    loading('stop');
-                });
-            });
-        }
-
-        $('a[rel=tooltip]').tooltip({
-              live: true
-        });
-
-        // Remove vis first.
-        var vis = $('#visualization').detach(),
-            picker;
-
-        $('#visualization-toggle').toggle(function () {
-              $('.tooltip').remove();
-              $(this).addClass('active').attr('title', 'Back to colorpicker')
-              picker = $('#color-picker').detach();
-              $('#legend').addClass('active');
-              vis.appendTo('#modes');
-              vis = null;
-              chropleth();
-              loading('start');
-          }, function() {
-              loading('stop');
-              $('#load').removeClass('active');
-              $(this).removeClass('active').attr('title', 'Visualize on a map')
-              vis = $('#visualization').detach();
-              $('#legend').removeClass('active');
-              picker.appendTo('#modes');
-              picker = null;
-              counties.selectAll('path').remove();
-        });
-    });
-  !function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (!d.getElementById(id)) {
-      js = d.createElement(s);
-      js.id = id;
-      js.src = '//platform.twitter.com/widgets.js';
-      fjs.parentNode.insertBefore(js,fjs);
-    }
-  }(document,'script','twitter-wjs');
-
 var analytics=analytics||[];(function(){var e=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group"],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
 analytics.load("ppyh4q5xb3");
 </script>

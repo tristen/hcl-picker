@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="80"
+   height="100"
+   id="svg129324"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="sprite.svg"
+   inkscape:export-filename="./sprite@2x.png"
+   inkscape:export-xdpi="179.99998"
+   inkscape:export-ydpi="179.99998">
+  <defs
+     id="defs129326">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath16502">
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;fill:#587088;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path16504"
+         sodipodi:cx="-174.06879"
+         sodipodi:cy="-4.2665939"
+         sodipodi:rx="4.0982738"
+         sodipodi:ry="4.0982738"
+         d="m -169.97051,-4.2665939 a 4.0982738,4.0982738 0 1 1 -8.19655,0 4.0982738,4.0982738 0 1 1 8.19655,0 z"
+         transform="matrix(1.9520414,0,0,1.9520414,169.63525,850.74979)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath18096">
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;fill:#587088;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path18098"
+         sodipodi:cx="44.841457"
+         sodipodi:cy="34.361153"
+         sodipodi:rx="17.082458"
+         sodipodi:ry="17.082458"
+         d="m 61.923916,34.361153 a 17.082458,17.082458 0 1 1 -34.164917,0 17.082458,17.082458 0 1 1 34.164917,0 z"
+         transform="matrix(1.6098385,0,0,1.6098385,-44.687507,824.54627)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath7115">
+      <path
+         sodipodi:type="arc"
+         style="opacity:0.98000004;color:#000000;fill:#fd7c6b;fill-opacity:1;fill-rule:nonzero;stroke:#c39475;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path7117"
+         sodipodi:cx="170.23596"
+         sodipodi:cy="68.076118"
+         sodipodi:rx="33.057243"
+         sodipodi:ry="33.587574"
+         d="m 203.29321,68.076118 a 33.057243,33.587574 0 1 1 -66.11449,0 33.057243,33.587574 0 1 1 66.11449,0 z"
+         transform="matrix(0.60501113,0,0,0.59545831,32.005348,973.82569)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath7182">
+      <rect
+         style="opacity:0.98000004;color:#000000;fill:#fd7c6b;fill-opacity:1;fill-rule:nonzero;stroke:#c39475;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect7184"
+         width="32"
+         height="32"
+         x="180"
+         y="945.36218"
+         ry="16" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath7719">
+      <path
+         sodipodi:type="arc"
+         style="opacity:0.98000004;color:#000000;fill:#000000;fill-opacity:1;stroke:#c39475;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path7721"
+         sodipodi:cx="148.125"
+         sodipodi:cy="56"
+         sodipodi:rx="15.125"
+         sodipodi:ry="22.75"
+         d="M 163.25,56 A 15.125,22.75 0 1 1 133,56 15.125,22.75 0 1 1 163.25,56 z"
+         transform="matrix(1.9834711,0,0,1.3186813,-137.80165,874.51603)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath7719-6">
+      <path
+         sodipodi:type="arc"
+         style="opacity:0.98000004;color:#000000;fill:#000000;fill-opacity:1;stroke:#c39475;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path7721-9"
+         sodipodi:cx="148.125"
+         sodipodi:cy="56"
+         sodipodi:rx="15.125"
+         sodipodi:ry="22.75"
+         d="M 163.25,56 A 15.125,22.75 0 1 1 133,56 15.125,22.75 0 1 1 163.25,56 z"
+         transform="matrix(1.9834711,0,0,1.3186813,-137.80165,874.51603)" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="476.91552"
+     inkscape:cy="370.46856"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="752"
+     inkscape:window-x="4"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid129859"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       color="#000000"
+       opacity="0.03921569"
+       empcolor="#000000"
+       empopacity="0.07843137" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata129329">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="underlay"
+     style="display:none"
+     transform="translate(0,-100)">
+    <rect
+       style="opacity:0.98000004;color:#000000;fill:#f9f9f9;fill-opacity:1;fill-rule:nonzero;stroke:#c39475;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect6869"
+       width="80"
+       height="100"
+       x="0"
+       y="100" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path7757"
+       d="m 60,140 0,10 0,10 10,0 10,0 0,-10 0,-10 -10,0 -10,0 z"
+       style="color:#000000;fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  </g>
+  <g
+     inkscape:label="sprite"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-952.36218)">
+    <image
+       width="72.416664"
+       height="87.083336"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABfCAIAAAAmgA1KAAAAA3NCSVQICAjb4U/gAAABg0lEQVR4 nO2aQUoEQQxFK91BFBx6yoULF8KAF/AC3v9QanuB/wcCBcLPf8ukSPcjiz/VTNw+vwYkNlzf4l/O x0bOB5mPzpMRothWF9vqYltdMo4Dd0i+nTQ/C7l39zyunyvm9NqtbXWxrS621SV/5wV3qvfVYg7T 3F51f3be2lYX2+piW13ynM+4U7x/8jp58qL5QecU3kUT2+piW11sq0vGfISNWJFv9+bQz8PF85X5 vXZrW11sq4ttdcmn+QAb9PMtzWF2Hter8+m1tzK/125tq4ttdbGtLnl9wcIbCVCWb7ROcnKvzlkx v9dubauLbXWxrS75OnFg7XHCOss9mp/lvMXP3Vfkdq/d2lYX2+piW13y7foDGyzHeO6RnFw1p5i3 8PdCr93aVhfb6mJbXfKd5S2535bybYyRi/I2V+Rzr93aVhfb6mJbXfJ2fMNGPT+rOUleaNkcUOy1 W9vqYltdbKtLflxw3lbvpSwPab2Sk6Oew4n+79Vrt7bVxba69LL9A+DrGnrqRvMnAAAAAElFTkSu QmCC "
+       id="image16452"
+       x="-8.9380941"
+       y="836.08514"
+       clip-path="url(#clipPath18096)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(1.0909092,0,0,1.0909092,1.7238646e-7,-127.48752)" />
+    <rect
+       style="color:#000000;fill:#2c2c2c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect129861"
+       width="20"
+       height="20"
+       x="-56"
+       y="815.36218"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="815.36218"
+       x="-36"
+       height="20"
+       width="20"
+       id="rect129863"
+       style="color:#000000;fill:#252525;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+       y="835.36218"
+       x="16"
+       height="20"
+       width="20"
+       id="rect129865"
+       style="color:#000000;fill:#2c2c2c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(-1,1)" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+       style="color:#000000;fill:#252525;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect129867"
+       width="20"
+       height="20"
+       x="36"
+       y="835.36218"
+       transform="scale(-1,1)" />
+    <g
+       style="font-size:52.58620453px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica"
+       id="text18030"
+       transform="translate(0,-48.000001)">
+      <path
+         d="m 18,871.36218 2,0 0,8 4,0 0,-8 2,0 0,18 -2,0 0,-8 -4,0 0,8 -2,0"
+         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#ffffff;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         id="path18089"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccccccc" />
+      <path
+         d="m 36,885.36218 0,4 c 0,0 1,0 -3,0 -4,0 -4,0 -4,-4 l 0,-7 0,-3 c 0,-4 0,-4 4,-4 l 3,0 0,4 -2,0 0,-2 c 0,0 -1,0 -2,0 -1,0 -1,0 -1,1 l 0,4 0,8 c 0,1 0.202605,1 1,1 0.797394,0 2,0 2,0 l 0,-2"
+         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#ffffff;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         id="path18091"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cczcccccccccccczcc" />
+      <path
+         d="m 38,871.36218 2,0 0,16 5,0 0,2 -7,0"
+         style="font-size:19.0334568px;font-weight:bold;font-stretch:condensed;fill:#ffffff;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+         id="path18093"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccc" />
+    </g>
+    <g
+       style="fill:#a0a0a0;fill-opacity:1"
+       transform="translate(-110,70)"
+       id="g5577">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path5583"
+         transform="translate(0,862.36218)"
+         d="m 184,45 -9,9 0,2 11,-11 z"
+         style="fill:#a0a0a0;fill-opacity:1;stroke:none" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4163"
+       d="m 62,955.36218 2,0 0,1 5,0 0,1 1,0 0,1 2,0 0,2 1,0 0,-2 1,0 0,1 1,0 0,1 1,0 1,-2 1,0 0,-1 1,0 0,3 -1,0 0,1 -1,0 0,1 1,0 0,1 -2,1 1,2 0,2 -1,0 -2,-3 -1,0 -1,1 -1,0 -1,-1 -1,0 -1,2 -1,0 0,1 -1,0 -1,-2 -2,0 0,-2 -1,0 -2,-2 0,-4 z"
+       style="fill:#a0a0a0;fill-opacity:1;stroke:none"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccc" />
+    <path
+       style="font-size:19.0334568px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#a4a4a4;fill-opacity:1;stroke:none;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
+       d="m -16.3125,910.36218 c -2.67969,0.0547 -2.6875,0.5 -2.6875,4 l 0,4 c 0.0328,2.96253 0.38095,3 4,3 0.7974,0 1,0 1,1 l 0,1 0,3 0,1 c 0,1 -0.2026,1 -1,1 l -2,0 0,-2 -2,0 0,4 3,0 c 4,0 4,0 4,-4 l 0,-3 c 0,-4 0,-4 -3,-4 -1,0 -2,0 -2,-1 l 0,-1 0,-4 c 0,-1 0,-1 1,-1 l 2,0 0,2 2,0 0,-4 -3,0 c -0.5,0 -0.92969,-0.008 -1.3125,0 z"
+       id="path18091-1"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="opacity:0.98000004;color:#000000;fill:#a0a0a0;fill-opacity:1;fill-rule:nonzero;stroke:#c39475;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect6983"
+       width="6"
+       height="5.9999976"
+       x="63"
+       y="983.36218"
+       ry="2.9999988" />
+    <rect
+       ry="2.9999988"
+       y="974.36218"
+       x="72"
+       height="5.9999976"
+       width="6"
+       id="rect6985"
+       style="opacity:0.98000004;color:#000000;fill:#a0a0a0;fill-opacity:1;fill-rule:nonzero;stroke:#c39475;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       y="945.36218"
+       x="230"
+       height="32"
+       width="32"
+       id="rect7157"
+       style="opacity:0.98000004;color:#000000;fill:none;stroke:#c39475;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="./favicon.png"
+       inkscape:export-xdpi="89.723083"
+       inkscape:export-ydpi="89.723083" />
+    <g
+       id="g7710"
+       clip-path="url(#clipPath7719)"
+       transform="translate(-126.00001,34)">
+      <rect
+         transform="scale(-1,1)"
+         y="916.36218"
+         x="-196"
+         height="9"
+         width="80"
+         id="rect7159"
+         style="color:#000000;fill:#10596c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+         style="color:#000000;fill:#406183;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect7161"
+         width="80"
+         height="9"
+         x="-196"
+         y="925.36218"
+         transform="scale(-1,1)" />
+      <rect
+         transform="scale(-1,1)"
+         y="934.36218"
+         x="-196"
+         height="9"
+         width="80"
+         id="rect7163"
+         style="color:#000000;fill:#6f6592;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+         style="color:#000000;fill:#9d6796;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect7165"
+         width="80"
+         height="9"
+         x="-196"
+         y="943.36218"
+         transform="scale(-1,1)" />
+      <rect
+         transform="scale(-1,1)"
+         y="952.36218"
+         x="-196"
+         height="9"
+         width="80"
+         id="rect7167"
+         style="color:#000000;fill:#c7688f;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+         style="color:#000000;fill:#e96d80;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect7169"
+         width="80"
+         height="9"
+         x="-196"
+         y="961.36218"
+         transform="scale(-1,1)" />
+      <rect
+         transform="scale(-1,1)"
+         y="970.36218"
+         x="-196"
+         height="9"
+         width="80"
+         id="rect7171"
+         style="color:#000000;fill:#fd7c6b;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+    </g>
+    <g
+       id="g7173"
+       clip-path="url(#clipPath7182)"
+       inkscape:export-filename="./favicon.png"
+       inkscape:export-xdpi="89.723083"
+       inkscape:export-ydpi="89.723083"
+       transform="translate(50,0)">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+         style="color:#000000;fill:#10596c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect7070-5"
+         width="40"
+         height="4.9999938"
+         x="-216"
+         y="944.36218"
+         transform="scale(-1,1)" />
+      <rect
+         transform="scale(-1,1)"
+         y="949.36218"
+         x="-216"
+         height="5"
+         width="40"
+         id="rect7072-1"
+         style="color:#000000;fill:#406183;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+         style="color:#000000;fill:#6f6592;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect7074-7"
+         width="40"
+         height="5"
+         x="-216"
+         y="954.36218"
+         transform="scale(-1,1)" />
+      <rect
+         transform="scale(-1,1)"
+         y="959.36218"
+         x="-216"
+         height="5"
+         width="40"
+         id="rect7076-0"
+         style="color:#000000;fill:#9d6796;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+         style="color:#000000;fill:#c7688f;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect7086-8"
+         width="40"
+         height="5"
+         x="-216"
+         y="964.36218"
+         transform="scale(-1,1)" />
+      <rect
+         transform="scale(-1,1)"
+         y="969.36218"
+         x="-216"
+         height="5"
+         width="40"
+         id="rect7088-6"
+         style="color:#000000;fill:#e96d80;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+         style="color:#000000;fill:#fd7c6b;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect7090-0"
+         width="40"
+         height="5"
+         x="-216"
+         y="974.36218"
+         transform="scale(-1,1)" />
+    </g>
+    <rect
+       transform="scale(-1,1)"
+       y="1006.3622"
+       x="-196"
+       height="9"
+       width="80"
+       id="rect7696"
+       style="color:#000000;fill:#10596c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+       style="color:#000000;fill:#406183;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect7698"
+       width="80"
+       height="9"
+       x="-196"
+       y="1015.3622"
+       transform="scale(-1,1)" />
+    <rect
+       transform="scale(-1,1)"
+       y="1024.3622"
+       x="-196"
+       height="9"
+       width="80"
+       id="rect7700"
+       style="color:#000000;fill:#6f6592;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+       style="color:#000000;fill:#9d6796;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect7702"
+       width="80"
+       height="9"
+       x="-196"
+       y="1033.3622"
+       transform="scale(-1,1)" />
+    <rect
+       transform="scale(-1,1)"
+       y="1042.3622"
+       x="-196"
+       height="9"
+       width="80"
+       id="rect7704"
+       style="color:#000000;fill:#c7688f;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+       style="color:#000000;fill:#e96d80;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect7706"
+       width="80"
+       height="9"
+       x="-196"
+       y="1051.3622"
+       transform="scale(-1,1)" />
+    <rect
+       transform="scale(-1,1)"
+       y="1060.3622"
+       x="-196"
+       height="9"
+       width="80"
+       id="rect7708"
+       style="color:#000000;fill:#fd7c6b;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#c39475;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 39.78125,970.48718 c -0.807409,0.0406 -1.63488,0.38488 -2.28125,1.03125 l -4.09375,4.09375 c -0.07347,0.0735 -0.121751,0.17227 -0.1875,0.25 l -0.03125,-0.0312 -0.71875,0.71875 -2.125,-2.125 -1.40625,1.40625 4.25,4.25 4.25,4.25 1.40625,-1.40625 -2.125,-2.125 0.71875,-0.71875 -0.03125,-0.0312 c 0.07767,-0.0658 0.176495,-0.11399 0.25,-0.1875 L 41.75,975.76843 c 1.292731,-1.29273 1.393966,-3.29355 0.21875,-4.46875 -0.587605,-0.5876 -1.380091,-0.85305 -2.1875,-0.8125 z"
+       id="rect7731"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.6;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 32.065744,976.9619 -12.192387,12.19238 -1.414215,4.24265 1.414213,1.41422 4.242643,-1.41423 12.192387,-12.19238 z m 0.707106,2.12132 1.414216,1.41421 -11.485284,11.48529 -2.121318,0.7071 0.707106,-2.12132 z"
+       id="rect7742"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccc" />
+    <rect
+       y="958.36218"
+       x="241"
+       height="2"
+       width="10"
+       id="rect7750"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#c39475;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="./favicon.png"
+       inkscape:export-xdpi="89.723083"
+       inkscape:export-ydpi="89.723083" />
+    <path
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:connector-curvature="0"
+       id="path7752"
+       d="m 243.00006,955.36221 4.8e-4,3.75734 0.84375,0 c 0.54439,0.61581 1.31005,0.99999 2.15626,0.99999 0.84618,-10e-6 1.61185,-0.38416 2.15625,-0.99998 l 0.84376,2e-5 -5.6e-4,-3.7574 c -2.4e-4,-1.82821 -1,-3 -3,-3 -2,0 -2.96342,1.66313 -2.99994,3.00003 z"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#c39475;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="./favicon.png"
+       inkscape:export-xdpi="89.723083"
+       inkscape:export-ydpi="89.723083" />
+    <path
+       sodipodi:nodetypes="ccccccccccccc"
+       inkscape:connector-curvature="0"
+       id="path7754"
+       d="m 242.99999,958.36219 1e-5,9.99998 2,3 2.00001,10e-6 1.99999,-3.00001 0,-9.99999 z m 2.00001,2 2,-1e-5 1e-5,8.00001 -1.00001,0.99999 -1,-1.00001 z"
+       style="opacity:0.75;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="./favicon.png"
+       inkscape:export-xdpi="89.723083"
+       inkscape:export-ydpi="89.723083" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path6973"
+       d="m 7,1025.3622 0,2 2,0 0,-2 -2,0 z m 4,0 0,2 2,0 0,-2 -2,0 z m -4,4 0,2 2,0 0,-2 -2,0 z m 4,0 0,2 2,0 0,-2 -2,0 z m -4,4 0,2 2,0 0,-2 -2,0 z m 4,0 0,2 2,0 0,-2 -2,0 z m -4,4 0,2 2,0 0,-2 -2,0 z m 4,0 0,2 2,0 0,-2 -2,0 z"
+       style="color:#000000;fill:#a0a0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       style="color:#000000;fill:#a0a0a0;fill-opacity:0.98039216;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 70,996.36218 c 0,0 -1,0 -1,0.9375 l 0,8.12502 c 0,0.9375 1,0.9375 1,0.9375 0,0 1,0 1,-0.9375 l 0,-8.12502 c 0,-0.9375 -1,-0.9375 -1,-0.9375 z"
+       id="rect7783"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       sodipodi:nodetypes="cssccsscc"
+       inkscape:connector-curvature="0"
+       id="path7792"
+       d="m 66,1020.3622 c -1,0 -1,1 -1,1 l 0,0 c 0,0 0,1 1,1 l 8,0 c 1,0 1,-1 1,-1 l 0,0 c 0,0 0,-1 -1,-1 z"
+       style="color:#000000;fill:#a0a0a0;fill-opacity:0.98039216;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       style="color:#000000;fill:#a0a0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 65.90625,1037.3622 c -0.498599,0 -0.90625,0.4076 -0.90625,0.9062 l 0,8.1875 c 0,0.4986 0.407651,0.9063 0.90625,0.9063 l 9.1875,0 c 0.498599,0 0.90625,-0.4077 0.90625,-0.9063 l 0,-8.1875 c 0,-0.4986 -0.407651,-0.9062 -0.90625,-0.9062 z m 1.09375,3 7,0 0,1 -7,0 z m 0,2 5,0 0,1 -5,0 z m 0,2 6,0 0,1 -6,0 z"
+       id="rect7796"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssssccccccccccccccc" />
+    <path
+       style="color:#000000;fill:#a0a0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 69,1034.3622 c -0.553999,0 -1,0.446 -1,1 l 0,1 0,2 5,0 0,-2 0,-1 c 0,-0.554 -0.446001,-1 -1,-1 z"
+       id="rect7798"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ssccccsss" />
+    <path
+       style="color:#000000;fill:#a0a0a0;fill-opacity:0.98039216;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 66,1000.3622 c -1,0 -1,1 -1,1 l 0,0 c 0,0 0,1 1,1 l 8,0 c 1,0 1,-1 1,-1 l 0,0 c 0,0 0,-1 -1,-1 z"
+       id="path7834"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssccsscc" />
+    <rect
+       style="color:#000000;fill:#f9f9f9;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect7836"
+       width="640"
+       height="480"
+       x="160"
+       y="412.36218" />
+    <g
+       id="g7893"
+       transform="translate(-19.999991,100.00005)">
+      <g
+         transform="matrix(3.9999999,0,0,3.9999999,-124.00002,-3301.0865)"
+         clip-path="url(#clipPath7719-6)"
+         id="g7710-2">
+        <rect
+           inkscape:export-ydpi="90"
+           inkscape:export-xdpi="90"
+           inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+           style="color:#000000;fill:#10596c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect7159-4"
+           width="80"
+           height="9"
+           x="-196"
+           y="916.36218"
+           transform="scale(-1,1)" />
+        <rect
+           transform="scale(-1,1)"
+           y="925.36218"
+           x="-196"
+           height="9"
+           width="80"
+           id="rect7161-0"
+           style="color:#000000;fill:#406183;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90" />
+        <rect
+           inkscape:export-ydpi="90"
+           inkscape:export-xdpi="90"
+           inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+           style="color:#000000;fill:#6f6592;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect7163-2"
+           width="80"
+           height="9"
+           x="-196"
+           y="934.36218"
+           transform="scale(-1,1)" />
+        <rect
+           transform="scale(-1,1)"
+           y="943.36218"
+           x="-196"
+           height="9"
+           width="80"
+           id="rect7165-8"
+           style="color:#000000;fill:#9d6796;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90" />
+        <rect
+           inkscape:export-ydpi="90"
+           inkscape:export-xdpi="90"
+           inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+           style="color:#000000;fill:#c7688f;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect7167-2"
+           width="80"
+           height="9"
+           x="-196"
+           y="952.36218"
+           transform="scale(-1,1)" />
+        <rect
+           transform="scale(-1,1)"
+           y="961.36218"
+           x="-196"
+           height="9"
+           width="80"
+           id="rect7169-8"
+           style="color:#000000;fill:#e96d80;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90" />
+        <rect
+           inkscape:export-ydpi="90"
+           inkscape:export-xdpi="90"
+           inkscape:export-filename="/Users/tristen/github/hcl-picker/images/canvas.png"
+           style="color:#000000;fill:#fd7c6b;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect7171-6"
+           width="80"
+           height="9"
+           x="-196"
+           y="970.36218"
+           transform="scale(-1,1)" />
+      </g>
+      <g
+         id="g7889">
+        <path
+           style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#c39475;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 539.12501,444.86218 c -3.22964,0.1624 -6.53952,1.53952 -9.125,4.12499 l -16.375,16.375 c -0.294,0.294 -0.487,0.68908 -0.75,1 l -0.1248,-0.1248 -2.875,2.875 -8.5,-8.5 -5.625,5.625 17,17 17,17 5.625,-5.625 -8.5,-8.5 2.875,-2.875 -0.1248,-0.1248 c 0.3108,-0.2632 0.706,-0.45596 1,-0.75 l 16.375,-16.3754 c 5.17092,-5.17092 5.57588,-13.1742 0.875,-17.875 -2.3504,-2.35039 -5.52036,-3.41219 -8.75,-3.24999 z"
+           id="rect7731-8"
+           inkscape:connector-curvature="0" />
+        <path
+           style="opacity:0.6;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 508.26301,470.76105 -48.76956,48.76952 -5.65684,16.9706 5.65684,5.65688 16.97056,-5.65692 48.76956,-48.76952 z m 2.8284,8.48528 5.65688,5.65684 -45.94112,45.94116 -8.48528,2.8284 2.8284,-8.48528 z"
+           id="rect7742-3"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccccccccccc" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#444444;fill-opacity:1;stroke:none;font-family:Sans"
+       x="289.10547"
+       y="789.47156"
+       id="text7906"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7908"
+         x="289.10547"
+         y="789.47156"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#444444;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial Bold">Colorpicker for data</tspan></text>
+  </g>
+</svg>
