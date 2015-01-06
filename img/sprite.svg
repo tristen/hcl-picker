@@ -111,9 +111,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="476.91552"
-     inkscape:cy="370.46856"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="24.367181"
+     inkscape:cy="31.057301"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -249,7 +249,7 @@
          sodipodi:nodetypes="cccccc" />
     </g>
     <g
-       style="fill:#a0a0a0;fill-opacity:1"
+       style="fill:#ffffff;fill-opacity:1"
        transform="translate(-110,70)"
        id="g5577">
       <path
@@ -258,13 +258,13 @@
          id="path5583"
          transform="translate(0,862.36218)"
          d="m 184,45 -9,9 0,2 11,-11 z"
-         style="fill:#a0a0a0;fill-opacity:1;stroke:none" />
+         style="fill:#ffffff;fill-opacity:1;stroke:none" />
     </g>
     <path
        inkscape:connector-curvature="0"
        id="path4163"
        d="m 62,955.36218 2,0 0,1 5,0 0,1 1,0 0,1 2,0 0,2 1,0 0,-2 1,0 0,1 1,0 0,1 1,0 1,-2 1,0 0,-1 1,0 0,3 -1,0 0,1 -1,0 0,1 1,0 0,1 -2,1 1,2 0,2 -1,0 -2,-3 -1,0 -1,1 -1,0 -1,-1 -1,0 -1,2 -1,0 0,1 -1,0 -1,-2 -2,0 0,-2 -1,0 -2,-2 0,-4 z"
-       style="fill:#a0a0a0;fill-opacity:1;stroke:none"
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
        sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccc" />
     <path
        style="font-size:19.0334568px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#a4a4a4;fill-opacity:1;stroke:none;font-family:Swis721 Cn BT;-inkscape-font-specification:Swis721 Cn BT Bold Condensed"
@@ -272,7 +272,7 @@
        id="path18091-1"
        inkscape:connector-curvature="0" />
     <rect
-       style="opacity:0.98000004;color:#000000;fill:#a0a0a0;fill-opacity:1;fill-rule:nonzero;stroke:#c39475;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="opacity:0.98000003999999996;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#c39475;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect6983"
        width="6"
        height="5.9999976"
@@ -286,7 +286,7 @@
        height="5.9999976"
        width="6"
        id="rect6985"
-       style="opacity:0.98000004;color:#000000;fill:#a0a0a0;fill-opacity:1;fill-rule:nonzero;stroke:#c39475;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="opacity:0.98000003999999996;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#c39475;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <rect
        y="945.36218"
        x="230"
@@ -584,9 +584,9 @@
        inkscape:connector-curvature="0"
        id="path6973"
        d="m 7,1025.3622 0,2 2,0 0,-2 -2,0 z m 4,0 0,2 2,0 0,-2 -2,0 z m -4,4 0,2 2,0 0,-2 -2,0 z m 4,0 0,2 2,0 0,-2 -2,0 z m -4,4 0,2 2,0 0,-2 -2,0 z m 4,0 0,2 2,0 0,-2 -2,0 z m -4,4 0,2 2,0 0,-2 -2,0 z m 4,0 0,2 2,0 0,-2 -2,0 z"
-       style="color:#000000;fill:#a0a0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <path
-       style="color:#000000;fill:#a0a0a0;fill-opacity:0.98039216;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#ffffff;fill-opacity:0.98039215999999996;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="m 70,996.36218 c 0,0 -1,0 -1,0.9375 l 0,8.12502 c 0,0.9375 1,0.9375 1,0.9375 0,0 1,0 1,-0.9375 l 0,-8.12502 c 0,-0.9375 -1,-0.9375 -1,-0.9375 z"
        id="rect7783"
        inkscape:connector-curvature="0"
@@ -596,21 +596,21 @@
        inkscape:connector-curvature="0"
        id="path7792"
        d="m 66,1020.3622 c -1,0 -1,1 -1,1 l 0,0 c 0,0 0,1 1,1 l 8,0 c 1,0 1,-1 1,-1 l 0,0 c 0,0 0,-1 -1,-1 z"
-       style="color:#000000;fill:#a0a0a0;fill-opacity:0.98039216;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="color:#000000;fill:#ffffff;fill-opacity:0.98039215999999996;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <path
-       style="color:#000000;fill:#a0a0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="m 65.90625,1037.3622 c -0.498599,0 -0.90625,0.4076 -0.90625,0.9062 l 0,8.1875 c 0,0.4986 0.407651,0.9063 0.90625,0.9063 l 9.1875,0 c 0.498599,0 0.90625,-0.4077 0.90625,-0.9063 l 0,-8.1875 c 0,-0.4986 -0.407651,-0.9062 -0.90625,-0.9062 z m 1.09375,3 7,0 0,1 -7,0 z m 0,2 5,0 0,1 -5,0 z m 0,2 6,0 0,1 -6,0 z"
        id="rect7796"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="sssssssssccccccccccccccc" />
     <path
-       style="color:#000000;fill:#a0a0a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="m 69,1034.3622 c -0.553999,0 -1,0.446 -1,1 l 0,1 0,2 5,0 0,-2 0,-1 c 0,-0.554 -0.446001,-1 -1,-1 z"
        id="rect7798"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ssccccsss" />
     <path
-       style="color:#000000;fill:#a0a0a0;fill-opacity:0.98039216;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#ffffff;fill-opacity:0.98039215999999996;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="m 66,1000.3622 c -1,0 -1,1 -1,1 l 0,0 c 0,0 0,1 1,1 l 8,0 c 1,0 1,-1 1,-1 l 0,0 c 0,0 0,-1 -1,-1 z"
        id="path7834"
        inkscape:connector-curvature="0"
@@ -621,10 +621,16 @@
        width="640"
        height="480"
        x="160"
-       y="412.36218" />
+       y="412.36218"
+       inkscape:export-filename="/Users/tristen/dev/github/hcl-picker/img/twitter-card.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <g
        id="g7893"
-       transform="translate(-19.999991,100.00005)">
+       transform="translate(-19.999991,100.00005)"
+       inkscape:export-filename="/Users/tristen/dev/github/hcl-picker/img/twitter-card.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <g
          transform="matrix(3.9999999,0,0,3.9999999,-124.00002,-3301.0865)"
          clip-path="url(#clipPath7719-6)"
@@ -728,7 +734,10 @@
        x="289.10547"
        y="789.47156"
        id="text7906"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/Users/tristen/dev/github/hcl-picker/img/twitter-card.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan7908"
          x="289.10547"

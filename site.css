@@ -35,7 +35,7 @@ input[type=range] {
 /* For whatever reason, these need to be defined
  * on their own so dont group them */
 input[type=range]::-webkit-slider-thumb {
-  background-color:#252525;
+  background-color:#505050;
   background-image:url(img/sprite@2x.png);
   background-repeat:no-repeat;
   background-size:80px 100px;
@@ -44,7 +44,7 @@ input[type=range]::-webkit-slider-thumb {
   border-radius:0;
   }
 input[type=range]::-ms-thumb {
-  background-color:#252525;
+  background-color:#505050;
   background-image:url(img/sprite@2x.png);
   background-repeat:no-repeat;
   background-size:80px 100px;
@@ -53,7 +53,7 @@ input[type=range]::-ms-thumb {
   border-radius:0;
   }
 input[type=range]::-moz-range-thumb {
-  background-color:#252525;
+  background-color:#505050;
   background-image:url(img/sprite@2x.png);
   background-repeat:no-repeat;
   background-size:80px 100px;
@@ -61,6 +61,14 @@ input[type=range]::-moz-range-thumb {
   height:40px;
   border-radius:0;
   }
+
+.button.mode { color:#808080; }
+.button.mode:hover,
+.button.mode.active { color:#fff; }
+
+.button.mode .icon { opacity:0.5; }
+.button.mode:hover .icon,
+.button.mode.active .icon { opacity:1; }
 
 /* Template classes
 ---------------------------------------------*/
