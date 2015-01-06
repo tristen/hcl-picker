@@ -2,31 +2,55 @@
 <html>
   <head>
   <meta charset='utf-8' />
-  <title>Colorpicker for Data | tristen</title>
-  <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon' />
+  <title>Colorpicker for data | tristen</title>
+
+  <meta name='twitter:site' content='@fallsemo' />
+  <meta property='og:site_name' content='Colorpicker for data' />
+  <meta name='twitter:url' content='http://tristen.ca/hcl-picker/' />
+  <meta name='twitter:domain' content='http://tristen.ca/hcl-picker/' />
+  <meta property='og:url' content='http://tristen.ca/hcl-picker/' />
+  <meta name='twitter:title' content='Colorpicker for data' />
+  <meta property='og:title' content='Colorpicker for data' />
+  <meta name='twitter:description' content='Avoiding equidistant HSV colors' />
+  <meta property='og:description' content='Avoiding equidistant HSV colors' />
+  <meta name='twitter:image' content='img/twitter-card.png' />
+  <meta name='st:image' content='img/twitter-card.png' />
+  <meta property='og:image' content='img/twitter-card.png' />
+  <meta property='og:type' content='website' />
+  <meta name='twitter:card' content='summary_large_image' />
+  <link rel='shortcut icon' href='img/favicon.png' type='image/x-icon' />
   <link rel='stylesheet' href='base.css' />
   <link rel='stylesheet' href='site.css' />
 </head>
 <body>
 
-<header class='fill-white'>
+<header class='fill-white pad2y space-bottom2'>
   <div class='limiter clearfix'>
-    <a href='/' class='sprite logo'>HCL</a>
-    <a href='http://en.wikipedia.org/wiki/Munsell_color_system'>hue, saturation, lightness</a> colorpicker for data. <a href='https://twitter.com/share' class='twitter-share-button' data-url='http://tristen.ca/hcl-picker/' data-text='A Colorpicker for Data:' data-via='fallsemo' data-count='none'>Tweet</a>
-
-    <small>Built off Gregor Aisch's <a href='http://vis4.net/blog/posts/avoid-equidistant-hsv-colors'>demo</a> and color conversion library <a href='https://github.com/gka/chroma.js'>chroma.js</a>. Map powered by <a href='http://d3js.org'>D3</a></small>
+    <div class='col8 margin2'>
+      <a href='/' class='sprite logo fl'>HCL</a>
+      <div class='fl pad1x pad0y'>
+        <h1>Colorpicker for data</h1>
+        <span class='quiet'>Built off Gregor Aisch's <a href='http://vis4.net/blog/posts/avoid-equidistant-hsv-colors'>article</a> and color conversion library <a href='https://github.com/gka/chroma.js'>chroma.js</a>. Map powered by <a href='http://d3js.org'>D3</a>.</span>
+      </div>
+    </div>
   </div>
 </header>
 
-<div class='limiter pad4y'>
+<div class='limiter'>
 
-  <div class='pin-right'>
-    <a href='#picker' class='sprite icon picker js-mode' data-tooltip='Colorpicker'></a>
-    <a href='#visualization' class='sprite icon map js-mode' data-tooltip='Visualize on a map'></a>
+  <div class='col12 clearfix'>
+    <div class='pill col4 margin4 clearfix'><!--
+      --><a href='#picker' class='button active col6 js-mode'>
+        <span class='sprite icon picker'></span> Colorpicker
+      </a><!--
+      --><a href='#visualization' class='button col6 js-mode'>
+        <span class='sprite icon map'></span> Visualized
+      </a>
+    </div>
   </div>
 
-  <section id='picker' class='active contain'>
-    <ul class='axis-select'></ul>
+  <section id='picker' class='picker active contain space-bottom2 space-top2'>
+    <nav class='axis-select pin-topleft'></nav>
     <div class='canvas fl'>
       <div id='bg'>
         <canvas id='colorspace' width='210' height='210'></canvas>
@@ -36,55 +60,54 @@
         <div class='drag from'></div>
         <div class='drag to'></div>
       </div>
-      <div class='slider contain'>
-        <div id='sl-z' class='slider'></div>
-        <small id='sl-val' class='quiet'></small>
+      <input id='slider' class='slider col12' type='range' value='0' min='0' max='1' step='0.05' data-tooltip='Adjust chroma' />
+
+      <div class='slider-output pin-bottomleft'>
+        <span class='js-slider-title'></span>
+        <span class='js-slider-value'></span>
       </div>
     </div>
-
     <div class='sidebar'>
-      <div class='inner'>
-        <div id='visual-output'></div>
-        <div id='code-output'></div>
+      <div class='output pad1'>
+        <div id='visual-output' class='fl'></div>
+        <div id='code-output' class='fl hexes quiet'></div>
       </div>
-      <div id='controls'>
-        <a data-type='add' href='#' data-tooltip='Add a swatch' >+</a>
-        <a data-type='subtract' class='subtract' href='#' data-tooltip='Remove a swatch'>-</a>
+
+      <a href='#' id='select' class='pin-bottom button col12 js-select select-all control unround'>
+        Select all
+        <div class='sprite icon clipboard'></div>
+      </a>
+
+      <div id='controls' class='controls pill unround pin-bottom col12 clearfix'><!--
+        --><a href='#' class='col6 button unround js-add' data-tooltip='Add a swatch' >
+          <span class='icon sprite plus'></span>
+        </a><!--
+        --><a href='#' class='col6 button round-bottomright js-subtract' data-tooltip='Remove a swatch'>
+          <span class='icon sprite minus'></span>
+        </a>
       </div>
     </div>
   </section>
 
-
   <section id='visualization' class='hidden'>
-    <div id='legend' class='legend'>
+    <div id='legend' class='legend dark pin-bottomright pad1'>
       <h4>U.S Unemployment 2008</h4>
       <ul id='legend-output' class='clearfix'></ul>
       <div class='clearfix'>
-        <span class='key low'>Low</span>
-    <span class='key high'>High</span>
+        <span class='fl'>Low</span>
+        <span class='fr'>High</span>
       </div>
     </div>
   </section>
 
 </div>
 
-<script src='js/jquery.min.js'></script>
-<script src='js/jquery-ui.js'></script>
-<script src='js/chroma.min.js'></script>
+<script src='js/chroma.js'></script>
 <script src='js/d3.v3.min.js'></script>
 <script src='js/d3.geo.js'></script>
+<script src='js/ZeroClipboard.min.js'></script>
 <script src='app.js'></script>
 <script>
-!function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (!d.getElementById(id)) {
-    js = d.createElement(s);
-    js.id = id;
-    js.src = '//platform.twitter.com/widgets.js';
-    fjs.parentNode.insertBefore(js,fjs);
-  }
-}(document,'script','twitter-wjs');
-
 var analytics=analytics||[];(function(){var e=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group"],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
 analytics.load("ppyh4q5xb3");
 </script>
