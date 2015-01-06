@@ -72,6 +72,7 @@ input[type=range]::-moz-range-thumb {
 
 /* Template classes
 ---------------------------------------------*/
+.capitalize { text-transform:capitalize; }
 .button { background-color:#353535; }
 .button.zeroclipboard-is-hover { background:#666666!important; }
 .button.active { background-color:#505050; }

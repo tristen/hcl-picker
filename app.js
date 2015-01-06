@@ -28,9 +28,9 @@ var colorspace = {
       ['c', 'chroma', 0, 5, 1],
       ['l', 'lightness', 0, 1.7, 0.6]],
     axis: [
-      ['hlc', 'hue-lightness-chroma'],
-      ['clh', 'chroma-lightness-hue'],
-      ['hcl', 'hue-chroma-lightness']]
+      ['hlc', 'hue-lightness'],
+      ['clh', 'chroma-lightness'],
+      ['hcl', 'hue-chroma']]
   }
 };
 
@@ -139,7 +139,10 @@ Colorpicker.prototype = {
         .attr('value', config.zval);
 
       d3.select('.js-slider-title')
-        .text('Adjust ' + config.zdim[1]);
+        .text(config.zdim[1]);
+
+      d3.select('.js-slider-value')
+        .text(config.zval);
     }
 
     function setView(state, reset) {
@@ -156,10 +159,8 @@ Colorpicker.prototype = {
       return [hcl[config.dx], hcl[config.dy]];
     }
 
-    d3.select('#slider')
-      .attr('step', 0.01)
-      .attr('value', 1)
-      .on('mousemove', function() {
+    var slider = d3.select('#slider');
+    slider.on('mousemove', function() {
         var v = this.value;
         d3.select('.js-slider-value').text(v);
         config.zval = v;
