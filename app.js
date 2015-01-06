@@ -442,7 +442,7 @@ client.on('ready', function() {
   client.on('aftercopy', function(e) {
     selectButton.text('Copied!');
     setTimeout(function() {
-      selectButton.text('Select all')
+      selectButton.text('Copy')
         .append('span')
         .attr('class', 'sprite icon clipboard');
     }, 1000);
