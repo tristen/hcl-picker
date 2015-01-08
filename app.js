@@ -440,6 +440,8 @@ var client = new ZeroClipboard( document.getElementById('select') );
 var selectButton = d3.selectAll('.js-select');
 
 client.on('ready', function() {
+  d3.select('.output').classed('with-select', true);
+  selectButton.classed('hidden', false);
   client.on('aftercopy', function(e) {
     selectButton.text('Copied!');
     setTimeout(function() {
