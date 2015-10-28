@@ -64,7 +64,13 @@ Colorpicker.prototype = {
 
       xyz[config.dx] = x;
       xyz[config.dy] = y;
-      xyz[config.dz] = config.zval;
+
+      if (typeof config.zval == "string") {
+        xyz[config.dz] = parseFloat(config.zval);
+      }
+      else {
+        xyz[config.dz] = config.zval;
+      }
 
       var c = new Color(xyz, 'hcl');
       return c;
