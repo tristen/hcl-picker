@@ -1,7 +1,13 @@
+'use strict';
+/* global d3 chroma ZeroClipboard */
+/*eslint-disable no-new */
+
+var pad = d3.format('05d');
+
 function autoscale(canvas) {
   var ctx = canvas.getContext('2d');
   var ratio = window.devicePixelRatio || 1;
-  if (1 != ratio) {
+  if (ratio !== 1) {
     canvas.style.width = canvas.width + 'px';
     canvas.style.height = canvas.height + 'px';
     canvas.width *= ratio;
@@ -50,8 +56,18 @@ function Colorpicker(cb) {
 
 Colorpicker.prototype = {
   init: function(config, cb) {
-    initPosSet = false;
-    function getctx(id, autoscale) {
+    var initPosSet = false;
+    var hash = location.hash.slice(2);
+    var state = unserialize(hash);
+    var swatches = state.swatches;
+    var gradient = {
+      from: state.from,
+      to: state.to, //x,y
+      steps: swatches,
+      handlesize: 15
+    };
+
+    function getctx(id) {
       return document.getElementById(id).getContext('2d');
     }
 
@@ -61,17 +77,13 @@ Colorpicker.prototype = {
 
     function getColor(x, y) {
       var xyz = [];
-
       xyz[config.dx] = x;
       xyz[config.dy] = y;
-
-      if (typeof config.zval == "string") {
+      if (typeof config.zval == 'string') {
         xyz[config.dz] = parseFloat(config.zval);
-      }
-      else {
+      } else {
         xyz[config.dz] = config.zval;
       }
-
       var c = new Color(xyz, 'hcl');
       return c;
     }
@@ -80,8 +92,6 @@ Colorpicker.prototype = {
 
     function renderColorSpace() {
       var x, y, xv, yv, color, idx,
-        dx = config.dx,
-        dy = config.dy,
         xdim = config.xdim,
         ydim = config.ydim,
         sq = config.sq,
@@ -90,7 +100,6 @@ Colorpicker.prototype = {
 
       for (x = 0; x < sq; x++) {
         for (y = 0; y < sq; y++) {
-
           idx = (x + y * imdata.width) * 4;
 
           // TODO use the xv commented out to double the colorspace and
@@ -151,7 +160,7 @@ Colorpicker.prototype = {
         .text(config.zval);
     }
 
-    function setView(state, reset) {
+    function setView(state) {
       updateAxis(state.axis);
       config.zval = config.zdim[4];
       renderColorSpace();
@@ -186,7 +195,7 @@ Colorpicker.prototype = {
       .on('click', function() {
         d3.event.preventDefault();
         d3.event.stopPropagation();
-        if (swatches != 1) {
+        if (swatches !== 1) {
           swatches = swatches - 1;
           gradient.steps = swatches;
           showGradient();
@@ -202,7 +211,7 @@ Colorpicker.prototype = {
 
     var gradctx = getretinactx('grad');
 
-    function showGradient(from) {
+    function showGradient() {
       // draw line
       var colors = [], col_f, col_t, col;
       var toX = function(v, dim) {
@@ -338,7 +347,7 @@ Colorpicker.prototype = {
 
     var drag = d3.behavior.drag()
       .origin(Object)
-      .on('drag', function(d) {
+      .on('drag', function() {
         initPosSet = true;
 
         var posX = parseInt(d3.select(this).style('left').split('px')[0], 10);
@@ -365,11 +374,11 @@ Colorpicker.prototype = {
 
         if (from) {
           gradient.from = [xv, yv];
-          showGradient(from);
         } else {
           gradient.to = [xv, yv];
-          showGradient();
         }
+
+        showGradient();
     });
     d3.select('.drag.to').call(drag);
     d3.select('.drag.from').call(drag);
@@ -409,17 +418,6 @@ Colorpicker.prototype = {
         });
     }
 
-    var hash = location.hash.slice(2);
-    var state = unserialize(hash);
-    var swatches = state.swatches;
-
-    var gradient = {
-      from: state.from,
-      to: state.to, //x,y
-      steps: swatches,
-      handlesize: 15
-    };
-
     config.axis = state.axis;
     setView(state);
     axisLinks();
@@ -427,28 +425,13 @@ Colorpicker.prototype = {
   }
 };
 
-function choropleth(counties, colors) {
-  d3.json('example-data/unemployment.json', function(data) {
-    var quantize = d3.scale.quantile().domain(d3.values(data)).range(d3.range(colors.length));
-    d3.json('example-data/us-counties.json', function(json) {
-      counties.selectAll('path').data(json.features).enter().append('svg:path').attr('style', function(d) {
-          return 'fill:' + colors[quantize(data[pad(d.id)])] + ';';
-        })
-        .attr('d', path).append('svg:title').text(function(d) {
-          return d.properties.name + ': ' + data[pad(d.id)] + '%';
-        });
-      d3.select('#visualization').classed('loading', false);
-    });
-  });
-}
-
 var client = new ZeroClipboard( document.getElementById('select') );
 var selectButton = d3.selectAll('.js-select');
 
 client.on('ready', function() {
   d3.select('.output').classed('with-select', true);
   selectButton.classed('hidden', false);
-  client.on('aftercopy', function(e) {
+  client.on('aftercopy', function() {
     selectButton.text('Copied!');
     setTimeout(function() {
       selectButton.text('Copy')
@@ -469,10 +452,7 @@ select.on('click', function() {
 });
 
 if (!location.hash) location.hash = '/hlc/6/1/16534C/E2E062';
-var color = new Colorpicker(function(colors) {
-  colorArray = colors;
-  select.attr('data-clipboard-text', colors);
-});
+
 var path = d3.geo.path()
   .projection(d3.geo.albersUsa()
     .scale(960)
@@ -483,7 +463,26 @@ var svg = vizs.append('svg:svg')
   .attr('height', 500);
 
 var counties = svg.append('svg:g').attr('id', 'counties');
-var pad = d3.format('05d');
+
+function choropleth(counties, colors) {
+  d3.json('example-data/unemployment.json', function(data) {
+    var quantize = d3.scale.quantile().domain(d3.values(data)).range(d3.range(colors.length));
+    d3.json('example-data/us-counties.json', function(json) {
+      counties.selectAll('path').data(json.features).enter().append('svg:path').attr('style', function(d) {
+          return 'fill:' + colors[quantize(data[pad(d.id)])] + ';';
+        })
+        .attr('d', path).append('svg:title').text(function(d) {
+          return d.properties.name + ': ' + data[pad(d.id)] + '%';
+        });
+      d3.select('#visualization').classed('loading', false);
+    });
+  });
+}
+
+new Colorpicker(function(colors) {
+  colorArray = colors;
+  select.attr('data-clipboard-text', colors);
+});
 
 mode.on('click', function() {
   d3.event.preventDefault();
