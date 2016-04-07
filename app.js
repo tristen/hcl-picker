@@ -162,9 +162,7 @@ Colorpicker.prototype = {
 
     function setView(state) {
       updateAxis(state.axis);
-      config.zval = config.zdim[4];
       renderColorSpace();
-      resetGradient();
       showGradient();
     }
 
