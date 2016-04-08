@@ -38,7 +38,7 @@ input[type=range] {
  * on their own so dont group them */
 input[type=range]::-webkit-slider-thumb {
   background-color:#505050;
-  background-image:url(img/sprite@2x.png);
+  background-image:url(../img/sprite@2x.png);
   background-repeat:no-repeat;
   background-size:80px 100px;
   background-position:0 -60px;
@@ -47,7 +47,7 @@ input[type=range]::-webkit-slider-thumb {
   }
 input[type=range]::-ms-thumb {
   background-color:#505050;
-  background-image:url(img/sprite@2x.png);
+  background-image:url(../img/sprite@2x.png);
   background-repeat:no-repeat;
   background-size:80px 100px;
   background-position:0 -60px;
@@ -56,7 +56,7 @@ input[type=range]::-ms-thumb {
   }
 input[type=range]::-moz-range-thumb {
   background-color:#505050;
-  background-image:url(img/sprite@2x.png);
+  background-image:url(../img/sprite@2x.png);
   background-repeat:no-repeat;
   background-size:80px 100px;
   background-position:0 -60px;
@@ -64,20 +64,10 @@ input[type=range]::-moz-range-thumb {
   border-radius:0;
   }
 
-.button.mode { color:#808080; }
-.button.mode:hover,
-.button.mode.active { color:#fff; }
-
-.button.mode .icon { opacity:0.5; }
-.button.mode:hover .icon,
-.button.mode.active .icon { opacity:1; }
-
 /* Template classes
 ---------------------------------------------*/
 .capitalize { text-transform:capitalize; }
-.button { background-color:#353535; }
-.button.zeroclipboard-is-hover { background:#666666!important; }
-.button.active { background-color:#505050; }
+.uppercase { text-transform:uppercase; }
 .fill-white { background-color:#fff; }
 .pill > * { border-color:#181818; }
 .quiet { color:#aaa; }
@@ -135,7 +125,7 @@ input[type=range]::-moz-range-thumb {
     height:100%;
     }
   .loading:after {
-    background:rgba(0,0,0,0.25) url(img/loading.svg) 50% 50% no-repeat;
+    background:rgba(0,0,0,0.25) url(../img/loading.svg) 50% 50% no-repeat;
     left:50%;
     top:50%;
     margin:-20px 0 0 -20px;
@@ -145,7 +135,7 @@ input[type=range]::-moz-range-thumb {
     }
 
 .sprite {
-  background-image:url(img/sprite@2x.png);
+  background-image:url(../img/sprite@2x.png);
   background-repeat:no-repeat;
   background-size:80px 100px;
   display:block;
@@ -172,6 +162,15 @@ input[type=range]::-moz-range-thumb {
 
 /* Color Picker
 ---------------------------------------------*/
+.sidebar .button {
+  background-color:#505050;
+  color:#fff;
+  }
+.sidebar .button.zeroclipboard-is-hover,
+.sidebar .button:hover {
+  background-color:#666;
+  }
+
 .picker {
   width:580px;
   height:460px;
@@ -186,19 +185,19 @@ input[type=range]::-moz-range-thumb {
   left:-40px;
   top:0;
   }
-  .axis-select a {
+  .axis-select {
     background:#353535;
     color:#808080;
     width:40px;
     text-transform:uppercase;
     border-bottom:1px solid #181818;
     }
-    .axis-select a.active {
+    .axis-select .active {
       background:#505050;
       color:#fff;
       }
-      a.hlc { border-radius: 2px 0 0 0; }
-      a.hcl { border-radius: 0 0 0 2px; }
+      .axis-option.hlc { border-radius: 2px 0 0 0; }
+      .axis-option.hcl { border-radius: 0 0 0 2px; }
 
 .z-axis-label {
   text-transform: uppercase;
@@ -239,7 +238,7 @@ input[type=range]::-moz-range-thumb {
   height:420px;
   }
 #bg {
-  background-image:url(img/canvas.png);
+  background-image:url(../img/canvas.png);
   background-repeat:repeat;
   left:0;
   position:relative;

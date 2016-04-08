@@ -18,8 +18,8 @@
   <meta property='og:type' content='website' />
   <meta name='twitter:card' content='summary_large_image' />
   <link rel='shortcut icon' href='img/favicon.png' type='image/x-icon' />
-  <link rel='stylesheet' href='base.css' />
-  <link rel='stylesheet' href='site.css' />
+  <link rel='stylesheet' href='css/base.css' />
+  <link rel='stylesheet' href='css/site.css' />
 </head>
 <body>
 
@@ -39,12 +39,12 @@
 
   <div class='col12 clearfix'>
     <div class='pill col4 margin4 clearfix'><!--
-      --><a href='#picker' class='button active mode col6 js-mode'>
+      --><button href='#picker' class='button active mode col6 js-mode'>
         <span class='sprite icon picker'></span> Colorpicker
-      </a><!--
-      --><a href='#visualization' class='button mode col6 js-mode'>
+      </button><!--
+      --><button href='#visualization' class='button mode col6 js-mode'>
         <span class='sprite icon map'></span> Visualized
-      </a>
+      </button>
     </div>
   </div>
 
@@ -72,17 +72,17 @@
         <div id='code-output' class='fl hexes quiet'></div>
       </div>
 
-      <a href='#' id='select' class='pin-bottom hidden button col12 js-select select-all control unround'>
+      <button href='#' id='select' class='z1 pin-bottom keyline-bottom hidden button col12 js-select select-all control unround'>
         Copy<div class='sprite icon clipboard'></div>
-      </a>
+      </button>
 
       <div id='controls' class='controls pill unround pin-bottom col12 clearfix'><!--
-        --><a href='#' class='col6 button unround js-add' data-tooltip='Add a swatch' >
+        --><button href='#' class='col6 button unround js-add' data-tooltip='Add a swatch' >
           <span class='icon sprite plus'></span>
-        </a><!--
-        --><a href='#' class='col6 button round-bottomright js-subtract' data-tooltip='Remove a swatch'>
+        </button><!--
+        --><button href='#' class='col6 button round-bottomright js-subtract' data-tooltip='Remove a swatch'>
           <span class='icon sprite minus'></span>
-        </a>
+        </button>
       </div>
     </div>
   </section>

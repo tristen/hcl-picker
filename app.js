@@ -182,8 +182,6 @@ Colorpicker.prototype = {
 
     d3.select('.js-add')
       .on('click', function() {
-        d3.event.preventDefault();
-        d3.event.stopPropagation();
         swatches = swatches + 1;
         gradient.steps = swatches;
         showGradient();
@@ -191,8 +189,6 @@ Colorpicker.prototype = {
 
     d3.select('.js-subtract')
       .on('click', function() {
-        d3.event.preventDefault();
-        d3.event.stopPropagation();
         if (swatches !== 1) {
           swatches = swatches - 1;
           gradient.steps = swatches;
@@ -387,10 +383,9 @@ Colorpicker.prototype = {
         .data(colorspace.hcl.axis);
 
       axis_links.exit().remove();
-      axis_links.enter().append('a')
-        .attr('href', '#')
+      axis_links.enter().append('button')
         .attr('class', function(d) {
-          return 'axis-option block button pad0x unround ' + d[0];
+          return 'axis-option col12 block button uppercase unround keyline-bottom ' + d[0];
         })
         .attr('data-tooltip', function(d) {
             return d[1];
@@ -403,14 +398,12 @@ Colorpicker.prototype = {
           return d[0][0] + '–' + d[0][1];
         })
         .on('click', function(d) {
-          d3.event.preventDefault();
-          d3.event.stopPropagation();
           initPosSet = false;
           updateAxis(d[0]);
           resetGradient();
           renderColorSpace();
           showGradient();
-          d3.selectAll('a.axis-option').classed('active', function(_) {
+          d3.selectAll('.axis-option').classed('active', function(_) {
             return _[0] == d[0];
           });
         });
@@ -444,10 +437,6 @@ var vizs = d3.select('#visualization');
 var pick = d3.select('#picker');
 var select = d3.select('.js-select');
 var colorArray = [];
-select.on('click', function() {
-  d3.event.preventDefault();
-  d3.event.stopPropagation();
-});
 
 if (!location.hash) location.hash = '/hlc/6/1/16534C/E2E062';
 
@@ -483,9 +472,6 @@ new Colorpicker(function(colors) {
 });
 
 mode.on('click', function() {
-  d3.event.preventDefault();
-  d3.event.stopPropagation();
-
   var el = d3.select(this);
   mode.classed('active', false);
   el.classed('active', true);
