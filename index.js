@@ -2,8 +2,9 @@
 /*eslint-disable no-new */
 
 var clipboard = require('clipboard');
-var chroma = require('./src/chroma');
 var debounce = require('lodash.debounce');
+var extend = require('xtend');
+var Color = require('./src/chroma').Color;
 var d3 = require('d3');
 d3.geo = require('d3-geo').geo;
 
@@ -22,7 +23,6 @@ function autoscale(canvas) {
   return ctx;
 }
 
-var Color = chroma.Color;
 var colorspace = {
   'hcl': {
     dimensions: [
@@ -36,8 +36,9 @@ var colorspace = {
   }
 };
 
-function Colorpicker(cb) {
-  var config = {
+if (!location.hash) location.hash = '/hlc/6/1/16534C/E2E062';
+function Colorpicker(options) {
+  var defaults = {
     sq: 210,
     scale: 2,
     axis: 'hcl',
@@ -47,11 +48,12 @@ function Colorpicker(cb) {
     z: '',
     zval: 1
   };
-  this.init(config, cb);
+
+  this.init(extend(defaults, options));
 }
 
 Colorpicker.prototype = {
-  init: function(config, cb) {
+  init: function(config) {
     var initPosSet = false;
     var hash = location.hash.slice(2);
     var state = unserialize(hash);
@@ -293,7 +295,7 @@ Colorpicker.prototype = {
         output.style('background', String);
       });
 
-      cb(colors);
+      if (config.callback) config.callback(colors);
       var output = d3.select('#code-output')
         .selectAll('span.value').data(colors);
 
@@ -418,8 +420,6 @@ var pick = d3.select('#picker');
 var select = d3.select('.js-select');
 var colorArray = [];
 
-if (!location.hash) location.hash = '/hlc/6/1/16534C/E2E062';
-
 var path = d3.geo.path()
   .projection(d3.geo.albersUsa()
     .scale(960)
@@ -458,9 +458,11 @@ clipboard.on('success', function(e) {
   }, 1000);
 });
 
-new Colorpicker(function(colors) {
-  colorArray = colors;
-  select.attr('data-clipboard-text', colors);
+new Colorpicker({
+  callback: function(colors) {
+    colorArray = colors;
+    select.attr('data-clipboard-text', colors);
+  }
 });
 
 mode.on('click', function() {
