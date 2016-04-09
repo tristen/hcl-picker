@@ -1,6 +1,11 @@
 'use strict';
-/* global d3 chroma ZeroClipboard */
 /*eslint-disable no-new */
+
+var clipboard = require('clipboard');
+var chroma = require('./src/chroma');
+var debounce = require('lodash.debounce');
+var d3 = require('d3');
+d3.geo = require('d3-geo').geo;
 
 var pad = d3.format('05d');
 
@@ -15,15 +20,6 @@ function autoscale(canvas) {
     ctx.scale(ratio, ratio);
   }
   return ctx;
-}
-
-var timer = null;
-function debounce(fn, delay) {
-  var context = this, args = arguments;
-  clearTimeout(timer);
-  timer = setTimeout(function() {
-    fn.apply(context, args);
-  }, delay);
 }
 
 var Color = chroma.Color;
@@ -416,22 +412,6 @@ Colorpicker.prototype = {
   }
 };
 
-var client = new ZeroClipboard( document.getElementById('select') );
-var selectButton = d3.selectAll('.js-select');
-
-client.on('ready', function() {
-  d3.select('.output').classed('with-select', true);
-  selectButton.classed('hidden', false);
-  client.on('aftercopy', function() {
-    selectButton.text('Copied!');
-    setTimeout(function() {
-      selectButton.text('Copy')
-        .append('span')
-        .attr('class', 'sprite icon clipboard');
-    }, 1000);
-  });
-});
-
 var mode = d3.selectAll('.js-mode');
 var vizs = d3.select('#visualization');
 var pick = d3.select('#picker');
@@ -465,6 +445,18 @@ function choropleth(counties, colors) {
     });
   });
 }
+
+var clipboardEl = d3.select('#select');
+clipboard = new clipboard('#select');
+
+clipboard.on('success', function(e) {
+  clipboardEl.text('copied!');
+  window.setTimeout(function() {
+    clipboardEl.text('copy')
+      .append('span')
+      .attr('class', 'sprite icon clipboard');
+  }, 1000);
+});
 
 new Colorpicker(function(colors) {
   colorArray = colors;

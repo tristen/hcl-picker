@@ -1,0 +1,23 @@
+module.exports = {
+    "rules": {
+        "linebreak-style": [
+            2,
+            "unix"
+        ],
+        "no-console": [
+            0
+        ]
+    },
+    "env": {
+        "browser": true,
+        "jquery": true
+    },
+    "globals": {
+        "analytics": true,
+        "App": true,
+        "_": true,
+        "L": true,
+        "Views": true
+    },
+    "extends": "eslint:recommended"
+};

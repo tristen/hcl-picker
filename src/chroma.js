@@ -973,4 +973,7 @@
   Array.min = function(array) {
     return Math.min.apply(Math, array);
   };
+
+if (typeof module !== 'undefined') module.exports = chroma;
 }).call(this);
+
