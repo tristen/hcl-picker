@@ -23,26 +23,22 @@ function autoscale(canvas) {
   return ctx;
 }
 
-var colorspace = {
-  'hcl': {
-    dimensions: [
-      ['h', 'hue', 0, 360, 0],
-      ['c', 'chroma', 0, 5, 1],
-      ['l', 'lightness', 0, 1.7, 0.6]],
-    axis: [
-      ['hlc', 'hue-lightness'],
-      ['clh', 'chroma-lightness'],
-      ['hcl', 'hue-chroma']]
-  }
-};
-
 if (!location.hash) location.hash = '/hlc/6/1/16534C/E2E062';
 function Colorpicker(options) {
   var defaults = {
     sq: 210,
     scale: 2,
     axis: 'hcl',
-    opt: colorspace.hcl,
+    colorspace: {
+      dimensions: [
+        ['h', 'hue', 0, 360, 0],
+        ['c', 'chroma', 0, 5, 1],
+        ['l', 'lightness', 0, 1.7, 0.6]],
+      axis: [
+        ['hlc', 'hue-lightness'],
+        ['clh', 'chroma-lightness'],
+        ['hcl', 'hue-chroma']]
+    },
     x: '',
     y: '',
     z: '',
@@ -131,8 +127,8 @@ Colorpicker.prototype = {
       config.y = axis[1];
       config.z = axis[2];
 
-      for (var i = 0; i < colorspace.hcl.dimensions.length; i++) {
-        var dim = colorspace.hcl.dimensions[i];
+      for (var i = 0; i < config.colorspace.dimensions.length; i++) {
+        var dim = config.colorspace.dimensions[i];
         if (dim[0] === config.x) {
           config.dx = i;
           config.xdim = dim;
@@ -309,7 +305,7 @@ Colorpicker.prototype = {
         // default init settings
         return {
           swatches: 6,
-          axis: colorspace.hcl.axis[0],
+          axis: config.colorspace.axis[0],
           from: [0, 1],
           to: [1, 0.6]
         };
@@ -378,7 +374,7 @@ Colorpicker.prototype = {
     function axisLinks() {
       var axis_links = d3.select('.axis-select')
         .selectAll('a')
-        .data(colorspace.hcl.axis);
+        .data(config.colorspace.axis);
 
       axis_links.exit().remove();
       axis_links.enter().append('button')
