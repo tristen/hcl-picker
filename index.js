@@ -418,7 +418,7 @@ var colorArray = [];
 var clipboardEl = d3.select('#select');
 clipboard = new clipboard('#select');
 
-clipboard.on('success', function(e) {
+clipboard.on('success', function() {
   clipboardEl.text('Copied!');
   window.setTimeout(function() {
     clipboardEl.text('Copy')
