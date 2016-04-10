@@ -205,8 +205,9 @@ Colorpicker.prototype = {
       var toX = function(v, dim) {
         return Math.round((v - dim[2]) / (dim[3] - dim[2]) * options.sq * options.scale) - 0.5;
       };
-      var a = options.handlesize;
-      var b = Math.floor(options.handlesize * 0.65);
+
+      var a = options.handleSize;
+      var b = Math.floor(options.handleSize * 0.65);
       var x0 = toX(options.from[0], options.xdim) + 10;
       var x1 = toX(options.to[0], options.xdim) + 10;
       var y0 = toX(options.from[1], options.ydim) + 10;
@@ -324,8 +325,8 @@ Colorpicker.prototype = {
         });
 
         var from = d3.select(this).classed('from');
-        var x = posX + options.handlesize - 10;
-        var y = posY + options.handlesize - 10;
+        var x = posX + options.handleSize - 10;
+        var y = posY + options.handleSize - 10;
         var xv = x / (options.sq * options.scale) * (options.xdim[3] - options.xdim[2]) + options.xdim[2];
         var yv = y / (options.sq * options.scale) * (options.ydim[3] - options.ydim[2]) + options.ydim[2];
 
