@@ -1,0 +1,39 @@
+{
+  "name": "hcl-picker",
+  "version": "0.0.0",
+  "description": "A colorpicker for Data",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint --no-eslintrc -c .eslintrc index.js src",
+    "start": "budo index.js --serve=bundle.js --live -d",
+    "build": "browserify index.js | uglifyjs -c -m > bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tristen/hcl-picker.git"
+  },
+  "keywords": [
+    "hcl",
+    "color",
+    "data",
+    "geo"
+  ],
+  "author": "@tristen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tristen/hcl-picker/issues"
+  },
+  "homepage": "https://github.com/tristen/hcl-picker#readme",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "budo": "^8.1.0",
+    "eslint": "^2.7.0",
+    "uglify-js": "^2.6.2"
+  },
+  "dependencies": {
+    "clipboard": "^1.5.10",
+    "d3": "^3.5.16",
+    "d3-geo": "0.0.0",
+    "xtend": "^4.0.1"
+  }
+}

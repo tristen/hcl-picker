@@ -72,15 +72,15 @@
         <div id='code-output' class='fl hexes quiet'></div>
       </div>
 
-      <button href='#' id='select' class='z1 pin-bottom keyline-bottom hidden button col12 js-select select-all control unround'>
+      <button id='select' class='z1 pin-bottom keyline-bottom button col12 js-select select-all control unround'>
         Copy<div class='sprite icon clipboard'></div>
       </button>
 
       <div id='controls' class='controls pill unround pin-bottom col12 clearfix'><!--
-        --><button href='#' class='col6 button unround js-add' data-tooltip='Add a swatch' >
+        --><button class='col6 button unround js-add' data-tooltip='Add a swatch' >
           <span class='icon sprite plus'></span>
         </button><!--
-        --><button href='#' class='col6 button round-bottomright js-subtract' data-tooltip='Remove a swatch'>
+        --><button class='col6 button round-bottomright js-subtract' data-tooltip='Remove a swatch'>
           <span class='icon sprite minus'></span>
         </button>
       </div>
@@ -100,11 +100,7 @@
 
 </div>
 
-<script src='js/chroma.js'></script>
-<script src='https://d3js.org/d3.v3.min.js'></script>
-<script src='js/d3.geo.js'></script>
-<script src='js/ZeroClipboard.min.js'></script>
-<script src='app.js'></script>
+<script src='bundle.js'></script>
 <script>
 var analytics=analytics||[];(function(){var e=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group"],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
 analytics.load("ppyh4q5xb3");

@@ -1,0 +1,18 @@
+{
+    "rules": {
+        "linebreak-style": [
+            2,
+            "unix"
+        ],
+        "no-console": [
+            0
+        ]
+    },
+    "env": {
+        "browser": true
+    },
+    "globals": {
+        "require": true
+    },
+    "extends": "eslint:recommended"
+}
