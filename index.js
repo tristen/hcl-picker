@@ -2,7 +2,6 @@
 /*eslint-disable no-new */
 
 var clipboard = require('clipboard');
-var debounce = require('lodash.debounce');
 var extend = require('xtend');
 var Color = require('./src/chroma').Color;
 var d3 = require('d3');
@@ -278,9 +277,7 @@ Colorpicker.prototype = {
       updateSwatches(colors);
 
       // Update the url hash
-      debounce(function() {
-        location.href = '#/' + serialize();
-      }, 100);
+      location.href = '#/' + serialize();
     }
 
     function updateSwatches(colors) {
