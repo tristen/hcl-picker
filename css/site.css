@@ -178,7 +178,10 @@ input[type=range]::-moz-range-thumb {
   margin-right:auto;
   }
 .slider-output {
-  bottom:-25px;
+  position: absolute;
+  right: 101%;
+  margin-top: 10px;
+  white-space: nowrap;
   }
 .axis-select {
   position:absolute;
@@ -213,7 +216,7 @@ input[type=range]::-moz-range-thumb {
 .sidebar {
   background:#353535;
   width:145px;
-  height:460px;
+  height:500px;
   float:left;
   border-radius:0 2px 2px 0;
   position:relative;

@@ -59,12 +59,16 @@
         <div class='drag from'></div>
         <div class='drag to'></div>
       </div>
-      <input id='slider' class='slider col12' type='range' value='0' min='0' max='1' step='0.05' />
-
-      <div class='slider-output pin-bottomleft'>
+      <div class='slider-output'>
         <span class='quiet capitalize js-slider-title'></span>
         <span class='quiet js-slider-value'></span>
       </div>
+      <input id='slider' class='slider col12' type='range' value='0' min='0' max='1' step='0.05' />
+      <div class='slider-output'>
+        <span class='quiet capitalize js-slider-hue-title'>Hue Shift</span>
+        <span class='quiet js-slider-hue-value'></span>
+      </div>
+      <input id='slider-hue' class='slider col12' type='range' value='0' min='-180' max='180' step='1' />
     </div>
     <div class='sidebar'>
       <div class='output pad1'>

@@ -4,8 +4,11 @@
 var clipboard = require('clipboard');
 var extend = require('xtend');
 var chroma = require('chroma-js');
+var debounce = require('lodash.debounce');
 var d3 = require('d3');
 d3.geo = require('d3-geo').geo;
+
+var HUE_SHIFT = 130;
 
 function autoscale(canvas) {
   var ctx = canvas.getContext('2d');
@@ -27,7 +30,8 @@ function unserialize(hash) {
     steps: Number(parts[1]),
     zval: Number(parts[2]),
     from: chroma(parts[3]),
-    to: chroma(parts[4])
+    to: chroma(parts[4]),
+    hueShift: Number(parts[5]) || HUE_SHIFT
   };
 }
 
@@ -37,6 +41,7 @@ function Colorpicker(options) {
     scale: 2,
     handleSize: 15,
     axis: 'hlc',
+    hueShift: HUE_SHIFT,
     colorspace: {
       dimensions: [
         ['h', 'hue', 0, 360, 0],
@@ -53,9 +58,9 @@ function Colorpicker(options) {
     y: 'l',
     z: 'c',
     steps: 6,
-    zval: 1,
-    from: chroma(0x16534c),
-    to: chroma(0xe2e062)
+    zval: 64,
+    from: chroma(0x351b7e),
+    to: chroma(0xe0fe7e)
   };
 
   var hash = location.hash.slice(2) ? unserialize(location.hash.slice(2)) : {};
@@ -65,6 +70,9 @@ function Colorpicker(options) {
 Colorpicker.prototype = {
   init: function(options) {
     var initPosSet = false;
+    var slider = d3.select('#slider');
+    var sliderHue = d3.select('#slider-hue');
+
     updateAxis(options.axis);
     options.from = getXY(options.from);
     options.to = getXY(options.to);
@@ -137,6 +145,11 @@ Colorpicker.prototype = {
 
       for (var i = 0; i < options.colorspace.dimensions.length; i++) {
         var dim = options.colorspace.dimensions[i];
+        if (dim[0] === 'h') {
+          dim = dim.slice();
+          dim[2] -= options.hueShift;
+          dim[3] -= options.hueShift;
+        }
         if (dim[0] === options.x) {
           options.dx = i;
           options.xdim = dim;
@@ -149,8 +162,7 @@ Colorpicker.prototype = {
         }
       }
 
-      d3
-        .select('#slider')
+      slider
         .attr('min', options.zdim[2])
         .attr('max', options.zdim[3])
         .attr('step', options.zdim[3] > 99 ? 1 : 0.01)
@@ -158,7 +170,34 @@ Colorpicker.prototype = {
 
       d3.select('.js-slider-title').text(options.zdim[1]);
 
-      d3.select('.js-slider-value').text(options.zval);
+      d3.select('.js-slider-value').text(formatZValue());
+
+      sliderHue
+        .attr('min', -180)
+        .attr('max', 180)
+        .attr('value', options.hueShift);
+      d3.select('.js-slider-hue-value').text(options.hueShift);
+    }
+
+    function fixAngle(angle, min, max) {
+      while (angle < min) angle += 360;
+      while (angle >= max) angle -= 360;
+      return angle;
+    }
+
+    function fixAngleIfNeeded(value, dim) {
+      if (dim[0] === 'h') {
+        value = fixAngle(value, dim[2], dim[3]);
+      }
+      return value;
+    }
+
+    function formatZValue() {
+      var zval = options.zval;
+      if (options.zdim[0] === 'h') {
+        zval = fixAngle(zval, 0, 360);
+      }
+      return zval;
     }
 
     function setView(axis) {
@@ -170,14 +209,32 @@ Colorpicker.prototype = {
     function getXY(color) {
       // inverse operation to getColor
       var hcl = color.hcl();
-      return [hcl[options.dx], hcl[options.dy]];
+      return [
+        fixAngleIfNeeded(hcl[options.dx], options.xdim),
+        fixAngleIfNeeded(hcl[options.dy], options.ydim)
+      ];
     }
 
-    var slider = d3.select('#slider');
-    slider.on('mousemove', function() {
-      d3.select('.js-slider-value').text(this.value);
-      options.zval = this.value;
+    var DEBOUNCE_MILLISECONDS = 10;
+    var debouncedRenderColorSpace = debounce(
+      renderColorSpace,
+      DEBOUNCE_MILLISECONDS
+    );
+    var debouncedRenderUpdateAxisAndRenderColorSpace = debounce(function() {
+      d3.select('.js-slider-hue-value').text(options.hueShift);
+      updateAxis(options.axis);
       renderColorSpace();
+    }, DEBOUNCE_MILLISECONDS);
+
+    slider.on('mousemove', function() {
+      options.zval = this.value;
+      d3.select('.js-slider-value').text(formatZValue());
+      debouncedRenderColorSpace();
+    });
+
+    sliderHue.on('mousemove', function() {
+      options.hueShift = +this.value;
+      debouncedRenderUpdateAxisAndRenderColorSpace();
     });
 
     d3.select('.js-add').on('click', function() {
@@ -348,7 +405,9 @@ Colorpicker.prototype = {
         '/' +
         getColor(options.to[0], options.to[1])
           .hex()
-          .substr(1)
+          .substr(1) +
+        '/' +
+        options.hueShift
       );
     }
 
