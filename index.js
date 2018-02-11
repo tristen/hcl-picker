@@ -226,13 +226,15 @@ Colorpicker.prototype = {
       renderColorSpace();
     }, DEBOUNCE_MILLISECONDS);
 
-    slider.on('mousemove', function() {
+    var SLIDER_EVENT = window.oninput ? 'input' : 'mousemove';
+
+    slider.on(SLIDER_EVENT, function() {
       options.zval = this.value;
       d3.select('.js-slider-value').text(formatZValue());
       debouncedRenderColorSpace();
     });
 
-    sliderHue.on('mousemove', function() {
+    sliderHue.on(SLIDER_EVENT, function() {
       options.hueShift = +this.value;
       debouncedRenderUpdateAxisAndRenderColorSpace();
     });
