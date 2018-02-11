@@ -159,10 +159,10 @@ Colorpicker.prototype = {
         }
       }
 
+      options.zval = fixAngleIfNeeded(options.zval, options.zdim);
       slider
         .attr('min', options.zdim[2])
         .attr('max', options.zdim[3])
-        .attr('step', options.zdim[3] > 99 ? 1 : 0.01)
         .attr('value', options.zval);
 
       d3.select('.js-slider-title').text(options.zdim[1]);
@@ -223,17 +223,21 @@ Colorpicker.prototype = {
       renderColorSpace();
     }, DEBOUNCE_MILLISECONDS);
 
-    // TODO: the `input` event doesn't work in IE11 and Chrome Mobile
-    slider.on('input', function() {
+    function sliderHandler() {
       options.zval = +this.value;
       d3.select('.js-slider-value').text(formatZValue());
       debouncedRenderColorSpace();
-    });
+    }
 
-    sliderHue.on('input', function() {
+    slider.on('input', sliderHandler);
+    slider.on('change', sliderHandler);
+
+    function sliderHueHandler() {
       options.hueShift = +this.value;
       debouncedRenderUpdateAxisAndRenderColorSpace();
-    });
+    }
+    sliderHue.on('input', sliderHueHandler);
+    sliderHue.on('change', sliderHueHandler);
 
     d3.select('.js-add').on('click', function() {
       options.steps = options.steps + 1;
