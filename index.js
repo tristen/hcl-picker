@@ -94,11 +94,7 @@ Colorpicker.prototype = {
       var xyz = [];
       xyz[options.dx] = x;
       xyz[options.dy] = y;
-      if (typeof options.zval == 'string') {
-        xyz[options.dz] = parseFloat(options.zval);
-      } else {
-        xyz[options.dz] = options.zval;
-      }
+      xyz[options.dz] = options.zval;
       var c = chroma.hcl(xyz);
       return c;
     }
@@ -139,6 +135,7 @@ Colorpicker.prototype = {
     }
 
     function updateAxis(axis) {
+      options.axis = axis;
       options.x = axis[0];
       options.y = axis[1];
       options.z = axis[2];
@@ -226,15 +223,14 @@ Colorpicker.prototype = {
       renderColorSpace();
     }, DEBOUNCE_MILLISECONDS);
 
-    var SLIDER_EVENT = window.oninput ? 'input' : 'mousemove';
-
-    slider.on(SLIDER_EVENT, function() {
-      options.zval = this.value;
+    // TODO: the `input` event doesn't work in IE11 and Chrome Mobile
+    slider.on('input', function() {
+      options.zval = +this.value;
       d3.select('.js-slider-value').text(formatZValue());
       debouncedRenderColorSpace();
     });
 
-    sliderHue.on(SLIDER_EVENT, function() {
+    sliderHue.on('input', function() {
       options.hueShift = +this.value;
       debouncedRenderUpdateAxisAndRenderColorSpace();
     });
@@ -456,6 +452,9 @@ Colorpicker.prototype = {
         }
 
         showGradient();
+
+        // prevent pull-to-refresh in Chrome Mobile
+        d3.event.sourceEvent.preventDefault();
       });
     d3.select('.drag.to').call(drag);
     d3.select('.drag.from').call(drag);
