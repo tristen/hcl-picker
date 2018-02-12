@@ -142,7 +142,8 @@ Colorpicker.prototype = {
 
       for (var i = 0; i < options.colorspace.dimensions.length; i++) {
         var dim = options.colorspace.dimensions[i];
-        if (dim[0] === 'h') {
+        if (dim[0] === 'h' && dim[0] !== options.z) {
+          // Apply the hue shift unless the z axis is hue.
           dim = dim.slice();
           dim[2] -= options.hueShift;
           dim[3] -= options.hueShift;
@@ -169,11 +170,18 @@ Colorpicker.prototype = {
 
       d3.select('.js-slider-value').text(formatZValue());
 
-      sliderHue
-        .attr('min', -180)
-        .attr('max', 180)
-        .attr('value', options.hueShift);
-      d3.select('.js-slider-hue-value').text(options.hueShift);
+      if (options.zdim[0] === 'h') {
+        sliderHue.style('visibility', 'hidden');
+        d3.select('.slider-output-hue').style('visibility', 'hidden');
+      } else {
+        sliderHue
+          .style('visibility', 'visible')
+          .attr('min', -180)
+          .attr('max', 180)
+          .attr('value', options.hueShift);
+        d3.select('.slider-output-hue').style('visibility', 'visible');
+        d3.select('.js-slider-hue-value').text(options.hueShift);
+      }
     }
 
     function fixAngle(angle, min, max) {
@@ -234,6 +242,7 @@ Colorpicker.prototype = {
 
     function sliderHueHandler() {
       options.hueShift = +this.value;
+      initPosSet = false;
       debouncedRenderUpdateAxisAndRenderColorSpace();
     }
     sliderHue.on('input', sliderHueHandler);
