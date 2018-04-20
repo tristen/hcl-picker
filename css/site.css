@@ -255,10 +255,10 @@ input[type=range]::-moz-range-thumb {
   }
 #grad,
 .drag_cont {
-  left:-15px;
-  top:-15px;
-  width:440px;
-  height:440px;
+  left:0px;
+  top:0px;
+  width:420px;
+  height:420px;
   }
 #grad {
   z-index: 20;

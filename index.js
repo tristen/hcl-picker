@@ -48,11 +48,7 @@ function Colorpicker(options) {
         ['c', 'chroma', 0, 135, 60],
         ['l', 'lightness', 0, 100, 50]
       ],
-      axis: [
-        ['hlc', 'hue-lightness'],
-        ['clh', 'chroma-lightness'],
-        ['hcl', 'hue-chroma']
-      ]
+      axis: [['hlc', 'hue-lightness'], ['clh', 'chroma-lightness'], ['hcl', 'hue-chroma']]
     },
     x: 'h',
     y: 'l',
@@ -182,6 +178,9 @@ Colorpicker.prototype = {
         d3.select('.slider-output-hue').style('visibility', 'visible');
         d3.select('.js-slider-hue-value').text(options.hueShift);
       }
+
+      options.from[0] = clamp(options.from[0], options.xdim[2], options.xdim[3]);
+      options.to[0] = clamp(options.to[0], options.xdim[2], options.xdim[3]);
     }
 
     function fixAngle(angle, min, max) {
@@ -221,10 +220,7 @@ Colorpicker.prototype = {
     }
 
     var DEBOUNCE_MILLISECONDS = 10;
-    var debouncedRenderColorSpace = debounce(
-      renderColorSpace,
-      DEBOUNCE_MILLISECONDS
-    );
+    var debouncedRenderColorSpace = debounce(renderColorSpace, DEBOUNCE_MILLISECONDS);
     var debouncedRenderUpdateAxisAndRenderColorSpace = debounce(function() {
       d3.select('.js-slider-hue-value').text(options.hueShift);
       updateAxis(options.axis);
@@ -261,50 +257,47 @@ Colorpicker.prototype = {
     });
 
     function resetGradient() {
-      options.from[0] =
-        options.xdim[2] + (options.xdim[3] - options.xdim[2]) * (23 / 36);
-      options.from[1] =
-        options.ydim[2] + (options.ydim[3] - options.ydim[2]) * 0.1;
-      options.to[0] =
-        options.xdim[2] + (options.xdim[3] - options.xdim[2]) * (8 / 36);
-      options.to[1] =
-        options.ydim[2] + (options.ydim[3] - options.ydim[2]) * 0.8;
+      options.from = [
+        options.xdim[2] + (options.xdim[3] - options.xdim[2]) * (23 / 36),
+        options.ydim[2] + (options.ydim[3] - options.ydim[2]) * 0.1
+      ];
+      options.to = [
+        options.xdim[2] + (options.xdim[3] - options.xdim[2]) * (8 / 36),
+        options.ydim[2] + (options.ydim[3] - options.ydim[2]) * 0.8
+      ];
     }
 
     var gradctx = getretinactx('grad');
 
-    function showGradient() {
-      // draw line
-      var colors = [],
-        col_f,
-        col_t,
-        col;
-      var toX = function(v, dim) {
-        return (
-          Math.round(
-            (v - dim[2]) / (dim[3] - dim[2]) * options.sq * options.scale
-          ) - 0.5
-        );
-      };
+    function toCanvasCoord(v, dim) {
+      return Math.round((v - dim[2]) / (dim[3] - dim[2]) * options.sq * options.scale);
+    }
 
-      var a = options.handleSize;
-      var b = Math.floor(options.handleSize * 0.65);
-      var x0 = toX(options.from[0], options.xdim) + 10;
-      var x1 = toX(options.to[0], options.xdim) + 10;
-      var y0 = toX(options.from[1], options.ydim) + 10;
-      var y1 = toX(options.to[1], options.ydim) + 10;
+    function showGradient() {
+      var bigCircleRadius = options.handleSize;
+      var smallCircleRadius = Math.floor(options.handleSize * 0.65);
+
+      var x0 = toCanvasCoord(options.from[0], options.xdim);
+      var y0 = toCanvasCoord(options.from[1], options.ydim);
+      var x1 = toCanvasCoord(options.to[0], options.xdim);
+      var y1 = toCanvasCoord(options.to[1], options.ydim);
 
       var ctx = gradctx;
-      ctx.clearRect(0, 0, 600, 600);
+      ctx.clearRect(
+        0,
+        0,
+        toCanvasCoord(options.xdim[3], options.xdim),
+        toCanvasCoord(options.ydim[3], options.ydim)
+      );
 
       if (!initPosSet) {
         d3.select('.drag.from').style({
-          left: x0 - a + 'px',
-          top: y0 - a + 'px'
+          left: x0 - bigCircleRadius + 'px',
+          top: y0 - bigCircleRadius + 'px'
         });
         d3.select('.drag.to').style({
-          left: x1 - a + 'px',
-          top: y1 - a + 'px'
+          left: x1 - bigCircleRadius + 'px',
+          top: y1 - bigCircleRadius + 'px'
         });
       }
 
@@ -327,31 +320,27 @@ Colorpicker.prototype = {
       }
 
       // `from` drag control on the colorpicker.
-      col_f = getColor(options.from[0], options.from[1]);
-      drawCircle(x0, y0, a, col_f, '#fff');
+      var colorFrom = getColor(options.from[0], options.from[1]);
+      drawCircle(x0, y0, bigCircleRadius, colorFrom, '#fff');
 
       // `to` drag control on the colorpicker.
-      col_t = getColor(options.to[0], options.to[1]);
-      drawCircle(x1, y1, a, col_t, '#fff');
+      var colorTo = getColor(options.to[0], options.to[1]);
+      drawCircle(x1, y1, bigCircleRadius, colorTo, '#fff');
 
-      colors.push(col_f);
+      var colors = [colorFrom];
 
       for (var i = 1; i < options.steps - 1; i++) {
-        var fx =
-          options.from[0] +
-          i / (options.steps - 1) * (options.to[0] - options.from[0]);
-        var fy =
-          options.from[1] +
-          i / (options.steps - 1) * (options.to[1] - options.from[1]);
-        var x = toX(fx, options.xdim) + 10;
-        var y = toX(fy, options.ydim) + 10;
+        var fx = options.from[0] + i / (options.steps - 1) * (options.to[0] - options.from[0]);
+        var fy = options.from[1] + i / (options.steps - 1) * (options.to[1] - options.from[1]);
+        var x = toCanvasCoord(fx, options.xdim);
+        var y = toCanvasCoord(fy, options.ydim);
 
-        col = getColor(fx, fy);
-        drawCircle(x, y, b, col, 'rgba(255,255,255,0.5)');
+        var col = getColor(fx, fy);
+        drawCircle(x, y, smallCircleRadius, col, 'rgba(255,255,255,0.5)');
         colors.push(col);
       }
 
-      colors.push(col_t);
+      colors.push(colorTo);
       updateSwatches(colors);
 
       // Update the url hash
@@ -373,12 +362,7 @@ Colorpicker.prototype = {
         output.attr('title', function(color) {
           var lch = color.lch();
           return (
-            'L=' +
-            Math.round(lch[0]) +
-            '\nC=' +
-            Math.round(lch[1]) +
-            '\nH=' +
-            Math.round(lch[2])
+            'L=' + Math.round(lch[0]) + '\nC=' + Math.round(lch[1]) + '\nH=' + Math.round(lch[2])
           );
         });
       });
@@ -428,41 +412,30 @@ Colorpicker.prototype = {
       .on('drag', function() {
         initPosSet = true;
 
-        var posX = parseInt(d3.select(this).style('left'), 10);
-        var posY = parseInt(d3.select(this).style('top'), 10);
+        var containerSize = 420;
+        var minPos = -options.handleSize;
+        var maxPos = containerSize - options.handleSize;
 
-        // 440 = width of container. 30 = width of drag circle.
-        posX = Math.max(0, Math.min(440 - 30, posX + d3.event.dx));
-        // 440 = height of container. 30 = height of drag circle.
-        posY = Math.max(0, Math.min(440 - 30, posY + d3.event.dy));
+        var posX = parseInt(d3.select(this).style('left'), 10) + d3.event.dx;
+        var posY = parseInt(d3.select(this).style('top'), 10) + d3.event.dy;
 
-        d3.select(this).style({
-          left: posX + 'px',
-          top: posY + 'px'
-        });
+        posX = clamp(posX, minPos, maxPos);
+        posY = clamp(posY, minPos, maxPos);
+
+        d3.select(this).style({ left: posX + 'px', top: posY + 'px' });
 
         var from = d3.select(this).classed('from');
-        var x = posX + options.handleSize - 10;
-        var y = posY + options.handleSize - 10;
+        var x = posX + options.handleSize;
+        var y = posY + options.handleSize;
         var xv =
-          x /
-            (options.sq * options.scale) *
-            (options.xdim[3] - options.xdim[2]) +
-          options.xdim[2];
+          x / (options.sq * options.scale) * (options.xdim[3] - options.xdim[2]) + options.xdim[2];
         var yv =
-          y /
-            (options.sq * options.scale) *
-            (options.ydim[3] - options.ydim[2]) +
-          options.ydim[2];
+          y / (options.sq * options.scale) * (options.ydim[3] - options.ydim[2]) + options.ydim[2];
 
-        xv = Math.min(options.xdim[3], Math.max(options.xdim[2], xv));
-        yv = Math.min(options.ydim[3], Math.max(options.ydim[2], yv));
+        xv = clamp(xv, options.xdim[2], options.xdim[3]);
+        yv = clamp(yv, options.ydim[2], options.ydim[3]);
 
-        if (from) {
-          options.from = [xv, yv];
-        } else {
-          options.to = [xv, yv];
-        }
+        options[from ? 'from' : 'to'] = [xv, yv];
 
         showGradient();
 
@@ -483,10 +456,7 @@ Colorpicker.prototype = {
         .enter()
         .append('button')
         .attr('class', function(d) {
-          return (
-            'axis-option col12 block button uppercase unround keyline-bottom ' +
-            d[0]
-          );
+          return 'axis-option col12 block button uppercase unround keyline-bottom ' + d[0];
         })
         .attr('data-tooltip', function(d) {
           return d[1];
@@ -596,3 +566,7 @@ mode.on('click', function() {
     choropleth(counties, colorArray);
   }
 });
+
+function clamp(number, lower, upper) {
+  return number <= upper ? (number >= lower ? number : lower) : upper;
+}
