@@ -2,6 +2,7 @@
 <html>
   <head>
   <meta charset='utf-8' />
+  <meta name="viewport" content="width=650px" />
   <title>Colorpicker for data | tristen</title>
   <meta name='twitter:site' content='@fallsemo' />
   <meta property='og:site_name' content='Colorpicker for data' />
@@ -54,17 +55,21 @@
       <div id='bg'>
         <canvas id='colorspace' width='210' height='210'></canvas>
       </div>
-      <canvas id='grad' width='440' height='440'></canvas>
+      <canvas id='grad' width='420' height='420'></canvas>
       <div class='drag_cont'>
         <div class='drag from'></div>
         <div class='drag to'></div>
       </div>
-      <input id='slider' class='slider col12' type='range' value='0' min='0' max='1' step='0.05' />
-
-      <div class='slider-output pin-bottomleft'>
+      <div class='slider-output hide-tablet'>
         <span class='quiet capitalize js-slider-title'></span>
         <span class='quiet js-slider-value'></span>
       </div>
+      <input id='slider' class='slider col12' type='range' value='0' min='0' max='1' step='1' />
+      <div class='slider-output slider-output-hue hide-tablet'>
+        <span class='quiet capitalize js-slider-hue-title'>Hue Shift</span>
+        <span class='quiet js-slider-hue-value'></span>
+      </div>
+      <input id='slider-hue' class='slider col12' type='range' value='0' min='-180' max='180' step='1' />
     </div>
     <div class='sidebar'>
       <div class='output pad1'>
